@@ -1,0 +1,11 @@
+{
+  "institution_name": "しずおか焼津信用金庫",
+  "institution_code": 1501,
+  "prefecture": "静岡県",
+  "disclosure_page": "https://www.shizuokayaizu-shinkin.co.jp/about/disclosure/",
+  "pdf_urls": [
+    "https://www.shizuokayaizu-shinkin.co.jp/files/user/images/2025ディスクロージャー誌（セキュリティ有）.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "'ascii' codec can't encode characters in position 27-45: ordinal not in range(128)"
+}

@@ -1,0 +1,148 @@
+{
+  "institution_name": "新潟信用金庫",
+  "institution_code": 1370,
+  "prefecture": "新潟県",
+  "disclosure_page": "https://www.niigata-shinkin.co.jp/info/disclosure/",
+  "pdf_urls": [
+    "https://www.niigata-shinkin.co.jp/info/disclosure/img/95gyomureport.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 7,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            4556520
+          ],
+          "raw_line": "経 常 収 益 4,556,520"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            3990358
+          ],
+          "raw_line": "資 金 運 用 収 益 3,990,358"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            2295422
+          ],
+          "raw_line": "貸 出 金 利 息 2,295,422 積 立 金 取 崩 額 ―"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            1526594,
+            648562834
+          ],
+          "raw_line": "有価証券利息配当金 1,526,594 計 648,562,834"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            287741
+          ],
+          "raw_line": "役 務 取 引 等 収 益 287,741"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            43468
+          ],
+          "raw_line": "そ の 他 業 務 収 益 43,468"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            234952
+          ],
+          "raw_line": "そ の 他 経 常 収 益 234,952"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            3737011
+          ],
+          "raw_line": "経 常 費 用 3,737,011"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            30909
+          ],
+          "raw_line": "資 金 調 達 費 用 30,909"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            21129
+          ],
+          "raw_line": "預 金 利 息 21,129"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            301824,
+            38,
+            2,
+            3
+          ],
+          "raw_line": "役 務 取 引 等 費 用 301,824 は、信用金庫法第38条の2第3項の規定に基づき、"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            108478
+          ],
+          "raw_line": "そ の 他 業 務 費 用 108,478"
+        },
+        {
+          "label": "経費",
+          "values": [
+            2916991
+          ],
+          "raw_line": "経 費 2,916,991"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            1862519
+          ],
+          "raw_line": "人 件 費 1,862,519"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            952397
+          ],
+          "raw_line": "物 件 費 952,397"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            819508
+          ],
+          "raw_line": "経 常 利 益 819,508"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            543767
+          ],
+          "raw_line": "当 期 純 利 益 543,767"
+        }
+      ]
+    },
+    "page_count": 7
+  }
+}

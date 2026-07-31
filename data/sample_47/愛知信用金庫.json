@@ -1,0 +1,16 @@
+{
+  "institution_name": "愛知信用金庫",
+  "institution_code": 1550,
+  "prefecture": "愛知県",
+  "disclosure_page": "https://www.aichishinkin.co.jp/report.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.aichishinkin.co.jp/report.html",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      }
+    ]
+  }
+}

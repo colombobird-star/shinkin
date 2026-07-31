@@ -1,0 +1,74 @@
+{
+  "institution_name": "足利小山信用金庫",
+  "institution_code": 1221,
+  "prefecture": "栃木県",
+  "disclosure_page": "https://www.ashikagaoyamashinkin.co.jp/company/disclosure.html",
+  "pdf_urls": [
+    "https://www.ashikagaoyamashinkin.co.jp/company/pdf/disclosure/2021/20210401-20210930.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": true,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": {
+      "source_page": 2,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            0.4
+          ],
+          "raw_line": "その他 0.4%"
+        },
+        {
+          "label": "製造業",
+          "values": [
+            13.9
+          ],
+          "raw_line": "製造業 13.9%"
+        },
+        {
+          "label": "個人",
+          "values": [
+            25.5
+          ],
+          "raw_line": "個人 25.5%"
+        },
+        {
+          "label": "不動産業",
+          "values": [
+            20.0
+          ],
+          "raw_line": "不動産業・ 20.0%"
+        },
+        {
+          "label": "地方公共団体",
+          "values": [
+            8.9
+          ],
+          "raw_line": "地方公共団体 サービス業 8.9%"
+        },
+        {
+          "label": "建設業",
+          "values": [
+            8.1
+          ],
+          "raw_line": "建設業 8.1%"
+        },
+        {
+          "label": "その他",
+          "values": [
+            4.3
+          ],
+          "raw_line": "その他 4.3%"
+        }
+      ]
+    },
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 6
+  }
+}

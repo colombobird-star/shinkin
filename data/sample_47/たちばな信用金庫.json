@@ -1,0 +1,26 @@
+{
+  "institution_name": "たちばな信用金庫",
+  "institution_code": 1942,
+  "prefecture": "長崎県",
+  "disclosure_page": "https://www.tachibana-shinkin.jp/safe_overview/disclosure",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.tachibana-shinkin.jp/safe_overview/disclosure",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.tachibana-shinkin.jp/safe_overview/disclosure#top",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.tachibana-shinkin.jp/add/20200114/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      }
+    ]
+  }
+}

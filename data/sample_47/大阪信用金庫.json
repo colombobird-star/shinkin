@@ -1,0 +1,22 @@
+{
+  "institution_name": "大阪信用金庫",
+  "institution_code": 1630,
+  "prefecture": "大阪府",
+  "disclosure_page": "https://www.osaka-shinkin.co.jp/companyinfo/index.html",
+  "pdf_urls": [
+    "https://www.osaka-shinkin.co.jp/pdf/disclosure2025/2025hanki_disclosure_shusei.pdf",
+    "https://www.osaka-shinkin.co.jp/pdf/disclosure2024/2025_disclosure_shusei.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 8
+  }
+}

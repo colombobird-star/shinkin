@@ -1,5 +1,6 @@
 data/*
 !data/pilot/
-data/pilot/_raw_pdf/
+!data/sample_47/
+**/_raw_pdf/
 __pycache__/
 *.pyc

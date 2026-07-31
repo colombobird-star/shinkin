@@ -1,0 +1,22 @@
+{
+  "institution_name": "新宮信用金庫",
+  "institution_code": 1671,
+  "prefecture": "和歌山県",
+  "disclosure_page": "https://www.shinkin.co.jp/shingu/sin13_3.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/shingu/pdf/disclosure2025.pdf",
+    "https://www.shinkin.co.jp/shingu/pdf/disclosuredocument2025.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 49
+  }
+}

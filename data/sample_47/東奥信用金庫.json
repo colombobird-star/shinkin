@@ -1,0 +1,16 @@
+{
+  "institution_name": "東奥信用金庫",
+  "institution_code": 1104,
+  "prefecture": "青森県",
+  "disclosure_page": "https://www.shinkin.co.jp/toshin/04-3.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.shinkin.co.jp/toshin/04-3.html",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      }
+    ]
+  }
+}

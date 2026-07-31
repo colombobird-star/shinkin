@@ -4,12 +4,7 @@
   "prefecture": "兵庫県",
   "disclosure_page": "https://www.nakashin.co.jp/company/disclosure.html",
   "pdf_urls": [
-    "https://www.nakashin.co.jp/company/disclosure/2026/pdf/2026.pdf",
-    "https://www.nakashin.co.jp/company/disclosure/2026/pdf/2026-00.pdf",
-    "https://www.nakashin.co.jp/company/disclosure/2026/pdf/2026-01.pdf",
-    "https://www.nakashin.co.jp/company/disclosure/2026/pdf/2026-02.pdf",
-    "https://www.nakashin.co.jp/company/disclosure/2026/pdf/2026-03.pdf",
-    "https://www.nakashin.co.jp/company/disclosure/2026/pdf/2026-04.pdf"
+    "https://www.nakashin.co.jp/company/disclosure/2026/pdf/2026.pdf"
   ],
   "status": "ok",
   "found": {
@@ -264,6 +259,6 @@
     },
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 38
+    "page_count": 31
   }
 }

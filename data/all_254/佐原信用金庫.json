@@ -6,6 +6,9 @@
   "pdf_urls": [
     "https://www.shinkin.co.jp/sawara/about/assets/files/about/disclosure/disclosure_202603.pdf"
   ],
+  "download_errors": [
+    "https://www.shinkin.co.jp/sawara/about/assets/files/about/disclosure/disclosure_202603.pdf: HTTP Error 404: Not Found"
+  ],
   "status": "download_or_parse_error",
-  "error": "HTTP Error 404: Not Found"
+  "error": "https://www.shinkin.co.jp/sawara/about/assets/files/about/disclosure/disclosure_202603.pdf: HTTP Error 404: Not Found"
 }

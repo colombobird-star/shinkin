@@ -8,6 +8,20 @@
     "https://www.tanyo-shinkin.co.jp/_pdf/disclosure/2026/mini_all.pdf",
     "https://www.tanyo-shinkin.co.jp/_pdf/disclosure/2026/repo_all.pdf"
   ],
-  "status": "download_or_parse_error",
-  "error": "HTTP Error 404: Not Found"
+  "download_errors": [
+    "https://www.tanyo-shinkin.co.jp/_pdf/disclosure/2026/mini_all.pdf: HTTP Error 404: Not Found",
+    "https://www.tanyo-shinkin.co.jp/_pdf/disclosure/2026/repo_all.pdf: HTTP Error 404: Not Found"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 72
+  }
 }

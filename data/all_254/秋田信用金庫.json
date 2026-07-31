@@ -4,7 +4,6 @@
   "prefecture": "秋田県",
   "disclosure_page": "https://www.shinkin.co.jp/akishin/about/disclosure.html",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/akishin/pdf/disc20260731_01.pdf",
     "https://www.shinkin.co.jp/akishin/pdf/disc20260731_02.pdf"
   ],
   "status": "ok",
@@ -15,7 +14,7 @@
   },
   "data": {
     "industry_loans": {
-      "source_page": 32,
+      "source_page": 11,
       "rows": [
         {
           "label": "製造業",
@@ -293,7 +292,7 @@
     "securities_portfolio": {
       "pages": [
         {
-          "source_page": 32,
+          "source_page": 11,
           "rows": [
             {
               "label": "合計",
@@ -403,7 +402,7 @@
       ]
     },
     "income_statement": {
-      "source_page": 28,
+      "source_page": 7,
       "rows": [
         {
           "label": "経常収益",
@@ -558,6 +557,6 @@
         }
       ]
     },
-    "page_count": 46
+    "page_count": 25
   }
 }

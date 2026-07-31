@@ -9,6 +9,19 @@
     "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_mini26.pdf",
     "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_keiei26.pdf"
   ],
-  "status": "download_or_parse_error",
-  "error": "HTTP Error 404: Not Found"
+  "download_errors": [
+    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_keiei26.pdf: HTTP Error 404: Not Found"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 80
+  }
 }

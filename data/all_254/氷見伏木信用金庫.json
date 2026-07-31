@@ -8,6 +8,20 @@
     "https://www.shinkin.co.jp/himifusi/assets/pdf/aboutus/minidisclosure202603.pdf",
     "https://www.shinkin.co.jp/himifusi/assets/pdf/aboutus/OperatingReport2026.pdf"
   ],
-  "status": "download_or_parse_error",
-  "error": "HTTP Error 404: Not Found"
+  "download_errors": [
+    "https://www.shinkin.co.jp/himifusi/assets/pdf/aboutus/disclosure202603.pdf: HTTP Error 404: Not Found",
+    "https://www.shinkin.co.jp/himifusi/assets/pdf/aboutus/minidisclosure202603.pdf: HTTP Error 404: Not Found"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 3
+  }
 }

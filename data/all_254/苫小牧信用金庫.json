@@ -4,11 +4,6 @@
   "prefecture": "北海道",
   "disclosure_page": "https://www.shinkin.co.jp/tomashin/h_disclo.html",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/tomashin/pdf/disclo/disclo_2026.pdf",
-    "https://www.shinkin.co.jp/tomashin/pdf/disclo/disclo_2026_1.pdf",
-    "https://www.shinkin.co.jp/tomashin/pdf/disclo/disclo_2026_2.pdf",
-    "https://www.shinkin.co.jp/tomashin/pdf/disclo/disclo_2026_3.pdf",
-    "https://www.shinkin.co.jp/tomashin/pdf/disclo/disclo_2026_4.pdf",
     "https://www.shinkin.co.jp/tomashin/pdf/disclo/disclo_2026_5.pdf"
   ],
   "status": "ok",
@@ -19,7 +14,7 @@
   },
   "data": {
     "industry_loans": {
-      "source_page": 42,
+      "source_page": 14,
       "rows": [
         {
           "label": "その他",
@@ -201,7 +196,7 @@
     },
     "securities_portfolio": null,
     "income_statement": {
-      "source_page": 33,
+      "source_page": 5,
       "rows": [
         {
           "label": "経常収益",
@@ -377,6 +372,6 @@
         }
       ]
     },
-    "page_count": 113
+    "page_count": 21
   }
 }

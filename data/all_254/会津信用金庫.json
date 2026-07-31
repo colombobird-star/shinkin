@@ -10,6 +10,19 @@
     "http://www.aizu-shinkin.jp/kinko/disclo2025/P44.pdf",
     "http://www.aizu-shinkin.jp/kinko/disclo2025/P49-50.pdf"
   ],
-  "status": "download_or_parse_error",
-  "error": "HTTP Error 503: Service Unavailable"
+  "download_errors": [
+    "http://www.aizu-shinkin.jp/kinko/disclo2025/P49-50.pdf: HTTP Error 403: Forbidden"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 10
+  }
 }

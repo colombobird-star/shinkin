@@ -7,6 +7,10 @@
     "http://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025.pdf",
     "http://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025kami.pdf"
   ],
+  "download_errors": [
+    "http://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025.pdf: HTTP Error 404: Not Found",
+    "http://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025kami.pdf: HTTP Error 404: Not Found"
+  ],
   "status": "download_or_parse_error",
-  "error": "HTTP Error 404: Not Found"
+  "error": "http://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025.pdf: HTTP Error 404: Not Found; http://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025kami.pdf: HTTP Error 404: Not Found"
 }

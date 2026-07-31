@@ -11,5 +11,5 @@
     "https://www.sanoshin.co.jp/sano/assets/pdf/common/policy_money_laundering.pdf"
   ],
   "status": "download_or_parse_error",
-  "error": "'ascii' codec can't encode characters in position 28-49: ordinal not in range(128)"
+  "error": "No /Root object! - Is this really a PDF?"
 }

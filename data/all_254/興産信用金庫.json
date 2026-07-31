@@ -8,7 +8,7 @@
     "visited": [
       {
         "url": "http://www.shinkin.co.jp/kosan/disclosure/index.html",
-        "error": "HTTP Error 503: Service Unavailable"
+        "error": "HTTP Error 404: Not Found"
       }
     ]
   }

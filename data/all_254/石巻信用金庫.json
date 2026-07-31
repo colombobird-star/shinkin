@@ -6,16 +6,9 @@
   "pdf_urls": [
     "http://www.i-shinkin.co.jp/aboutus/pdf/20260324_1.pdf"
   ],
-  "status": "ok",
-  "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
-    "income_statement": false
-  },
-  "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
-    "income_statement": null,
-    "page_count": 44
-  }
+  "download_errors": [
+    "http://www.i-shinkin.co.jp/aboutus/pdf/20260324_1.pdf: HTTP Error 503: Service Unavailable"
+  ],
+  "status": "download_or_parse_error",
+  "error": "http://www.i-shinkin.co.jp/aboutus/pdf/20260324_1.pdf: HTTP Error 503: Service Unavailable"
 }

@@ -4,7 +4,6 @@
   "prefecture": "福岡県",
   "disclosure_page": "https://www.shinkin.co.jp/omuta/disclosure/index.html",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/omuta/disclosure/2026pdf/disclosureInformation2026.pdf",
     "https://www.shinkin.co.jp/omuta/disclosure/2026pdf/disclosureMaterials2026.pdf"
   ],
   "status": "ok",
@@ -15,7 +14,7 @@
   },
   "data": {
     "industry_loans": {
-      "source_page": 53,
+      "source_page": 25,
       "rows": [
         {
           "label": "合計",
@@ -308,7 +307,7 @@
     "securities_portfolio": {
       "pages": [
         {
-          "source_page": 55,
+          "source_page": 27,
           "rows": [
             {
               "label": "国債",
@@ -614,7 +613,7 @@
       ]
     },
     "income_statement": {
-      "source_page": 45,
+      "source_page": 17,
       "rows": [
         {
           "label": "経常収益",
@@ -754,6 +753,6 @@
         }
       ]
     },
-    "page_count": 67
+    "page_count": 39
   }
 }

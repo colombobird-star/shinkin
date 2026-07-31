@@ -148,12 +148,8 @@
   {
     "institution_name": "釧路信用金庫",
     "prefecture": "北海道",
-    "status": "ok",
-    "found": {
-      "industry_loans": false,
-      "securities_portfolio": true,
-      "income_statement": true
-    }
+    "status": "pdf_not_found",
+    "found": null
   },
   {
     "institution_name": "大地みらい信用金庫",
@@ -350,12 +346,8 @@
   {
     "institution_name": "石巻信用金庫",
     "prefecture": "宮城県",
-    "status": "ok",
-    "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
-    }
+    "status": "download_or_parse_error",
+    "found": null
   },
   {
     "institution_name": "仙南信用金庫",
@@ -380,8 +372,12 @@
   {
     "institution_name": "会津信用金庫",
     "prefecture": "福島県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": false,
+      "income_statement": false
+    }
   },
   {
     "institution_name": "郡山信用金庫",
@@ -418,12 +414,8 @@
   {
     "institution_name": "あぶくま信用金庫",
     "prefecture": "福島県",
-    "status": "ok",
-    "found": {
-      "industry_loans": true,
-      "securities_portfolio": true,
-      "income_statement": true
-    }
+    "status": "pdf_not_found",
+    "found": null
   },
   {
     "institution_name": "二本松信用金庫",
@@ -508,8 +500,12 @@
   {
     "institution_name": "しののめ信用金庫",
     "prefecture": "群馬県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": false,
+      "income_statement": false
+    }
   },
   {
     "institution_name": "足利小山信用金庫",
@@ -560,8 +556,12 @@
   {
     "institution_name": "烏山信用金庫",
     "prefecture": "栃木県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "水戸信用金庫",
@@ -656,12 +656,8 @@
   {
     "institution_name": "館山信用金庫",
     "prefecture": "千葉県",
-    "status": "ok",
-    "found": {
-      "industry_loans": false,
-      "securities_portfolio": true,
-      "income_statement": true
-    }
+    "status": "pdf_not_found",
+    "found": null
   },
   {
     "institution_name": "佐原信用金庫",
@@ -778,8 +774,12 @@
   {
     "institution_name": "東京シティ信用金庫",
     "prefecture": "東京都",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "芝信用金庫",
@@ -1176,8 +1176,12 @@
   {
     "institution_name": "氷見伏木信用金庫",
     "prefecture": "富山県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": false,
+      "income_statement": false
+    }
   },
   {
     "institution_name": "砺波信用金庫",
@@ -1274,8 +1278,12 @@
   {
     "institution_name": "しずおか焼津信用金庫",
     "prefecture": "静岡県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": false,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "静清信用金庫",
@@ -1362,8 +1370,12 @@
   {
     "institution_name": "大垣西濃信用金庫",
     "prefecture": "岐阜県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "高山信用金庫",
@@ -1436,9 +1448,9 @@
     "prefecture": "愛知県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": false,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
@@ -1684,8 +1696,12 @@
   {
     "institution_name": "大阪商工信用金庫",
     "prefecture": "大阪府",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": false,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "永和信用金庫",
@@ -1866,8 +1882,12 @@
   {
     "institution_name": "但陽信用金庫",
     "prefecture": "兵庫県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": false,
+      "income_statement": false
+    }
   },
   {
     "institution_name": "鳥取信用金庫",
@@ -2150,8 +2170,12 @@
   {
     "institution_name": "高知信用金庫",
     "prefecture": "高知県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": false,
+      "income_statement": false
+    }
   },
   {
     "institution_name": "福岡信用金庫",
@@ -2186,22 +2210,14 @@
   {
     "institution_name": "筑後信用金庫",
     "prefecture": "福岡県",
-    "status": "ok",
-    "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
-    }
+    "status": "pdf_not_found",
+    "found": null
   },
   {
     "institution_name": "飯塚信用金庫",
     "prefecture": "福岡県",
-    "status": "ok",
-    "found": {
-      "industry_loans": true,
-      "securities_portfolio": true,
-      "income_statement": true
-    }
+    "status": "pdf_not_found",
+    "found": null
   },
   {
     "institution_name": "田川信用金庫",
@@ -2386,8 +2402,8 @@
     "prefecture": "鹿児島県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2404,11 +2420,7 @@
   {
     "institution_name": "コザ信用金庫",
     "prefecture": "沖縄県",
-    "status": "ok",
-    "found": {
-      "industry_loans": true,
-      "securities_portfolio": true,
-      "income_statement": true
-    }
+    "status": "pdf_not_found",
+    "found": null
   }
 ]

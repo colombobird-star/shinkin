@@ -1,0 +1,202 @@
+{
+  "industry_loans": {
+    "source_page": 2,
+    "rows": [
+      {
+        "label": "製造業",
+        "values": [
+          7729,
+          7416
+        ],
+        "raw_line": "製造業 7,729 7,416"
+      },
+      {
+        "label": "農業、林業",
+        "values": [
+          575,
+          562
+        ],
+        "raw_line": "農業、林業 575 562"
+      },
+      {
+        "label": "建設業",
+        "values": [
+          11890,
+          11866
+        ],
+        "raw_line": "建設業 11,890 11,866"
+      },
+      {
+        "label": "電気・ガス・熱供給・水道業",
+        "values": [
+          2496,
+          2170
+        ],
+        "raw_line": "電気・ガス・熱供給・水道業 2,496 2,170"
+      },
+      {
+        "label": "卸売業、小売業",
+        "values": [
+          10631,
+          11448
+        ],
+        "raw_line": "卸売業、小売業 10,631 11,448"
+      },
+      {
+        "label": "不動産業",
+        "values": [
+          29124,
+          31784
+        ],
+        "raw_line": "不動産業 29,124 31,784"
+      },
+      {
+        "label": "物品賃貸業",
+        "values": [
+          232,
+          246
+        ],
+        "raw_line": "物品賃貸業 232 246"
+      },
+      {
+        "label": "合計",
+        "values": [
+          136581,
+          142315
+        ],
+        "raw_line": "合 計 136,581 142,315"
+      }
+    ]
+  },
+  "securities_portfolio": null,
+  "income_statement": {
+    "source_page": 7,
+    "rows": [
+      {
+        "label": "経常収益",
+        "values": [
+          4207
+        ],
+        "raw_line": "経常収益 4,207"
+      },
+      {
+        "label": "資金運用収益",
+        "values": [
+          3688
+        ],
+        "raw_line": "資金運用収益 3,688"
+      },
+      {
+        "label": "貸出金利息",
+        "values": [
+          2663
+        ],
+        "raw_line": "貸出金利息 2,663"
+      },
+      {
+        "label": "有価証券利息配当金",
+        "values": [
+          436
+        ],
+        "raw_line": "有価証券利息配当金 436"
+      },
+      {
+        "label": "役務取引等収益",
+        "values": [
+          352
+        ],
+        "raw_line": "役務取引等収益 352"
+      },
+      {
+        "label": "その他業務収益",
+        "values": [
+          52
+        ],
+        "raw_line": "その他業務収益 52"
+      },
+      {
+        "label": "その他経常収益",
+        "values": [
+          114
+        ],
+        "raw_line": "その 他経常収益 114"
+      },
+      {
+        "label": "経常費用",
+        "values": [
+          5260
+        ],
+        "raw_line": "経常費 用 5,260"
+      },
+      {
+        "label": "資金調達費用",
+        "values": [
+          391
+        ],
+        "raw_line": "資金調達費用 391"
+      },
+      {
+        "label": "預金利息",
+        "values": [
+          390
+        ],
+        "raw_line": "預金利息 390"
+      },
+      {
+        "label": "役務取引等費用",
+        "values": [
+          419
+        ],
+        "raw_line": "役務 取引等費用 419"
+      },
+      {
+        "label": "その他業務費用",
+        "values": [
+          1914
+        ],
+        "raw_line": "その 他業務費用 1,914"
+      },
+      {
+        "label": "経費",
+        "values": [
+          2290
+        ],
+        "raw_line": "経費 2,290"
+      },
+      {
+        "label": "人件費",
+        "values": [
+          1469
+        ],
+        "raw_line": "人件費 1,469"
+      },
+      {
+        "label": "物件費",
+        "values": [
+          745
+        ],
+        "raw_line": "物件費 745"
+      },
+      {
+        "label": "経常利益",
+        "values": [
+          -1053
+        ],
+        "raw_line": "経常利益 △△1,053"
+      },
+      {
+        "label": "当期純利益",
+        "values": [
+          -772
+        ],
+        "raw_line": "当期純利益 △△772"
+      }
+    ]
+  },
+  "page_count": 8,
+  "institution_name": "栃木信用金庫",
+  "source_urls": [
+    "https://www.shinkin.co.jp/tochigi/profile/disclosure/disclosure_pdf/2025_9/r7.9disclosure.pdf",
+    "https://www.shinkin.co.jp/tochigi/profile/disclosure/disclosure_pdf/2026_3/2026_99_gyomu.pdf"
+  ]
+}

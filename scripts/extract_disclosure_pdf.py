@@ -1,0 +1,261 @@
+#!/usr/bin/env python3
+"""
+信用金庫の個別ディスクロージャー資料(PDF)から、
+- 貸出金の業種別内訳
+- 有価証券の種類別・残存期間別残高
+- 損益の状況（収益構造）
+を抽出するスクリプト。
+
+各信用金庫のPDFはレイアウト・ページ数が大きく異なるが、開示項目自体は
+信用金庫法施行規則等に基づく共通様式（日本標準産業分類の大分類ベースの
+業種区分など）に従っているため、キーワード検索でページを特定したうえで
+行単位のラベル・数値マッチングで抽出する方式を取っている。
+
+使い方:
+  python3 extract_disclosure_pdf.py --pdf /path/to/disclosure.pdf --out result.json
+  python3 extract_disclosure_pdf.py --url https://.../disclosure.pdf --out result.json
+
+注意:
+  信用金庫ごとにPDFのレイアウトが異なるため、本スクリプトは
+  「よくある形式」に対する抽出を行うベストエフォート実装であり、
+  金庫によっては一部の項目が取得できない場合がある。
+  取得できなかった項目は raw_pages に該当ページのテキストを残すので、
+  必要に応じて個別に確認・調整すること。
+"""
+import argparse
+import json
+import re
+import sys
+import unicodedata
+import urllib.request
+from pathlib import Path
+
+import pdfplumber
+
+INDUSTRY_CATEGORIES = [
+    "製造業",
+    "農業、林業",
+    "漁業",
+    "鉱業、採石業、砂利採取業",
+    "建設業",
+    "電気・ガス・熱供給・水道業",
+    "情報通信業",
+    "運輸業、郵便業",
+    "卸売業、小売業",
+    "金融業、保険業",
+    "不動産業",
+    "うち不動産賃貸業",
+    "物品賃貸業",
+    "学術研究、専門・技術サービス業",
+    "宿泊業",
+    "飲食業",
+    "生活関連サービス業、娯楽業",
+    "教育、学習支援業",
+    "医療、福祉",
+    "その他のサービス",
+    "小計",
+    "地方公共団体",
+    "国・地方公共団体等",
+    "個人",
+    "その他",
+    "合計",
+]
+
+SECURITY_CATEGORIES = [
+    "国債",
+    "地方債",
+    "短期社債",
+    "社債",
+    "株式",
+    "外国証券",
+    "その他の証券",
+    "合計",
+]
+
+INCOME_STATEMENT_ITEMS = [
+    "経常収益",
+    "資金運用収益",
+    "貸出金利息",
+    "有価証券利息配当金",
+    "役務取引等収益",
+    "その他業務収益",
+    "その他経常収益",
+    "経常費用",
+    "資金調達費用",
+    "預金利息",
+    "役務取引等費用",
+    "その他業務費用",
+    "経費",
+    "人件費",
+    "物件費",
+    "経常利益",
+    "当期純利益",
+    "業務純益",
+    "コア業務純益",
+]
+
+NUMBER_RE = re.compile(r"△?[\d,]+(?:\.\d+)?%?|―|ー|-")
+
+
+def strip_spaces(s: str) -> str:
+    return re.sub(r"\s+", "", s)
+
+
+def to_number(token: str):
+    token = token.strip()
+    if token in ("―", "ー", "-", ""):
+        return None
+    negative = token.startswith("△")
+    token = token.lstrip("△").replace(",", "")
+    is_pct = token.endswith("%")
+    token = token.rstrip("%")
+    try:
+        value = float(token) if "." in token else int(token)
+    except ValueError:
+        return None
+    if negative:
+        value = -value
+    return value
+
+
+def download(url: str, dest: Path):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req) as resp, open(dest, "wb") as f:
+        f.write(resp.read())
+
+
+def load_pages(pdf_path: Path):
+    pages = []
+    with pdfplumber.open(pdf_path) as pdf:
+        for page in pdf.pages:
+            text = page.extract_text() or ""
+            pages.append(unicodedata.normalize("NFKC", text))
+    return pages
+
+
+def find_pages(pages, keywords):
+    hits = []
+    for i, text in enumerate(pages):
+        if any(k in text for k in keywords):
+            hits.append(i)
+    return hits
+
+
+def _label_pattern(category: str) -> re.Pattern:
+    # PDF抽出時にラベルの文字間に空白が挿入されることがあるため、
+    # 各文字の間に任意の空白を許容する正規表現にする。
+    chars = [re.escape(c) for c in category]
+    return re.compile(r"^\s*" + r"\s*".join(chars))
+
+
+def extract_label_number_lines(text, categories):
+    """categories内のラベルで始まる行から、当該行の数値列を抽出する。"""
+    results = []
+    patterns = {cat: _label_pattern(cat) for cat in categories}
+    for line in text.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        for cat in categories:
+            m = patterns[cat].match(stripped)
+            if m:
+                rest = stripped[m.end():]
+                nums = [to_number(n) for n in NUMBER_RE.findall(rest)]
+                nums = [n for n in nums if n is not None]
+                if nums:
+                    results.append({"label": cat, "values": nums, "raw_line": stripped})
+                break
+    return results
+
+
+def extract_industry_loans(pages):
+    idx = find_pages(pages, ["貸出金業種別", "貸出金の業種別", "業種別内訳"])
+    for i in idx:
+        rows = extract_label_number_lines(pages[i], INDUSTRY_CATEGORIES)
+        if len(rows) >= 5:
+            return {"source_page": i + 1, "rows": rows}
+    return None
+
+
+def extract_securities_portfolio(pages):
+    idx = find_pages(pages, ["有価証券の種類別", "残存期間別の残高", "種類別の平均残高"])
+    out = {}
+    for i in idx:
+        rows = extract_label_number_lines(pages[i], SECURITY_CATEGORIES)
+        if len(rows) >= 3:
+            out.setdefault("pages", []).append({"source_page": i + 1, "rows": rows})
+    return out or None
+
+
+def extract_income_statement(pages):
+    idx = find_pages(pages, ["損益計算書", "損益の状況", "経常収益"])
+    for i in idx:
+        rows = extract_label_number_lines(pages[i], INCOME_STATEMENT_ITEMS)
+        if len(rows) >= 5:
+            return {"source_page": i + 1, "rows": rows}
+    return None
+
+
+def extract_all_from_pages(pages):
+    return {
+        "industry_loans": extract_industry_loans(pages),
+        "securities_portfolio": extract_securities_portfolio(pages),
+        "income_statement": extract_income_statement(pages),
+        "page_count": len(pages),
+    }
+
+
+def extract_all(pdf_paths):
+    """1つ以上のPDF(分割されたディスクロージャー誌に対応)からまとめて抽出する。"""
+    if isinstance(pdf_paths, (str, Path)):
+        pdf_paths = [pdf_paths]
+    pages = []
+    for p in pdf_paths:
+        pages.extend(load_pages(p))
+    return extract_all_from_pages(pages)
+
+
+def resolve_sources(pdfs, urls, keep_raw_dir):
+    """--pdf/--urlの指定(複数可)をローカルパスのリストに解決する。"""
+    paths = [Path(p) for p in (pdfs or [])]
+    tmp_paths = []
+    for i, url in enumerate(urls or []):
+        if keep_raw_dir:
+            dest = Path(keep_raw_dir) / f"source_{i}.pdf"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+        else:
+            dest = Path(f"_tmp_disclosure_{i}.pdf")
+            tmp_paths.append(dest)
+        print(f"Downloading {url} ...", file=sys.stderr)
+        download(url, dest)
+        paths.append(dest)
+    return paths, tmp_paths
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--pdf", action="append", help="ローカルのPDFファイルパス(複数指定可、分割PDFはページ順に連結される)")
+    parser.add_argument("--url", action="append", help="PDFのURL(複数指定可)")
+    parser.add_argument("--out", required=True, help="出力JSONファイルパス")
+    parser.add_argument("--keep-raw", help="ダウンロードしたPDFを保存するディレクトリ")
+    args = parser.parse_args()
+
+    if not args.pdf and not args.url:
+        parser.error("either --pdf or --url is required")
+        return
+
+    paths, tmp_paths = resolve_sources(args.pdf, args.url, args.keep_raw)
+    result = extract_all(paths)
+
+    out_path = Path(args.out)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    print(f"Wrote {out_path}", file=sys.stderr)
+
+    for p in tmp_paths:
+        p.unlink(missing_ok=True)
+
+
+if __name__ == "__main__":
+    main()

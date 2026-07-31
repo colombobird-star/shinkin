@@ -1,0 +1,36 @@
+[
+  {
+    "name": "栃木信用金庫",
+    "disclosure_page": "https://www.shinkin.co.jp/tochigi/profile/disclosure/disclosure.html",
+    "pdf_urls": [
+      "https://www.shinkin.co.jp/tochigi/profile/disclosure/disclosure_pdf/2025_9/r7.9disclosure.pdf",
+      "https://www.shinkin.co.jp/tochigi/profile/disclosure/disclosure_pdf/2026_3/2026_99_gyomu.pdf"
+    ],
+    "note": "令和7年度上半期版(業種別貸出金・有価証券時価情報)と、令和7年度通期の業務のご報告(貸借対照表・損益計算書)を結合。信金中金からの資本支援(40億円、国債売却による一過性赤字)を受けた期のデータ。"
+  },
+  {
+    "name": "稚内信用金庫",
+    "disclosure_page": "https://www.shinkin.co.jp/wakashin/07-06.html",
+    "pdf_urls": [
+      "https://www.shinkin.co.jp/wakashin/assets/pdf/07-disclo/year-2025_2024-r06-81/81_all.pdf",
+      "https://www.shinkin.co.jp/wakashin/assets/pdf/07-disclo/year-2025_2024-r06-81-2/81-2_all.pdf"
+    ],
+    "note": "ディスクロージャー誌が2分割PDFで構成されているため、両方を連結してから抽出する。"
+  },
+  {
+    "name": "城南信用金庫",
+    "disclosure_page": "https://www.jsbank.co.jp/about/disclosure/",
+    "pdf_urls": [
+      "https://www.jsbank.co.jp/about/disclosure/pdf/disclo_2026keisu.pdf"
+    ],
+    "note": "計数資料編PDF(全87ページ)。大規模金庫の代表例。"
+  },
+  {
+    "name": "伊達信用金庫",
+    "disclosure_page": "https://www.shinkin.co.jp/dateshin/about/gaiyo/disclosure/",
+    "pdf_urls": [
+      "https://www.shinkin.co.jp/dateshin/common/asset/data/pdf/report2026.pdf"
+    ],
+    "note": "小規模金庫の代表例。1つのPDFに全内容が統合されている。"
+  }
+]

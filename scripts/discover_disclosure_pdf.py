@@ -236,13 +236,23 @@ def find_followup_pages(links, base_domain, max_links=5):
     return out
 
 
+# この閾値以上のスコアは「資料編」「財務データ」等の明確なキーワード一致を
+# 意味し、それだけで探索を打ち切ってよいとみなす。閾値未満(バンドル一致の
+# みなど)の弱い候補だけで即座に確定すると、記念誌PDFのような無関係な
+# バンドルファイルに飛びついて、本来もっと良いページ(サブページにリンク
+# された本当のディスクロージャー誌)を見逃すことがある(大分みらい信用金庫
+# で発生)。弱い候補は保持しつつ、探索は続行する。
+STRONG_MATCH_THRESHOLD = 5
+
+
 def discover(disclosure_url, max_depth=2):
     """returns (list of candidate pdf urls, debug info dict)"""
     debug = {"visited": []}
     visited_pages = set()
     to_visit = [disclosure_url]
     base_domain = urlparse(disclosure_url).netloc
-    fallback_candidates = []
+    best_candidates = []
+    best_score = -1
 
     for depth in range(max_depth):
         next_round = []
@@ -258,20 +268,22 @@ def discover(disclosure_url, max_depth=2):
             links = extract_links(html, page_url)
             candidates = pick_pdf_candidates(links)
             good_candidates = [c for c in candidates if c["score"] > 0]
+            page_top_score = max((c["score"] for c in good_candidates), default=-1)
             debug["visited"].append({
                 "url": page_url,
                 "pdf_candidates_found": len(candidates),
                 "good_candidates_found": len(good_candidates),
             })
-            if good_candidates:
-                return good_candidates, debug
-            if candidates and not fallback_candidates:
-                fallback_candidates = candidates
+            if page_top_score > best_score:
+                best_score = page_top_score
+                best_candidates = good_candidates
+            if best_score >= STRONG_MATCH_THRESHOLD:
+                return best_candidates, debug
             next_round.extend(find_followup_pages(links, base_domain))
         to_visit = next_round
         if not to_visit:
             break
-    return fallback_candidates, debug
+    return best_candidates, debug
 
 
 def main():

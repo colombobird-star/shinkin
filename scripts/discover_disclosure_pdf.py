@@ -28,15 +28,23 @@ from urllib.parse import urljoin, urlparse
 
 HIGH_KEYWORDS = [
     "計数編", "計数資料編", "keisu", "資料編", "業務のご報告", "gyomu", "業績報告",
-    "財務データ", "開示項目", "損益の状況", "業種別",
+    "財務データ", "損益の状況", "業種別",
 ]
-BUNDLE_KEYWORDS = ["一括ダウンロード", "一括", "_all"]
+# "開示項目"は「開示項目一覧」という目次ページにもマッチしてしまうため、
+# 単体のHIGH_KEYWORDSからは除外し、実データを指すことが多い組み合わせのみ拾う。
+HIGH_KEYWORDS_PHRASES = ["開示項目（財務", "開示項目(財務"]
+BUNDLE_KEYWORDS = ["一括ダウンロード", "一括", "全ページ", "全頁", "_all"]
+INDEX_PAGE_KEYWORDS = ["一覧", "目次", "index"]
 MID_KEYWORDS = ["ディスクロージャー", "disclo", "report"]
 EXCLUDE_KEYWORDS = ["個人情報", "プライバシー", "規程", "約款", "定款", "採用", "sdgs", "csr", "iban"]
 
 LINK_RE = re.compile(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>', re.IGNORECASE | re.DOTALL)
 TAG_RE = re.compile(r"<[^>]+>")
 YEAR_RE = re.compile(r"20[12]\d")
+# 一部のサイトは西暦ではなく「令和年+月」を4桁でコード化したパス
+# (例: 2603 = 令和8年3月、2509 = 令和7年9月)を使うため、西暦が
+# 見つからない場合のみ弱いフォールバックの新しさ指標として使う。
+PERIOD_CODE_RE = re.compile(r"\b(2[3-6]\d{2})\b")
 
 RETRYABLE_HTTP_CODES = {403, 429, 500, 502, 503, 504}
 
@@ -75,13 +83,20 @@ def score_link(url, text):
     if any(k.lower() in hay for k in EXCLUDE_KEYWORDS):
         return -100
     score = 0
-    if any(k.lower() in hay for k in HIGH_KEYWORDS):
+    if any(k.lower() in hay for k in HIGH_KEYWORDS) or any(p.lower() in hay for p in HIGH_KEYWORDS_PHRASES):
         score += 5
     if any(k.lower() in hay for k in MID_KEYWORDS):
         score += 2
+    # 「開示項目一覧」等の目次ページはHIGH_KEYWORDSの単純一致では弾けないので減点する。
+    if any(k.lower() in hay for k in INDEX_PAGE_KEYWORDS):
+        score -= 4
     years = [int(y) for y in YEAR_RE.findall(hay)]
     if years:
         score += (max(years) - 2020)  # 新しい年度ほど加点
+    else:
+        periods = [int(p) for p in PERIOD_CODE_RE.findall(hay)]
+        if periods:
+            score += (max(periods) - 2300) * 0.01  # 弱いフォールバックの新しさ指標
     if any(k.lower() in hay for k in BUNDLE_KEYWORDS) or hay.endswith("all.pdf"):
         score += 1
     return score
@@ -110,6 +125,18 @@ def pick_pdf_candidates(links, max_candidates=6):
     # 同点内に「一括ダウンロード」等のバンドルファイルがあれば、
     # 個別章立てPDF(小分けファイル)より優先する。
     bundles = [s for s in tied if is_bundle(s["url"], s["text"])]
+    if not bundles:
+        # トップと僅差(年度コードが数値年と認識できず加点されない等)で
+        # バンドルファイルが埋もれている場合を救済する。同時に複数期間の
+        # バンドルが見つかった場合は、その中で最もスコアの高い(=最新の)
+        # ものだけに絞る。
+        near_top_bundles = [
+            s for s in scored
+            if is_bundle(s["url"], s["text"]) and s["score"] >= top_score - 6
+        ]
+        if near_top_bundles:
+            bundle_top = max(s["score"] for s in near_top_bundles)
+            bundles = [s for s in near_top_bundles if s["score"] == bundle_top]
     best = bundles if bundles else tied
 
     # 重複URL除去、順序維持

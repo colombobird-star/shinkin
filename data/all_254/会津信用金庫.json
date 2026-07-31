@@ -11,7 +11,8 @@
     "http://www.aizu-shinkin.jp/kinko/disclo2025/P49-50.pdf"
   ],
   "download_errors": [
-    "http://www.aizu-shinkin.jp/kinko/disclo2025/P44.pdf: HTTP Error 503: Service Unavailable"
+    "http://www.aizu-shinkin.jp/kinko/disclo2025/P44.pdf: HTTP Error 503: Service Unavailable",
+    "http://www.aizu-shinkin.jp/kinko/disclo2025/P49-50.pdf: HTTP Error 503: Service Unavailable"
   ],
   "status": "ok",
   "found": {
@@ -23,6 +24,6 @@
     "industry_loans": null,
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 11
+    "page_count": 9
   }
 }

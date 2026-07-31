@@ -4,15 +4,7 @@
   "prefecture": "高知県",
   "disclosure_page": "http://www.combank.co.jp/",
   "pdf_urls": [
-    "http://www.combank.co.jp/news/20260728.pdf",
-    "http://www.combank.co.jp/news/20260724.pdf",
-    "http://www.combank.co.jp/news/20260715.pdf",
-    "http://www.combank.co.jp/news/20260721.pdf",
-    "http://www.combank.co.jp/news/20260716.pdf",
-    "http://www.combank.co.jp/news/20260714_3.pdf"
-  ],
-  "download_errors": [
-    "http://www.combank.co.jp/news/20260716.pdf: Remote end closed connection without response"
+    "http://www.combank.co.jp/report/reportall.pdf"
   ],
   "status": "ok",
   "found": {
@@ -24,6 +16,6 @@
     "industry_loans": null,
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 13
+    "page_count": 83
   }
 }

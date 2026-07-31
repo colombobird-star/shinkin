@@ -350,7 +350,7 @@
     "found": {
       "industry_loans": false,
       "securities_portfolio": false,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
@@ -548,7 +548,7 @@
   {
     "institution_name": "佐野信用金庫",
     "prefecture": "栃木県",
-    "status": "download_or_parse_error",
+    "status": "pdf_not_found",
     "found": null
   },
   {
@@ -1170,9 +1170,9 @@
     "prefecture": "富山県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -1284,7 +1284,7 @@
   {
     "institution_name": "越前信用金庫",
     "prefecture": "福井県",
-    "status": "download_or_parse_error",
+    "status": "pdf_not_found",
     "found": null
   },
   {
@@ -2364,8 +2364,12 @@
   {
     "institution_name": "大分みらい信用金庫",
     "prefecture": "大分県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "日田信用金庫",
@@ -2440,7 +2444,11 @@
   {
     "institution_name": "コザ信用金庫",
     "prefecture": "沖縄県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   }
 ]

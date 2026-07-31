@@ -4,24 +4,70 @@
   "prefecture": "宮城県",
   "disclosure_page": "http://www.i-shinkin.co.jp/aboutus/index.html",
   "pdf_urls": [
-    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07pdf/goaisatsu.pdf",
-    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07pdf/enkaku.pdf",
-    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07pdf/visions.pdf"
-  ],
-  "download_errors": [
-    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07pdf/goaisatsu.pdf: HTTP Error 503: Service Unavailable",
-    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07pdf/enkaku.pdf: HTTP Error 503: Service Unavailable"
+    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07_harf_pdf/2025_disclosure_01.pdf",
+    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07_harf_pdf/2025_disclosure_02.pdf",
+    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07_harf_pdf/2025_disclosure_03.pdf",
+    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07_harf_pdf/2025_disclosure_05.pdf",
+    "http://www.i-shinkin.co.jp/aboutus/disclosure/R07_harf_pdf/2025_disclosure_06.pdf"
   ],
   "status": "ok",
   "found": {
     "industry_loans": false,
     "securities_portfolio": false,
-    "income_statement": false
+    "income_statement": true
   },
   "data": {
     "industry_loans": null,
     "securities_portfolio": null,
-    "income_statement": null,
-    "page_count": 1
+    "income_statement": {
+      "source_page": 3,
+      "rows": [
+        {
+          "label": "当期純利益",
+          "values": [
+            3,
+            39
+          ],
+          "raw_line": "当期純利益は3億39百万円を確保しております。"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            485,
+            596,
+            476
+          ],
+          "raw_line": "経 常 利 益 485 596 476"
+        },
+        {
+          "label": "業務純益",
+          "values": [
+            456,
+            441,
+            438
+          ],
+          "raw_line": "業 務 純 益 456 441 438"
+        },
+        {
+          "label": "コア業務純益",
+          "values": [
+            456,
+            441,
+            443
+          ],
+          "raw_line": "コ ア 業 務 純 益 456 441 443"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            325,
+            435,
+            339
+          ],
+          "raw_line": "当 期 純 利 益 325 435 339"
+        }
+      ]
+    },
+    "page_count": 6
   }
 }

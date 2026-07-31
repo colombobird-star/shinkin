@@ -36,7 +36,10 @@ HIGH_KEYWORDS_PHRASES = ["開示項目（財務", "開示項目(財務"]
 BUNDLE_KEYWORDS = ["一括ダウンロード", "一括", "全ページ", "全頁", "_all"]
 INDEX_PAGE_KEYWORDS = ["一覧", "目次", "index"]
 MID_KEYWORDS = ["ディスクロージャー", "disclo", "report"]
-EXCLUDE_KEYWORDS = ["個人情報", "プライバシー", "規程", "約款", "定款", "採用", "sdgs", "csr", "iban"]
+EXCLUDE_KEYWORDS = [
+    "個人情報", "プライバシー", "規程", "約款", "定款", "採用", "sdgs", "csr", "iban",
+    "正誤表", "訂正", "お詫び", "景況", "マーケットレポート",
+]
 
 LINK_RE = re.compile(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>', re.IGNORECASE | re.DOTALL)
 TAG_RE = re.compile(r"<[^>]+>")
@@ -116,6 +119,11 @@ def extract_links(html, base_url):
     return links
 
 
+# 「P13〜23」「P22-42」のようなページ範囲表記は、ディスクロージャー誌を
+# 分割した章立てファイルによく見られるパターン。
+PAGE_RANGE_RE = re.compile(r"\bp\.?\s*\d+\s*[~\-―～]\s*\d+", re.IGNORECASE)
+
+
 def score_link(url, text):
     hay = f"{url} {text}".lower()
     if any(k.lower() in hay for k in EXCLUDE_KEYWORDS):
@@ -123,19 +131,25 @@ def score_link(url, text):
     score = 0
     if any(k.lower() in hay for k in HIGH_KEYWORDS) or any(p.lower() in hay for p in HIGH_KEYWORDS_PHRASES):
         score += 5
-    if any(k.lower() in hay for k in MID_KEYWORDS):
+    if any(k.lower() in hay for k in MID_KEYWORDS) or PAGE_RANGE_RE.search(hay):
         score += 2
     # 「開示項目一覧」等の目次ページはHIGH_KEYWORDSの単純一致では弾けないので減点する。
     if any(k.lower() in hay for k in INDEX_PAGE_KEYWORDS):
         score -= 4
-    years = [int(y) for y in YEAR_RE.findall(hay)]
-    if years:
-        score += (max(years) - 2020)  # 新しい年度ほど加点
-    else:
-        periods = [int(p) for p in PERIOD_CODE_RE.findall(hay)]
-        if periods:
-            score += (max(periods) - 2300) * 0.01  # 弱いフォールバックの新しさ指標
-    if any(k.lower() in hay for k in BUNDLE_KEYWORDS) or hay.endswith("all.pdf"):
+    is_bundle_link = any(k.lower() in hay for k in BUNDLE_KEYWORDS) or hay.endswith("all.pdf")
+    # URLのクエリ文字列(キャッシュバスター等)やファイル名中の日付は
+    # 無関係な文書(規程・お知らせ等)にも付いていることが多く、それだけで
+    # ディスクロージャー資料と誤認しないよう、キーワード一致がある場合か
+    # バンドルファイルの場合に限って新しさボーナスを加点する。
+    if score > 0 or is_bundle_link:
+        years = [int(y) for y in YEAR_RE.findall(hay)]
+        if years:
+            score += (max(years) - 2020)  # 新しい年度ほど加点
+        else:
+            periods = [int(p) for p in PERIOD_CODE_RE.findall(hay)]
+            if periods:
+                score += (max(periods) - 2300) * 0.01  # 弱いフォールバックの新しさ指標
+    if is_bundle_link:
         score += 1
     return score
 

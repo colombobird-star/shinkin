@@ -1,0 +1,15 @@
+{
+  "institution_name": "石動信用金庫",
+  "institution_code": 1413,
+  "prefecture": "富山県",
+  "disclosure_page": "https://www.shinkin.co.jp/isurugi/company.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.shinkin.co.jp/isurugi/company.html",
+        "error": "HTTP Error 404: Not Found"
+      }
+    ]
+  }
+}

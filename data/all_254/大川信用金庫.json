@@ -1,0 +1,21 @@
+{
+  "institution_name": "大川信用金庫",
+  "institution_code": 1917,
+  "prefecture": "福岡県",
+  "disclosure_page": "http://www.shinkin.co.jp/ookawa/info/rinen_discro.html",
+  "pdf_urls": [
+    "http://www.shinkin.co.jp/ookawa/info/pdf/mini2025_all.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 6
+  }
+}

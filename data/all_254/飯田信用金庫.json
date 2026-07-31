@@ -1,0 +1,21 @@
+{
+  "institution_name": "飯田信用金庫",
+  "institution_code": 1394,
+  "prefecture": "長野県",
+  "disclosure_page": "https://www.iidashinkin.co.jp/company/disclosure/",
+  "pdf_urls": [
+    "https://www.iidashinkin.co.jp/assets/pdf/company/disclosure/2026/disclosure_all.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 11
+  }
+}

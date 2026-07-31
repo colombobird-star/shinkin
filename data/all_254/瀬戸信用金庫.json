@@ -1,0 +1,101 @@
+{
+  "institution_name": "瀬戸信用金庫",
+  "institution_code": 1554,
+  "prefecture": "愛知県",
+  "disclosure_page": "https://www.setoshin.co.jp/setoshinkin/disclosure/",
+  "pdf_urls": [
+    "https://www.setoshin.co.jp/pdf/2026disclosure.pdf",
+    "https://www.setoshin.co.jp/pdf/report2026_01.pdf",
+    "https://www.setoshin.co.jp/pdf/report2026_02.pdf",
+    "https://www.setoshin.co.jp/pdf/report2026_03.pdf",
+    "https://www.setoshin.co.jp/pdf/report2026_04.pdf",
+    "https://www.setoshin.co.jp/pdf/report2026_05.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 5,
+      "rows": [
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            9882
+          ],
+          "raw_line": "有価証券利息配当金 9,882"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            786
+          ],
+          "raw_line": "そ の 他 経 常 収 益 786"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            23600
+          ],
+          "raw_line": "経 常 費 用 23,600"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            5970
+          ],
+          "raw_line": "資 金 調 達 費 用 5,970"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            5857
+          ],
+          "raw_line": "預 金 利 息 5,857"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            890
+          ],
+          "raw_line": "そ の 他 業 務 費 用 890"
+        },
+        {
+          "label": "経費",
+          "values": [
+            15005
+          ],
+          "raw_line": "経 費 15,005"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            3867
+          ],
+          "raw_line": "経 常 利 益 3,867"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            2898,
+            89
+          ],
+          "raw_line": "当 期 純 利 益 2,898 法 人 税 等 調 整 額 △ 89"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            2898
+          ],
+          "raw_line": "当 期 純 利 益 2,898"
+        }
+      ]
+    },
+    "page_count": 70
+  }
+}

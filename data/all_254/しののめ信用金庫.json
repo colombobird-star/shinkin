@@ -1,0 +1,14 @@
+{
+  "institution_name": "しののめ信用金庫",
+  "institution_code": 1211,
+  "prefecture": "群馬県",
+  "disclosure_page": "https://www.shinonome-shinkin.jp/about/disclosure/index.html",
+  "pdf_urls": [
+    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_annual26.pdf",
+    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/gyoumu2026.pdf",
+    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_mini26.pdf",
+    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_keiei26.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "HTTP Error 404: Not Found"
+}

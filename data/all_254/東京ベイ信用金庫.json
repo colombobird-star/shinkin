@@ -1,0 +1,21 @@
+{
+  "institution_name": "東京ベイ信用金庫",
+  "institution_code": 1262,
+  "prefecture": "千葉県",
+  "disclosure_page": "http://www.bayshin.co.jp/about/disclosure.shtml",
+  "pdf_urls": [
+    "http://www.bayshin.co.jp/about/pdf/2026_report.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 30
+  }
+}

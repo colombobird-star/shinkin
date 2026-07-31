@@ -1,0 +1,22 @@
+{
+  "institution_name": "奈良信用金庫",
+  "institution_code": 1666,
+  "prefecture": "奈良県",
+  "disclosure_page": "https://www.narashin.co.jp/about/financial/",
+  "pdf_urls": [
+    "https://www.narashin.co.jp/about/pdf/disclosure2026.pdf",
+    "https://www.narashin.co.jp/about/pdf/minidisclosure2026.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 58
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "institution_name": "玉島信用金庫",
+  "institution_code": 1738,
+  "prefecture": "岡山県",
+  "disclosure_page": "https://www.shinkin.co.jp/tamashima-sk/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/tamashima-sk/archives/001/202302/moneylaunderingpolicy.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 1
+  }
+}

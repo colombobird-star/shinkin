@@ -1,0 +1,21 @@
+{
+  "institution_name": "熊本信用金庫",
+  "institution_code": 1951,
+  "prefecture": "熊本県",
+  "disclosure_page": "https://www.kumamoto-shinkin.jp/disclosure/",
+  "pdf_urls": [
+    "https://www.kumamoto-shinkin.jp/disclosure/2026/kumashin_dis2026.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 70
+  }
+}

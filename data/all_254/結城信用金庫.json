@@ -1,0 +1,21 @@
+{
+  "institution_name": "結城信用金庫",
+  "institution_code": 1242,
+  "prefecture": "茨城県",
+  "disclosure_page": "https://www.shinkin.co.jp/yuki/disclosure/index.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/yuki/disclosure/documents/2026_mini.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 6
+  }
+}

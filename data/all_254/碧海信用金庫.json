@@ -1,0 +1,104 @@
+{
+  "institution_name": "碧海信用金庫",
+  "institution_code": 1560,
+  "prefecture": "愛知県",
+  "disclosure_page": "https://www.hekishin.jp/about/disclosure/",
+  "pdf_urls": [
+    "https://www.hekishin.jp/about/disclosure/files/dis2026.pdf",
+    "https://www.hekishin.jp/about/disclosure/files/dis2026_01.pdf",
+    "https://www.hekishin.jp/about/disclosure/files/dis2026_02.pdf",
+    "https://www.hekishin.jp/about/disclosure/files/dis2026_03.pdf",
+    "https://www.hekishin.jp/about/disclosure/files/dis2026_04.pdf",
+    "https://www.hekishin.jp/about/disclosure/files/dis2026_05.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 5,
+      "rows": [
+        {
+          "label": "コア業務純益",
+          "values": [
+            5200,
+            5382,
+            5300
+          ],
+          "raw_line": "コア業務純益(投資信託解約損益を除く) 5,200百万円 5,382百万円 5,300百万円"
+        },
+        {
+          "label": "経費",
+          "values": [
+            15595,
+            16422,
+            826
+          ],
+          "raw_line": "経費 15,595 16,422 826"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            10112,
+            10735,
+            623
+          ],
+          "raw_line": "人件費 10,112 10,735 623"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            4930,
+            5046,
+            116
+          ],
+          "raw_line": "物件費 4,930 5,046 116"
+        },
+        {
+          "label": "業務純益",
+          "values": [
+            1,
+            4428,
+            2085,
+            -2343
+          ],
+          "raw_line": "業務純益(※1) 4,428 2,085 △2,343"
+        },
+        {
+          "label": "コア業務純益",
+          "values": [
+            2,
+            4882,
+            5382,
+            500
+          ],
+          "raw_line": "コア業務純益(投資信託解約損益を除く)(※2) 4,882 5,382 500"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            5299,
+            4313,
+            -986
+          ],
+          "raw_line": "経常利益 5,299 4,313 △986"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            3988,
+            3275,
+            -712
+          ],
+          "raw_line": "当期純利益 3,988 3,275 △712"
+        }
+      ]
+    },
+    "page_count": 72
+  }
+}

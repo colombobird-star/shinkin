@@ -1,0 +1,97 @@
+{
+  "institution_name": "鹿児島相互信用金庫",
+  "institution_code": 1991,
+  "prefecture": "鹿児島県",
+  "disclosure_page": "https://www.shinkin.co.jp/kasosin/info/disclosure/index.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/kasosin/disclosure/2026_mini.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 4,
+      "rows": [
+        {
+          "label": "資金運用収益",
+          "values": [
+            9587,
+            1056
+          ],
+          "raw_line": "資金運用収益 9,587 1,056"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            1130,
+            61
+          ],
+          "raw_line": "役務取引等収益 1,130 61"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            93,
+            11
+          ],
+          "raw_line": "その他業務収益 93 11"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            180,
+            207
+          ],
+          "raw_line": "その他経常収益 180 ▲ 207"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            1032,
+            1
+          ],
+          "raw_line": "役務取引等費用 1,032 1"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            166,
+            110
+          ],
+          "raw_line": "その他業務費用 166 110"
+        },
+        {
+          "label": "経費",
+          "values": [
+            6885,
+            152
+          ],
+          "raw_line": "経費 6,885 152"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            6334,
+            6929
+          ],
+          "raw_line": "経常利益 ▲ 6,334 ▲ 6,929"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            6714,
+            7030
+          ],
+          "raw_line": "当期純利益 ▲ 6,714 ▲ 7,030"
+        }
+      ]
+    },
+    "page_count": 14
+  }
+}

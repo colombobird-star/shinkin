@@ -1,0 +1,11 @@
+{
+  "institution_name": "大阪商工信用金庫",
+  "institution_code": 1636,
+  "prefecture": "大阪府",
+  "disclosure_page": "https://www.osaka-shoko.co.jp/about/disclosure/",
+  "pdf_urls": [
+    "https://www.osaka-shoko.co.jp/about/disclosure/pdf/2025/2026年3月期_ディスクロージャー誌（資料編）.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "'ascii' codec can't encode character '\\u5e74' in position 35: ordinal not in range(128)"
+}

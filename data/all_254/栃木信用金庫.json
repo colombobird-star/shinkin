@@ -1,0 +1,144 @@
+{
+  "institution_name": "栃木信用金庫",
+  "institution_code": 1222,
+  "prefecture": "栃木県",
+  "disclosure_page": "https://www.shinkin.co.jp/tochigi/profile/disclosure/disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/tochigi/profile/disclosure/disclosure_pdf/2026_3/2026_99_gyomu.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 3,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            4207
+          ],
+          "raw_line": "経常収益 4,207"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            3688
+          ],
+          "raw_line": "資金運用収益 3,688"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            2663
+          ],
+          "raw_line": "貸出金利息 2,663"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            436
+          ],
+          "raw_line": "有価証券利息配当金 436"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            352
+          ],
+          "raw_line": "役務取引等収益 352"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            52
+          ],
+          "raw_line": "その他業務収益 52"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            114
+          ],
+          "raw_line": "その 他経常収益 114"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            5260
+          ],
+          "raw_line": "経常費 用 5,260"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            391
+          ],
+          "raw_line": "資金調達費用 391"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            390
+          ],
+          "raw_line": "預金利息 390"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            419
+          ],
+          "raw_line": "役務 取引等費用 419"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            1914
+          ],
+          "raw_line": "その 他業務費用 1,914"
+        },
+        {
+          "label": "経費",
+          "values": [
+            2290
+          ],
+          "raw_line": "経費 2,290"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            1469
+          ],
+          "raw_line": "人件費 1,469"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            745
+          ],
+          "raw_line": "物件費 745"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            -1053
+          ],
+          "raw_line": "経常利益 △△1,053"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            -772
+          ],
+          "raw_line": "当期純利益 △△772"
+        }
+      ]
+    },
+    "page_count": 4
+  }
+}

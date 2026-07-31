@@ -1,0 +1,21 @@
+{
+  "institution_name": "北見信用金庫",
+  "institution_code": 1030,
+  "prefecture": "北海道",
+  "disclosure_page": "https://www.shinkin.co.jp/kitami/disclosure/index.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/kitami/privacy/pdf/kojinjyouhou_moneylaundering20241101.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 2
+  }
+}

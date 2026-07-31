@@ -1,0 +1,21 @@
+{
+  "institution_name": "青い森信用金庫",
+  "institution_code": 1105,
+  "prefecture": "青森県",
+  "disclosure_page": "https://www.aoimorishinkin.co.jp/disclo.html",
+  "pdf_urls": [
+    "https://www.aoimorishinkin.co.jp/disclo/2025HR/HR202503_aoimori_all.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 58
+  }
+}

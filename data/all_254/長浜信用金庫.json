@@ -1,0 +1,21 @@
+{
+  "institution_name": "長浜信用金庫",
+  "institution_code": 1603,
+  "prefecture": "滋賀県",
+  "disclosure_page": "https://www.nagashin.co.jp/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.nagashin.co.jp/about/doc/disclosure-2026-03/disclosure-2026-03.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 20
+  }
+}

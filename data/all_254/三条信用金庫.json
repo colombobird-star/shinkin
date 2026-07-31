@@ -1,0 +1,146 @@
+{
+  "institution_name": "三条信用金庫",
+  "institution_code": 1373,
+  "prefecture": "新潟県",
+  "disclosure_page": "https://www.shinkin.co.jp/sanshin/about/#al-dis",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/sanshin/assets/media/pdf/about/disclosure/disclosure_minidiscro202509.pdf",
+    "https://www.shinkin.co.jp/sanshin/assets/media/pdf/about/disclosure/disclosure_report2025.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 14,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            9251966,
+            2873231178
+          ],
+          "raw_line": "経 常 収 益 9,251,966 当 期 未 処 分 剰 余 金 2,873,231,178"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            7914607
+          ],
+          "raw_line": "資 金 運 用 収 益 7,914,607"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            2758259
+          ],
+          "raw_line": "貸 出 金 利 息 2,758,259"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            4934221
+          ],
+          "raw_line": "有価証券利息配当金 4,934,221"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            489292
+          ],
+          "raw_line": "役務取引等収益 489,292"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            50474
+          ],
+          "raw_line": "その他業務収益 50,474"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            797592
+          ],
+          "raw_line": "その他経常収益 797,592"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            5568930
+          ],
+          "raw_line": "経 常 費 用 5,568,930 会 長 西 潟 精 一"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            1250014
+          ],
+          "raw_line": "資 金 調 達 費 用 1,250,014 理 事 長 白 倉 徳 幸"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            1099088
+          ],
+          "raw_line": "預 金 利 息 1,099,088"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            354721
+          ],
+          "raw_line": "役務取引等費用 354,721"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            211295
+          ],
+          "raw_line": "その他業務費用 211,295"
+        },
+        {
+          "label": "経費",
+          "values": [
+            3682055
+          ],
+          "raw_line": "経 費 3,682,055"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            2254952
+          ],
+          "raw_line": "人 件 費 2,254,952 認めます。"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            1296975
+          ],
+          "raw_line": "物 件 費 1,296,975"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            3683035
+          ],
+          "raw_line": "経 常 利 益 3,683,035"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            2785129
+          ],
+          "raw_line": "当 期 純 利 益 2,785,129"
+        }
+      ]
+    },
+    "page_count": 14
+  }
+}

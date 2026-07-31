@@ -1,0 +1,21 @@
+{
+  "institution_name": "さがみ信用金庫",
+  "institution_code": 1288,
+  "prefecture": "神奈川県",
+  "disclosure_page": "https://www.shinkin.co.jp/sagami/aboutus/manage/",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/sagami/about/manageinfo/pdf/report2025.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 4
+  }
+}

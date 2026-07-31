@@ -1,0 +1,21 @@
+{
+  "institution_name": "東春信用金庫",
+  "institution_code": 1566,
+  "prefecture": "愛知県",
+  "disclosure_page": "https://www.shinkin.co.jp/toshun/disclo/",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/toshun/disclo/2026/disclosure2026.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 14
+  }
+}

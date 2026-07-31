@@ -1,0 +1,41 @@
+{
+  "institution_name": "郡山信用金庫",
+  "institution_code": 1182,
+  "prefecture": "福島県",
+  "disclosure_page": "https://gunshin.co.jp/publics/index/321/",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://gunshin.co.jp/publics/index/321/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://gunshin.co.jp/relays/download/321/1477/374/0/?file=/files/libs/10067/202507241651076284.pdf",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://gunshin.co.jp/relays/download/321/1479/431/0/?file=/files/libs/12327/202606251746358695.pdf",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://gunshin.co.jp/relays/download/321/1477/261/0/?file=/files/libs/7406/202407291458501822.pdf",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://gunshin.co.jp/relays/download/321/1479/372/0/?file=/files/libs/10018/202506171506572313.pdf",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://gunshin.co.jp/relays/download/321/1477/304/0/?file=/files/libs/7405/202307271205016220.pdf",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      }
+    ]
+  }
+}

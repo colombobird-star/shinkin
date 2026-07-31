@@ -1,0 +1,107 @@
+{
+  "institution_name": "遠賀信用金庫",
+  "institution_code": 1920,
+  "prefecture": "福岡県",
+  "disclosure_page": "https://www.shinkin.co.jp/onga/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/onga/img/about/disclosure/2026_all.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 15,
+      "rows": [
+        {
+          "label": "資金運用収益",
+          "values": [
+            4426879,
+            4927576
+          ],
+          "raw_line": "資 金 運 用 収 益 4,426,879 4,927,576 当 期 未 処 理 損 失 金( △ )"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            1200255,
+            1140991,
+            602389178,
+            13256359
+          ],
+          "raw_line": "有価証券利息配当金 1,200,255 1,140,991 剰 余 金 処 分 額 602,389,178 13,256,359"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            56400,
+            66569
+          ],
+          "raw_line": "そ の 他 業 務 収 益 56,400 66,569"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            557199,
+            217899
+          ],
+          "raw_line": "そ の 他 経 常 収 益 557,199 217,899 借対照表、損益計算書及び剰余金処分計算書は、信用金庫法"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            4659528,
+            11914398
+          ],
+          "raw_line": "経 常 費 用 4,659,528 11,914,398"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            241686,
+            641027
+          ],
+          "raw_line": "資 金 調 達 費 用 241,686 641,027"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            676240,
+            709569
+          ],
+          "raw_line": "役 務 取 引 等 費 用 676,240 709,569"
+        },
+        {
+          "label": "経費",
+          "values": [
+            2590048,
+            2635141
+          ],
+          "raw_line": "経 費 2,590,048 2,635,141"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            1615624,
+            1632105
+          ],
+          "raw_line": "人 件 費 1,615,624 1,632,105"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            791728,
+            6286946
+          ],
+          "raw_line": "経 常 利 益 791,728 △ 6,286,946"
+        }
+      ]
+    },
+    "page_count": 26
+  }
+}

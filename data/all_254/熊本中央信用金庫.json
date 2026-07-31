@@ -1,0 +1,22 @@
+{
+  "institution_name": "熊本中央信用金庫",
+  "institution_code": 1954,
+  "prefecture": "熊本県",
+  "disclosure_page": "https://www.kumachu.jp/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.kumachu.jp/about/disclosure/pdf/disclosure-all.pdf",
+    "https://www.kumachu.jp/about/disclosure/pdf/hyousi.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 34
+  }
+}

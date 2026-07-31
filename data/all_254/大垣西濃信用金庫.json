@@ -1,0 +1,15 @@
+{
+  "institution_name": "大垣西濃信用金庫",
+  "institution_code": 1531,
+  "prefecture": "岐阜県",
+  "disclosure_page": "https://www.ogakiseino-shinkin.co.jp/about/disclosure/",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.ogakiseino-shinkin.co.jp/about/disclosure/",
+        "error": "unknown encoding: none"
+      }
+    ]
+  }
+}

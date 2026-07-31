@@ -1,0 +1,21 @@
+{
+  "institution_name": "新湊信用金庫",
+  "institution_code": 1404,
+  "prefecture": "富山県",
+  "disclosure_page": "http://www.shinkin.co.jp/s-minato/",
+  "pdf_urls": [
+    "http://www.shinkin.co.jp/s-minato/attention/data/2027ic_keisatu.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 1
+  }
+}

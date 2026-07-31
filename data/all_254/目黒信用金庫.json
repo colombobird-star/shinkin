@@ -1,0 +1,16 @@
+{
+  "institution_name": "目黒信用金庫",
+  "institution_code": 1346,
+  "prefecture": "東京都",
+  "disclosure_page": "https://www.shinkin.co.jp/meguro/fr_disclosure.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.shinkin.co.jp/meguro/fr_disclosure.html",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      }
+    ]
+  }
+}

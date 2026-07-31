@@ -1,0 +1,168 @@
+{
+  "institution_name": "室蘭信用金庫",
+  "institution_code": 1003,
+  "prefecture": "北海道",
+  "disclosure_page": "https://www.shinkin.co.jp/muroshin/info/disclo.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/muroshin/info/pdf/discro202603.pdf",
+    "https://www.shinkin.co.jp/muroshin/info/pdf/discro202603_1.pdf",
+    "https://www.shinkin.co.jp/muroshin/info/pdf/discro202603_2.pdf",
+    "https://www.shinkin.co.jp/muroshin/info/pdf/discro202603_3.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 27,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            4382267,
+            5354587
+          ],
+          "raw_line": "経常収益 4,382,267 5,354,587"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            3700211,
+            4716669
+          ],
+          "raw_line": "資金運用収益 3,700,211 4,716,669"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            1855503,
+            1913485
+          ],
+          "raw_line": "貸出金利息 1,855,503 1,913,485"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            1062484,
+            2152998
+          ],
+          "raw_line": "有価証券利息配当金 1,062,484 2,152,998"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            421766,
+            437471
+          ],
+          "raw_line": "役務取引等収益 421,766 437,471"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            72725,
+            88043
+          ],
+          "raw_line": "その他業務収益 72,725 88,043"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            187564,
+            112403,
+            2026,
+            6,
+            11,
+            97
+          ],
+          "raw_line": "その他経常収益 187,564 112,403 2026年6月11日開催の第97回通常総代会で承認を得た貸"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            3276093,
+            3970849
+          ],
+          "raw_line": "経常費用 3,276,093 3,970,849"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            234434,
+            709836
+          ],
+          "raw_line": "資金調達費用 234,434 709,836"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            232110,
+            703741
+          ],
+          "raw_line": "預金利息 232,110 703,741"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            219586,
+            213964
+          ],
+          "raw_line": "役務取引等費用 219,586 213,964 等を確認しております。"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            789278,
+            1023276
+          ],
+          "raw_line": "その他業務費用 789,278 1,023,276"
+        },
+        {
+          "label": "経費",
+          "values": [
+            2027109,
+            2003720
+          ],
+          "raw_line": "経費 2,027,109 2,003,720"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            1091358,
+            1061647
+          ],
+          "raw_line": "人件費 1,091,358 1,061,647"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            845790,
+            850796
+          ],
+          "raw_line": "物件費 845,790 850,796"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            1106173,
+            1383737
+          ],
+          "raw_line": "経常利益 1,106,173 1,383,737"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            968050,
+            1035460
+          ],
+          "raw_line": "当期純利益 968,050 1,035,460"
+        }
+      ]
+    },
+    "page_count": 121
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "institution_name": "大阪シティ信用金庫",
+  "institution_code": 1635,
+  "prefecture": "大阪府",
+  "disclosure_page": "https://www.osaka-city-shinkin.co.jp/company/disclosure.html",
+  "pdf_urls": [
+    "https://www.osaka-city-shinkin.co.jp/company/disclosure/2026/02_p01_02.pdf",
+    "https://www.osaka-city-shinkin.co.jp/company/disclosure/2026/03_p03.pdf",
+    "https://www.osaka-city-shinkin.co.jp/company/disclosure/2026/04_p04_05.pdf",
+    "https://www.osaka-city-shinkin.co.jp/company/disclosure/2026/05_p06.pdf",
+    "https://www.osaka-city-shinkin.co.jp/company/disclosure/2026/06_p07.pdf",
+    "https://www.osaka-city-shinkin.co.jp/company/disclosure/2026/07_p08.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 7
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "institution_name": "加茂信用金庫",
+  "institution_code": 1380,
+  "prefecture": "新潟県",
+  "disclosure_page": "https://www.shinkin.co.jp/kamo/about/disclosure.php",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/kamo/about/pdf/report_r05_04-r06_03.pdf",
+    "https://www.shinkin.co.jp/kamo/about/pdf/report_r06_04-r06_03.pdf",
+    "https://www.shinkin.co.jp/kamo/about/pdf/report_r07_04-r08_03.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 5,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            1069202
+          ],
+          "raw_line": "経 常 収 益 1,069,202"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            972797
+          ],
+          "raw_line": "資 金 運 用 収 益 972,797"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            603591
+          ],
+          "raw_line": "貸 出 金 利 息 603,591"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            299921
+          ],
+          "raw_line": "有価証券利息配当金 299,921"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            63515
+          ],
+          "raw_line": "役 務 取 引 等 収 益 63,515"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            5205
+          ],
+          "raw_line": "そ の 他 業 務 収 益 5,205"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            27684
+          ],
+          "raw_line": "そ の 他 経 常 収 益 27,684"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            982427
+          ],
+          "raw_line": "経 常 費 用 982,427"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            14254
+          ],
+          "raw_line": "資 金 調 達 費 用 14,254"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            13840
+          ],
+          "raw_line": "預 金 利 息 13,840"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            98850
+          ],
+          "raw_line": "役 務 取 引 等 費 用 98,850"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            56402
+          ],
+          "raw_line": "そ の 他 業 務 費 用 56,402"
+        },
+        {
+          "label": "経費",
+          "values": [
+            768224
+          ],
+          "raw_line": "経 費 768,224"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            498550
+          ],
+          "raw_line": "人 件 費 498,550"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            243829
+          ],
+          "raw_line": "物 件 費 243,829"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            86775
+          ],
+          "raw_line": "経 常 利 益 86,775"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            82536
+          ],
+          "raw_line": "当 期 純 利 益 82,536"
+        }
+      ]
+    },
+    "page_count": 18
+  }
+}

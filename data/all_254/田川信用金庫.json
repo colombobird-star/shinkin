@@ -1,0 +1,21 @@
+{
+  "institution_name": "田川信用金庫",
+  "institution_code": 1913,
+  "prefecture": "福岡県",
+  "disclosure_page": "https://www.tagawashinkin.co.jp/about/disclosure/",
+  "pdf_urls": [
+    "https://www.tagawashinkin.co.jp/wp-content/uploads/2026/07/disclosure2026.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 24
+  }
+}

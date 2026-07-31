@@ -1,0 +1,15 @@
+{
+  "institution_name": "川之江信用金庫",
+  "institution_code": 1866,
+  "prefecture": "愛媛県",
+  "disclosure_page": "https://www.kawanoe-shinkin.co.jp/about/disclose",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.kawanoe-shinkin.co.jp/about/disclose",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+      }
+    ]
+  }
+}

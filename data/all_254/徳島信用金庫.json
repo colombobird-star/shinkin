@@ -1,0 +1,99 @@
+{
+  "institution_name": "徳島信用金庫",
+  "institution_code": 1801,
+  "prefecture": "徳島県",
+  "disclosure_page": "https://www.shinkin.co.jp/tokusima/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/tokusima/about/image/disclosur/disclosure_all.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 34,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            3225816,
+            3365124,
+            608436,
+            474423
+          ],
+          "raw_line": "経常収益 3,225,816 3,365,124 当期未処分剰余金 608,436 474,423"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            2785577,
+            3131617,
+            608436,
+            474423
+          ],
+          "raw_line": "資金運用収益 2,785,577 3,131,617 合 計 608,436 474,423"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            1823651,
+            1971725,
+            229182,
+            128862
+          ],
+          "raw_line": "貸出金利息 1,823,651 1,971,725 剰余金処分額 229,182 128,862"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            603869,
+            765325,
+            200000,
+            100000
+          ],
+          "raw_line": "有価証券利息配当金 603,869 765,325 特別積立金 200,000 100,000"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            206372,
+            201409,
+            379253,
+            345561
+          ],
+          "raw_line": "役務取引等収益 206,372 201,409 次期繰越金 379,253 345,561"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            33384,
+            23975
+          ],
+          "raw_line": "その他業務収益 33,384 23,975"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            200482,
+            8121
+          ],
+          "raw_line": "その他経常収益 200,482 8,121"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            384250,
+            404148
+          ],
+          "raw_line": "役務取引等費用 384,250 404,148 (以下、「財務諸表」という。)並びに財務諸表作成に係る内部監査等につ"
+        }
+      ]
+    },
+    "page_count": 50
+  }
+}

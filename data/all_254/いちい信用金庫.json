@@ -1,0 +1,26 @@
+{
+  "institution_name": "いちい信用金庫",
+  "institution_code": 1553,
+  "prefecture": "愛知県",
+  "disclosure_page": "https://www.shinkin.co.jp/ichii/disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/ichii/images/disclosure/2025/2025-9.pdf",
+    "https://www.shinkin.co.jp/ichii/images/disclosure/2025/2025.pdf",
+    "https://www.shinkin.co.jp/ichii/images/disclosure/2025/02.pdf",
+    "https://www.shinkin.co.jp/ichii/images/disclosure/2025/03.pdf",
+    "https://www.shinkin.co.jp/ichii/images/disclosure/2025/04-05.pdf",
+    "https://www.shinkin.co.jp/ichii/images/disclosure/2025/06.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 57
+  }
+}

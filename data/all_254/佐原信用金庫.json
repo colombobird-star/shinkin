@@ -1,0 +1,11 @@
+{
+  "institution_name": "佐原信用金庫",
+  "institution_code": 1267,
+  "prefecture": "千葉県",
+  "disclosure_page": "https://www.shinkin.co.jp/sawara/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/sawara/about/assets/files/about/disclosure/disclosure_202603.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "HTTP Error 404: Not Found"
+}

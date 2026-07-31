@@ -1,0 +1,15 @@
+{
+  "institution_name": "島根中央信用金庫",
+  "institution_code": 1712,
+  "prefecture": "島根県",
+  "disclosure_page": "https://www.shimanechuuou.co.jp/disclosure/index.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.shimanechuuou.co.jp/disclosure/index.html",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+      }
+    ]
+  }
+}

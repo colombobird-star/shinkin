@@ -1,0 +1,16 @@
+{
+  "institution_name": "沼津信用金庫",
+  "institution_code": 1505,
+  "prefecture": "静岡県",
+  "disclosure_page": "https://www.numashin.co.jp/about/loger.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.numashin.co.jp/about/loger.html",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      }
+    ]
+  }
+}

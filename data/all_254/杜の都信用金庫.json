@@ -1,0 +1,141 @@
+{
+  "institution_name": "杜の都信用金庫",
+  "institution_code": 1170,
+  "prefecture": "宮城県",
+  "disclosure_page": "https://www.morinomiyako-shinkin.co.jp/corporation/disk.html",
+  "pdf_urls": [
+    "https://www.morinomiyako-shinkin.co.jp/corporation/pdf/R08/p44-45.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 1,
+      "rows": [
+        {
+          "label": "資金運用収益",
+          "values": [
+            5354,
+            6340,
+            298,
+            291
+          ],
+          "raw_line": "資金運用収益 5,354 6,340 受入為替手数料 298 291"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            620,
+            607,
+            71,
+            69
+          ],
+          "raw_line": "役務取引等収益 620 607 支払為替手数料 71 69"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            381,
+            377,
+            15,
+            16
+          ],
+          "raw_line": "役務取引等費用 381 377 その他の支払手数料 15 16"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            1,
+            4
+          ],
+          "raw_line": "その他業務収益 1 4"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            256,
+            403
+          ],
+          "raw_line": "その他業務費用 256 403 経費の内訳 (単位:百万円)"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            1723,
+            1599
+          ],
+          "raw_line": "人 件 費 1,723 1,599"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            1708,
+            1686
+          ],
+          "raw_line": "物 件 費 1,708 1,686"
+        },
+        {
+          "label": "業務純益",
+          "values": [
+            661,
+            669
+          ],
+          "raw_line": "業務純益 事 務 費 661 669"
+        },
+        {
+          "label": "業務純益",
+          "values": [
+            3393,
+            1153,
+            50,
+            53
+          ],
+          "raw_line": "業 務 純 益 3,393 1,153 通 信 費 50 53"
+        },
+        {
+          "label": "コア業務純益",
+          "values": [
+            1505,
+            1554,
+            456,
+            462
+          ],
+          "raw_line": "コ ア 業 務 純 益 1,505 1,554 事務委託費 456 462"
+        },
+        {
+          "label": "コア業務純益",
+          "values": [
+            1505,
+            1554,
+            230,
+            250
+          ],
+          "raw_line": "コ ア 業 務 純 益 1,505 1,554 固 定 資 産 費 230 250"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            1,
+            4
+          ],
+          "raw_line": "その他業 務収益 1 4"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            256,
+            403
+          ],
+          "raw_line": "その他業 務 費用 256 403"
+        }
+      ]
+    },
+    "page_count": 2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "institution_name": "但陽信用金庫",
+  "institution_code": 1696,
+  "prefecture": "兵庫県",
+  "disclosure_page": "https://www.tanyo-shinkin.co.jp/about/disclosure/index.php",
+  "pdf_urls": [
+    "https://www.tanyo-shinkin.co.jp/_pdf/disclosure/2026/full_all.pdf",
+    "https://www.tanyo-shinkin.co.jp/_pdf/disclosure/2026/mini_all.pdf",
+    "https://www.tanyo-shinkin.co.jp/_pdf/disclosure/2026/repo_all.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "HTTP Error 404: Not Found"
+}

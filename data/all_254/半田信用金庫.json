@@ -1,0 +1,21 @@
+{
+  "institution_name": "半田信用金庫",
+  "institution_code": 1555,
+  "prefecture": "愛知県",
+  "disclosure_page": "https://www.hanshin-ca.co.jp/009/009-03/0090301-01.html",
+  "pdf_urls": [
+    "https://www.hanshin-ca.co.jp/009/009d/2026/dis99.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 28
+  }
+}

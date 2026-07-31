@@ -1,0 +1,23 @@
+{
+  "institution_name": "柏崎信用金庫",
+  "institution_code": 1375,
+  "prefecture": "新潟県",
+  "disclosure_page": "https://www.ksbank.jp/company/report/index.html",
+  "pdf_urls": [
+    "https://www.ksbank.jp/uploads/2026_torikumi.pdf",
+    "https://www.ksbank.jp/uploads/2026_goannai.pdf",
+    "https://www.ksbank.jp/uploads/2026_siryo.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 88
+  }
+}

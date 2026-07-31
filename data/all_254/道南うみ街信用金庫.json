@@ -1,0 +1,174 @@
+{
+  "institution_name": "道南うみ街信用金庫",
+  "institution_code": 1014,
+  "prefecture": "北海道",
+  "disclosure_page": "https://www.d-umishin.co.jp/disclosure-curt/",
+  "pdf_urls": [
+    "https://www.d-umishin.co.jp/wp-content/uploads/disclosure/2026disclosure_docu.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": true,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 8,
+          "rows": [
+            {
+              "label": "合計",
+              "values": [
+                117858,
+                120577,
+                8662,
+                8197
+              ],
+              "raw_line": "合 計 117,858 120,577 住 宅 ロ ー ン 8,662 8,197 ─"
+            },
+            {
+              "label": "合計",
+              "values": [
+                117858,
+                120577
+              ],
+              "raw_line": "合 計 117,858 120,577"
+            },
+            {
+              "label": "社債",
+              "values": [
+                29051,
+                34952
+              ],
+              "raw_line": "社 債 29,051 34,952 ※預金には、定期積金及び譲渡性預金を含んでおります。"
+            },
+            {
+              "label": "株式",
+              "values": [
+                79,
+                79
+              ],
+              "raw_line": "株 式 79 79"
+            },
+            {
+              "label": "外国証券",
+              "values": [
+                20908,
+                21402
+              ],
+              "raw_line": "外 国 証 券 20,908 21,402"
+            },
+            {
+              "label": "合計",
+              "values": [
+                7097,
+                117858,
+                100.0,
+                7008,
+                120577,
+                100.0
+              ],
+              "raw_line": "合 計 7,097 117,858 100.0 7,008 120,577 100.0"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                364,
+                139
+              ],
+              "raw_line": "そ の 他 の 証 券 364 139"
+            },
+            {
+              "label": "合計",
+              "values": [
+                124711,
+                97362
+              ],
+              "raw_line": "合 計 124,711 97,362"
+            }
+          ]
+        },
+        {
+          "source_page": 9,
+          "rows": [
+            {
+              "label": "合計",
+              "values": [
+                117858,
+                120577,
+                8662,
+                8197
+              ],
+              "raw_line": "合 計 117,858 120,577 住 宅 ロ ー ン 8,662 8,197 ─"
+            },
+            {
+              "label": "合計",
+              "values": [
+                117858,
+                120577
+              ],
+              "raw_line": "合 計 117,858 120,577"
+            },
+            {
+              "label": "社債",
+              "values": [
+                29051,
+                34952
+              ],
+              "raw_line": "社 債 29,051 34,952 ※預金には、定期積金及び譲渡性預金を含んでおります。"
+            },
+            {
+              "label": "株式",
+              "values": [
+                79,
+                79
+              ],
+              "raw_line": "株 式 79 79"
+            },
+            {
+              "label": "外国証券",
+              "values": [
+                20908,
+                21402
+              ],
+              "raw_line": "外 国 証 券 20,908 21,402"
+            },
+            {
+              "label": "合計",
+              "values": [
+                7097,
+                117858,
+                100.0,
+                7008,
+                120577,
+                100.0
+              ],
+              "raw_line": "合 計 7,097 117,858 100.0 7,008 120,577 100.0"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                364,
+                139
+              ],
+              "raw_line": "そ の 他 の 証 券 364 139"
+            },
+            {
+              "label": "合計",
+              "values": [
+                124711,
+                97362
+              ],
+              "raw_line": "合 計 124,711 97,362"
+            }
+          ]
+        }
+      ]
+    },
+    "income_statement": null,
+    "page_count": 24
+  }
+}

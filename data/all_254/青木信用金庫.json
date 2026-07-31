@@ -1,0 +1,208 @@
+{
+  "institution_name": "青木信用金庫",
+  "institution_code": 1252,
+  "prefecture": "埼玉県",
+  "disclosure_page": "https://www.shinkin.co.jp/aoshin/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/aoshin/about/disclosure/pdf/2026/all_2026.pdf",
+    "https://www.shinkin.co.jp/aoshin/about/disclosure/pdf/2026/mini_2026.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": true,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": {
+      "source_page": 24,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            1.2
+          ],
+          "raw_line": "その他預金 1.2%"
+        },
+        {
+          "label": "その他",
+          "values": [
+            4.3
+          ],
+          "raw_line": "その他 4.3%"
+        },
+        {
+          "label": "製造業",
+          "values": [
+            5.2
+          ],
+          "raw_line": "製造業 5.2%"
+        },
+        {
+          "label": "建設業",
+          "values": [
+            8.4
+          ],
+          "raw_line": "建設業8.4%"
+        },
+        {
+          "label": "個人",
+          "values": [
+            30.7
+          ],
+          "raw_line": "個人 30.7% 卸売業、小売業"
+        },
+        {
+          "label": "地方公共団体",
+          "values": [
+            8.8
+          ],
+          "raw_line": "地方公共団体8.8%"
+        },
+        {
+          "label": "生活関連サービス業、娯楽業",
+          "values": [
+            0.8
+          ],
+          "raw_line": "生活関連サービス業、娯楽業 0.8%"
+        }
+      ]
+    },
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 44,
+      "rows": [
+        {
+          "label": "資金運用収益",
+          "values": [
+            8114927,
+            9426442,
+            3066,
+            22501
+          ],
+          "raw_line": "資 金 運 用 収 益 8,114,927 9,426,442 固定資産処分損 3,066 22,501"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            5486280,
+            6102114,
+            3462
+          ],
+          "raw_line": "貸 出 金 利 息 5,486,280 6,102,114 その他の特別損失 3,462 −"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            1389045,
+            2007213,
+            249434,
+            324880
+          ],
+          "raw_line": "有価証券利息配当金 1,389,045 2,007,213 法人税、住民税及び事業税 249,434 324,880"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            1130385,
+            1161306,
+            369284,
+            437635
+          ],
+          "raw_line": "役務取引等収益 1,130,385 1,161,306 法 人 税 等 合 計 369,284 437,635"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            42295,
+            17703,
+            3797976,
+            2967154
+          ],
+          "raw_line": "その他業務収益 42,295 17,703 当期未処分剰余金 3,797,976 2,967,154"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            194277,
+            163358
+          ],
+          "raw_line": "その他経常収益 194,277 163,358"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            7857600,
+            9109060
+          ],
+          "raw_line": "経 常 費 用 7,857,600 9,109,060"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            495399,
+            1519596
+          ],
+          "raw_line": "資 金 調 達 費 用 495,399 1,519,596"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            487247,
+            1507654
+          ],
+          "raw_line": "預 金 利 息 487,247 1,507,654"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            914032,
+            913963
+          ],
+          "raw_line": "役務取引等費用 914,032 913,963"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            316846,
+            301810
+          ],
+          "raw_line": "その他業務費用 316,846 301,810"
+        },
+        {
+          "label": "経費",
+          "values": [
+            6086038,
+            6290175
+          ],
+          "raw_line": "経 費 6,086,038 6,290,175"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            3785126,
+            3949926
+          ],
+          "raw_line": "人 件 費 3,785,126 3,949,926"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            2076407,
+            2121756
+          ],
+          "raw_line": "物 件 費 2,076,407 2,121,756"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            1624285,
+            1659751
+          ],
+          "raw_line": "経 常 利 益 1,624,285 1,659,751"
+        }
+      ]
+    },
+    "page_count": 90
+  }
+}

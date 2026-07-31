@@ -1,0 +1,21 @@
+{
+  "institution_name": "新発田信用金庫",
+  "institution_code": 1374,
+  "prefecture": "新潟県",
+  "disclosure_page": "https://www.shibata-shinkin.co.jp/toushinkinn/disc/",
+  "pdf_urls": [
+    "https://www.shibata-shinkin.co.jp/disc/pdf/2026_report/2026disc_all.pdf?260730"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 14
+  }
+}

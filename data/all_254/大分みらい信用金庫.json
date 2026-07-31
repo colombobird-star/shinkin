@@ -1,0 +1,41 @@
+{
+  "institution_name": "大分みらい信用金庫",
+  "institution_code": 1962,
+  "prefecture": "大分県",
+  "disclosure_page": "https://www.oitamirai.co.jp/disclosure/",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https://www.oitamirai.co.jp/disclosure/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.oitamirai.co.jp/news/%e3%83%87%e3%82%a3%e3%82%b9%e3%82%af%e3%83%ad%e3%83%bc%e3%82%b8%e3%83%a3%e3%83%bc%e8%aa%8c%e3%80%8c%ef%bd%81%ef%bd%8e%ef%bd%8e%ef%bd%95%ef%bd%81%ef%bd%8c%e3%80%80%ef%bd%92%ef%bd%85%ef%bd%90%ef%bd%8f-4/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.oitamirai.co.jp/news/%e3%80%90%e5%a4%a7%e5%b9%a1%e6%94%af%e5%ba%97%e3%80%91atm%e3%82%b3%e3%83%bc%e3%83%8a%e3%83%bc%e3%80%80%e5%be%a9%e6%97%a7%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.oitamirai.co.jp/news/%e3%80%90%e5%a4%a7%e5%b9%a1%e6%94%af%e5%ba%97%e3%80%91%e3%80%8c%ef%bd%81%ef%bd%94%ef%bd%8d%e3%82%b3%e3%83%bc%e3%83%8a%e3%83%bc%e3%80%8d%e4%b8%80%e6%99%82%e4%bc%91%e6%ad%a2%e3%81%ae%e3%81%8a%e7%9f%a5/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.oitamirai.co.jp/topics/%e7%ac%ac%ef%bc%92%ef%bc%99%e5%9b%9e%e3%80%8c%e4%bf%a1%e7%94%a8%e9%87%91%e5%ba%ab%e7%a4%be%e4%bc%9a%e8%b2%a2%e7%8c%ae%e8%b3%9e%e3%80%8d%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6%e5%bd%93%e9%87%91%e5%ba%ab/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.oitamirai.co.jp/news/%e3%80%90%e4%bb%8a%e6%b4%a5%e5%87%ba%e5%bc%b5%e6%89%80%e3%80%91atm%e3%82%b3%e3%83%bc%e3%83%8a%e3%83%bc%e3%80%80%e5%be%a9%e6%97%a7%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      }
+    ]
+  }
+}

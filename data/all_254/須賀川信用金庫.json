@@ -1,0 +1,191 @@
+{
+  "institution_name": "須賀川信用金庫",
+  "institution_code": 1185,
+  "prefecture": "福島県",
+  "disclosure_page": "https://www.sushin.co.jp/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.sushin.co.jp/about/disclosure/gyomu_202603.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": true,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": {
+      "source_page": 5,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            6.5,
+            10.2
+          ],
+          "raw_line": "その他事業 6.5% 公金 10.2%"
+        },
+        {
+          "label": "建設業",
+          "values": [
+            5.7
+          ],
+          "raw_line": "建設業 5.7%"
+        },
+        {
+          "label": "製造業",
+          "values": [
+            4.2
+          ],
+          "raw_line": "製造業 4.2%"
+        },
+        {
+          "label": "個人",
+          "values": [
+            21.5
+          ],
+          "raw_line": "個人 21.5%"
+        },
+        {
+          "label": "製造業",
+          "values": [
+            6.3
+          ],
+          "raw_line": "製造業 6.3%"
+        },
+        {
+          "label": "不動産業",
+          "values": [
+            17.9
+          ],
+          "raw_line": "不動産業 17.9%"
+        }
+      ]
+    },
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 8,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            3335330
+          ],
+          "raw_line": "経 常 収 益 3,335,330"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            2877569
+          ],
+          "raw_line": "資 金 運 用 収 益 2,877,569"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            1860636
+          ],
+          "raw_line": "貸 出 金 利 息 1,860,636"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            660410
+          ],
+          "raw_line": "有 価 証 券 利 息 配 当 金 660,410"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            392059
+          ],
+          "raw_line": "役 務 取 引 等 収 益 392,059"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            25497
+          ],
+          "raw_line": "そ の 他 業 務 収 益 25,497"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            40204
+          ],
+          "raw_line": "そ の 他 経 常 収 益 40,204"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            3141189
+          ],
+          "raw_line": "経 常 費 用 3,141,189"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            469817
+          ],
+          "raw_line": "資 金 調 達 費 用 469,817"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            464370
+          ],
+          "raw_line": "預 金 利 息 464,370"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            226924
+          ],
+          "raw_line": "役 務 取 引 等 費 用 226,924"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            89329
+          ],
+          "raw_line": "そ の 他 業 務 費 用 89,329"
+        },
+        {
+          "label": "経費",
+          "values": [
+            2044174
+          ],
+          "raw_line": "経 費 2,044,174"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            1262332
+          ],
+          "raw_line": "人 件 費 1,262,332"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            698073
+          ],
+          "raw_line": "物 件 費 698,073"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            194141
+          ],
+          "raw_line": "経 常 利 益 194,141"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            183520
+          ],
+          "raw_line": "当 期 純 利 益 183,520"
+        }
+      ]
+    },
+    "page_count": 16
+  }
+}

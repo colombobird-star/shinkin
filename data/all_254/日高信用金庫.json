@@ -1,0 +1,22 @@
+{
+  "institution_name": "日高信用金庫",
+  "institution_code": 1011,
+  "prefecture": "北海道",
+  "disclosure_page": "https://www.hidaka-shinkin.co.jp/about/disclosure.php",
+  "pdf_urls": [
+    "https://www.hidaka-shinkin.co.jp/common/pdf/actionplan_202605.pdf",
+    "https://www.hidaka-shinkin.co.jp/common/pdf/actionplan_w_202604.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 2
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "institution_name": "石巻信用金庫",
+  "institution_code": 1172,
+  "prefecture": "宮城県",
+  "disclosure_page": "http://www.i-shinkin.co.jp/aboutus/index.html",
+  "pdf_urls": [
+    "http://www.i-shinkin.co.jp/aboutus/pdf/20260324_1.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 44
+  }
+}

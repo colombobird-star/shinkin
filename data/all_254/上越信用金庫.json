@@ -1,0 +1,15 @@
+{
+  "institution_name": "上越信用金庫",
+  "institution_code": 1376,
+  "prefecture": "新潟県",
+  "disclosure_page": "https:www.joetsu-shinkin.jp/about/disclosure.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "https:www.joetsu-shinkin.jp/about/disclosure.html",
+        "error": "<urlopen error no host given>"
+      }
+    ]
+  }
+}

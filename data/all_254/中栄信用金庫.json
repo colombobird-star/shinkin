@@ -1,0 +1,21 @@
+{
+  "institution_name": "中栄信用金庫",
+  "institution_code": 1289,
+  "prefecture": "神奈川県",
+  "disclosure_page": "https://www.shinkin.co.jp/chuei/about/disclosure/index.php",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/chuei/about/disclosure/202403teisei.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "institution_name": "二本松信用金庫",
+  "institution_code": 1189,
+  "prefecture": "福島県",
+  "disclosure_page": "https://www.matsushin.jp/pages/105/",
+  "pdf_urls": [
+    "https://www.matsushin.jp/files/libs/2753/202607281020425626.pdf",
+    "https://www.matsushin.jp/files/libs/2554/202601061003176197.pdf",
+    "https://www.matsushin.jp/files/libs/2712/202604031211599490.pdf",
+    "https://www.matsushin.jp/files/libs/2457/202511071553152026.pdf",
+    "https://www.matsushin.jp/files/libs/2756/202607291753473786.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 17
+  }
+}

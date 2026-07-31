@@ -1,0 +1,21 @@
+{
+  "institution_name": "但馬信用金庫",
+  "institution_code": 1692,
+  "prefecture": "兵庫県",
+  "disclosure_page": "https://www.tanshin.co.jp/disclosure/index.php",
+  "pdf_urls": [
+    "https://www.tanshin.co.jp/pdf/childcare-support.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 1
+  }
+}

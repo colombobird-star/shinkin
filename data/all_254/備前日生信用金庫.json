@@ -1,0 +1,117 @@
+{
+  "institution_name": "備前日生信用金庫",
+  "institution_code": 1743,
+  "prefecture": "岡山県",
+  "disclosure_page": "https://www.shinkin.co.jp/bizenhinase/about/disclosure/",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/bizenhinase/_pdf/about/disclosure/20260629.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": true
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 6,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            3829249,
+            2052906
+          ],
+          "raw_line": "経 常 収 益 3,829,249 経 費 2,052,906"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            3150409,
+            1340429
+          ],
+          "raw_line": "資 金 運 用 収 益 3,150,409 人 件 費 1,340,429"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            1356823,
+            655716
+          ],
+          "raw_line": "貸 出 金 利 息 1,356,823 物 件 費 655,716"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            1473484,
+            1524
+          ],
+          "raw_line": "有価証券利息配当金 1,473,484 そ の 他 経 常 費 用 1,524"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            180852
+          ],
+          "raw_line": "役 務 取 引 等 収 益 180,852 貸 出 金 償 却 -"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            107519,
+            1416
+          ],
+          "raw_line": "そ の 他 業 務 収 益 107,519 そ の 他 の 経 常 費 用 1,416"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            390468
+          ],
+          "raw_line": "そ の 他 経 常 収 益 390,468 そ の 他 の 特 別 利 益 -"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            3332962,
+            2000
+          ],
+          "raw_line": "経 常 費 用 3,332,962 法人税、住民税及び事業税 2,000"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            403600,
+            127201
+          ],
+          "raw_line": "資 金 調 達 費 用 403,600 法 人 税 等 調 整 額 127,201"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            400012,
+            129201
+          ],
+          "raw_line": "預 金 利 息 400,012 法 人 税 等 合 計 129,201"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            148711
+          ],
+          "raw_line": "役 務 取 引 等 費 用 148,711 優先出資消却積立金取崩額 -"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            726219
+          ],
+          "raw_line": "そ の 他 業 務 費 用 726,219"
+        }
+      ]
+    },
+    "page_count": 8
+  }
+}

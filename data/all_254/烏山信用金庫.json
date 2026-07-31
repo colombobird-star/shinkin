@@ -1,0 +1,13 @@
+{
+  "institution_name": "烏山信用金庫",
+  "institution_code": 1227,
+  "prefecture": "栃木県",
+  "disclosure_page": "https://www.karashin-bank.co.jp/about/disc.html",
+  "pdf_urls": [
+    "https://www.karashin-bank.co.jp/about/pdf/d2026/disc-2026.pdf",
+    "https://www.karashin-bank.co.jp/about/pdf/d2026/disc-2026d.pdf",
+    "https://www.karashin-bank.co.jp/about/pdf/d2026/minidisc202609.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "HTTP Error 404: Not Found"
+}

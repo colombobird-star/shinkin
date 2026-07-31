@@ -1,0 +1,21 @@
+{
+  "institution_name": "姫路信用金庫",
+  "institution_code": 1685,
+  "prefecture": "兵庫県",
+  "disclosure_page": "https://www.shinkin.co.jp/himeshin/aboutus/keiei.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/himeshin/aboutus/pdf/disclosure2025m.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 5
+  }
+}

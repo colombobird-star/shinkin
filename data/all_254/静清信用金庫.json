@@ -1,0 +1,11 @@
+{
+  "institution_name": "静清信用金庫",
+  "institution_code": 1502,
+  "prefecture": "静岡県",
+  "disclosure_page": "https://www.seishin-shinkin.co.jp/about/disclosure/",
+  "pdf_urls": [
+    "https://www.seishin-shinkin.co.jp/about/disclosure/pdf/2022/disclosure2022siryo.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "HTTP Error 404: Not Found"
+}

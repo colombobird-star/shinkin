@@ -1,0 +1,15 @@
+{
+  "institution_name": "会津信用金庫",
+  "institution_code": 1181,
+  "prefecture": "福島県",
+  "disclosure_page": "http://www.aizu-shinkin.jp/kinko/aishin001.html",
+  "pdf_urls": [
+    "http://www.aizu-shinkin.jp/kinko/disclo2025/P45.pdf",
+    "http://www.aizu-shinkin.jp/kinko/disclo2025/P46-47.pdf",
+    "http://www.aizu-shinkin.jp/kinko/disclo2025/P36-41.pdf",
+    "http://www.aizu-shinkin.jp/kinko/disclo2025/P44.pdf",
+    "http://www.aizu-shinkin.jp/kinko/disclo2025/P49-50.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "HTTP Error 503: Service Unavailable"
+}

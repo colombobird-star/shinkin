@@ -1,0 +1,16 @@
+{
+  "institution_name": "高知信用金庫",
+  "institution_code": 1881,
+  "prefecture": "高知県",
+  "disclosure_page": "http://www.combank.co.jp/",
+  "pdf_urls": [
+    "http://www.combank.co.jp/news/20260728.pdf",
+    "http://www.combank.co.jp/news/20260724.pdf",
+    "http://www.combank.co.jp/news/20260715.pdf",
+    "http://www.combank.co.jp/news/20260721.pdf",
+    "http://www.combank.co.jp/news/20260716.pdf",
+    "http://www.combank.co.jp/news/20260714_3.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "Remote end closed connection without response"
+}

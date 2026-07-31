@@ -1,0 +1,21 @@
+{
+  "institution_name": "かながわ信用金庫",
+  "institution_code": 1281,
+  "prefecture": "神奈川県",
+  "disclosure_page": "https://www.shinkin.co.jp/kanagawa/corp/disklo/",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/kanagawa/corp/disklo/pdf/2026_all.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 28
+  }
+}

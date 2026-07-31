@@ -1,0 +1,73 @@
+{
+  "institution_name": "西中国信用金庫",
+  "institution_code": 1781,
+  "prefecture": "山口県",
+  "disclosure_page": "https://www.shinkin.co.jp/nishichugoku/about/disclosure.php",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/nishichugoku/about/file/disclosure/2025hanki.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": true,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": {
+      "source_page": 3,
+      "rows": [
+        {
+          "label": "鉱業、採石業、砂利採取業",
+          "values": [
+            266,
+            272
+          ],
+          "raw_line": "鉱業、採石業、砂利採取業 266 272"
+        },
+        {
+          "label": "情報通信業",
+          "values": [
+            127,
+            134
+          ],
+          "raw_line": "情報通信業 127 134"
+        },
+        {
+          "label": "不動産業",
+          "values": [
+            55125,
+            56042
+          ],
+          "raw_line": "不動産業 55,125 56,042"
+        },
+        {
+          "label": "生活関連サービス業、娯楽業",
+          "values": [
+            4255,
+            3704
+          ],
+          "raw_line": "生活関連サービス業、娯楽業 4,255 3,704"
+        },
+        {
+          "label": "その他のサービス",
+          "values": [
+            8507,
+            7815
+          ],
+          "raw_line": "その他のサービス 8,507 7,815"
+        },
+        {
+          "label": "個人",
+          "values": [
+            81878,
+            82742
+          ],
+          "raw_line": "個人(住宅・消費・納税資金等) 81,878 82,742"
+        }
+      ]
+    },
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 8
+  }
+}

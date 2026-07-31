@@ -1,0 +1,41 @@
+{
+  "institution_name": "ひまわり信用金庫",
+  "institution_code": 1186,
+  "prefecture": "福島県",
+  "disclosure_page": "http://www.shinkin.co.jp/himawari/kinko_disclosure.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "http://www.shinkin.co.jp/himawari/kinko_disclosure.html",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "http://www.shinkin.co.jp/himawari/pdf/discloser/discloser202603/discloser202603.pdf#view=Fit",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "http://www.shinkin.co.jp/himawari/pdf/discloser/discloser202509/discloser202509.pdf#view=Fit",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "http://www.shinkin.co.jp/himawari/pdf/discloser/discloser202503/discloser202503.pdf#view=Fit",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "http://www.shinkin.co.jp/himawari/pdf/discloser/discloser202409/discloser202409.pdf#view=Fit",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "http://www.shinkin.co.jp/himawari/pdf/discloser/discloser202403/discloser202403.pdf#view=Fit",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      }
+    ]
+  }
+}

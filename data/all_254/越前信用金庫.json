@@ -1,0 +1,12 @@
+{
+  "institution_name": "越前信用金庫",
+  "institution_code": 1475,
+  "prefecture": "福井県",
+  "disclosure_page": "http://www.shinkin.co.jp/echishin/disclobanner/index.html",
+  "pdf_urls": [
+    "http://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025.pdf",
+    "http://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025kami.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "HTTP Error 404: Not Found"
+}

@@ -1,0 +1,15 @@
+{
+  "institution_name": "興産信用金庫",
+  "institution_code": 1305,
+  "prefecture": "東京都",
+  "disclosure_page": "http://www.shinkin.co.jp/kosan/disclosure/index.html",
+  "status": "pdf_not_found",
+  "debug": {
+    "visited": [
+      {
+        "url": "http://www.shinkin.co.jp/kosan/disclosure/index.html",
+        "error": "HTTP Error 503: Service Unavailable"
+      }
+    ]
+  }
+}

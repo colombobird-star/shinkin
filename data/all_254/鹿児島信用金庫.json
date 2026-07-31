@@ -1,0 +1,25 @@
+{
+  "institution_name": "鹿児島信用金庫",
+  "institution_code": 1990,
+  "prefecture": "鹿児島県",
+  "disclosure_page": "https://www.shinkin.co.jp/kashin/aboutus/disclosure/",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/kashin/aboutus/disclosure/report-files/disclosure2026_1.pdf",
+    "https://www.shinkin.co.jp/kashin/aboutus/disclosure/report-files/disclosure2026_2.pdf",
+    "https://www.shinkin.co.jp/kashin/aboutus/disclosure/report-files/disclosure2026_3.pdf",
+    "https://www.shinkin.co.jp/kashin/aboutus/disclosure/report-files/disclosure2026_4.pdf",
+    "https://www.shinkin.co.jp/kashin/aboutus/disclosure/report-files/disclosure2026_5.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 78
+  }
+}

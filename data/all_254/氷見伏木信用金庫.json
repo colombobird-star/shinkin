@@ -1,0 +1,13 @@
+{
+  "institution_name": "氷見伏木信用金庫",
+  "institution_code": 1406,
+  "prefecture": "富山県",
+  "disclosure_page": "https://www.shinkin.co.jp/himifusi/aboutus/#disclose",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/himifusi/assets/pdf/aboutus/disclosure202603.pdf",
+    "https://www.shinkin.co.jp/himifusi/assets/pdf/aboutus/minidisclosure202603.pdf",
+    "https://www.shinkin.co.jp/himifusi/assets/pdf/aboutus/OperatingReport2026.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "HTTP Error 404: Not Found"
+}

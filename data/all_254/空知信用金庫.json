@@ -1,0 +1,22 @@
+{
+  "institution_name": "空知信用金庫",
+  "institution_code": 1004,
+  "prefecture": "北海道",
+  "disclosure_page": "https://www.shinkin.co.jp/sorachi/about/disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/sorachi/about/pdf/srep2026_all.pdf",
+    "https://www.shinkin.co.jp/sorachi/about/pdf/srep20261_all.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 79
+  }
+}

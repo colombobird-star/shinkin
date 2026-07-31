@@ -1,0 +1,21 @@
+{
+  "institution_name": "遠軽信用金庫",
+  "institution_code": 1033,
+  "prefecture": "北海道",
+  "disclosure_page": "https://www.shinkin.co.jp/engaru/aboutus05_disclosure.html",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/engaru/pdf/disclosure/2026/2026-siryou.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 36
+  }
+}

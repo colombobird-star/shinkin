@@ -1,0 +1,15 @@
+{
+  "institution_name": "佐野信用金庫",
+  "institution_code": 1224,
+  "prefecture": "栃木県",
+  "disclosure_page": "https://www.sanoshin.co.jp/cpr/disclosure/",
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/sano/_news/contents/91/さのしんカーライフプラン特別金利キャンペーン.pdf",
+    "https://www.shinkin.co.jp/sano/_news/contents/94/さのしんサマーキャンペーンの実施について.pdf",
+    "https://www.sanoshin.co.jp/sano/assets/pdf/common/hoken_kyosai_bosyusisin.pdf",
+    "https://www.sanoshin.co.jp/sano/assets/pdf/code/code.pdf",
+    "https://www.sanoshin.co.jp/sano/assets/pdf/common/policy_money_laundering.pdf"
+  ],
+  "status": "download_or_parse_error",
+  "error": "'ascii' codec can't encode characters in position 28-49: ordinal not in range(128)"
+}

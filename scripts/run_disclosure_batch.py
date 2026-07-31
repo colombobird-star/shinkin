@@ -12,6 +12,7 @@ FSAの一覧(信用金庫)から対象をサンプリングし、ディスクロ
 import argparse
 import json
 import sys
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -96,6 +97,8 @@ def main():
     for i, record in enumerate(sample):
         name = record["institution_name"]
         print(f"[{i+1}/{len(sample)}] {name} ...", file=sys.stderr)
+        if i:
+            time.sleep(1.5)  # 同一ホスティング基盤への連続アクセスによるレート制限を避ける
         r = run_one(record, raw_dir)
         print(f"  -> {r['status']} {r.get('found', '')}", file=sys.stderr)
         results.append(r)

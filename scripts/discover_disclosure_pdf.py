@@ -20,11 +20,17 @@ import argparse
 import json
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 from html import unescape
 from urllib.parse import urljoin, urlparse
 
-HIGH_KEYWORDS = ["計数編", "計数資料編", "keisu", "資料編", "業務のご報告", "gyomu", "業績報告"]
+HIGH_KEYWORDS = [
+    "計数編", "計数資料編", "keisu", "資料編", "業務のご報告", "gyomu", "業績報告",
+    "財務データ", "開示項目", "損益の状況", "業種別",
+]
+BUNDLE_KEYWORDS = ["一括ダウンロード", "一括", "_all"]
 MID_KEYWORDS = ["ディスクロージャー", "disclo", "report"]
 EXCLUDE_KEYWORDS = ["個人情報", "プライバシー", "規程", "約款", "定款", "採用", "sdgs", "csr", "iban"]
 
@@ -32,12 +38,26 @@ LINK_RE = re.compile(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>', re.IGNORECASE | 
 TAG_RE = re.compile(r"<[^>]+>")
 YEAR_RE = re.compile(r"20[12]\d")
 
+RETRYABLE_HTTP_CODES = {403, 429, 500, 502, 503, 504}
 
-def fetch(url, timeout=20):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        charset = resp.headers.get_content_charset() or "utf-8"
-        return resp.read().decode(charset, errors="replace")
+
+def fetch(url, timeout=20, retries=3):
+    last_err = None
+    for attempt in range(retries):
+        if attempt:
+            time.sleep(2 * attempt)
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                charset = resp.headers.get_content_charset() or "utf-8"
+                return resp.read().decode(charset, errors="replace")
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code not in RETRYABLE_HTTP_CODES:
+                raise
+        except (urllib.error.URLError, TimeoutError) as e:
+            last_err = e
+    raise last_err
 
 
 def extract_links(html, base_url):
@@ -62,12 +82,17 @@ def score_link(url, text):
     years = [int(y) for y in YEAR_RE.findall(hay)]
     if years:
         score += (max(years) - 2020)  # 新しい年度ほど加点
-    if "_all" in hay or hay.endswith("all.pdf"):
+    if any(k.lower() in hay for k in BUNDLE_KEYWORDS) or hay.endswith("all.pdf"):
         score += 1
     return score
 
 
-def pick_pdf_candidates(links, max_candidates=3):
+def is_bundle(url, text):
+    hay = f"{url} {text}".lower()
+    return any(k.lower() in hay for k in BUNDLE_KEYWORDS) or hay.endswith("all.pdf")
+
+
+def pick_pdf_candidates(links, max_candidates=6):
     pdf_links = [(u, t) for u, t in links if u.lower().split("?")[0].endswith(".pdf")]
     if not pdf_links:
         return []
@@ -80,7 +105,13 @@ def pick_pdf_candidates(links, max_candidates=3):
     if not scored:
         return []
     top_score = scored[0]["score"]
-    best = [s for s in scored if s["score"] == top_score]
+    tied = [s for s in scored if s["score"] == top_score]
+
+    # 同点内に「一括ダウンロード」等のバンドルファイルがあれば、
+    # 個別章立てPDF(小分けファイル)より優先する。
+    bundles = [s for s in tied if is_bundle(s["url"], s["text"])]
+    best = bundles if bundles else tied
+
     # 重複URL除去、順序維持
     seen = set()
     result = []

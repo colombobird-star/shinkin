@@ -26,11 +26,15 @@ import argparse
 import json
 import re
 import sys
+import time
 import unicodedata
+import urllib.error
 import urllib.request
 from pathlib import Path
 
 import pdfplumber
+
+RETRYABLE_HTTP_CODES = {403, 429, 500, 502, 503, 504}
 
 INDUSTRY_CATEGORIES = [
     "製造業",
@@ -118,10 +122,23 @@ def to_number(token: str):
     return value
 
 
-def download(url: str, dest: Path):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req) as resp, open(dest, "wb") as f:
-        f.write(resp.read())
+def download(url: str, dest: Path, retries: int = 3):
+    last_err = None
+    for attempt in range(retries):
+        if attempt:
+            time.sleep(2 * attempt)
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        try:
+            with urllib.request.urlopen(req) as resp, open(dest, "wb") as f:
+                f.write(resp.read())
+            return
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code not in RETRYABLE_HTTP_CODES:
+                raise
+        except (urllib.error.URLError, TimeoutError) as e:
+            last_err = e
+    raise last_err
 
 
 def load_pages(pdf_path: Path):

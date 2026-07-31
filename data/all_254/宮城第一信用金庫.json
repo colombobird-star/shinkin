@@ -4,7 +4,12 @@
   "prefecture": "宮城県",
   "disclosure_page": "https://www.miyashinbank.co.jp/summary7.html",
   "pdf_urls": [
-    "https://www.miyashinbank.co.jp/pdf/miyashin2026.pdf"
+    "https://www.miyashinbank.co.jp/pdf/keisan_2024.pdf",
+    "https://www.miyashinbank.co.jp/pdf/miyashin2026.pdf",
+    "https://www.miyashinbank.co.jp/pdf/miyashin2025kami.pdf",
+    "https://www.miyashinbank.co.jp/pdf/miyashin2025.pdf",
+    "https://www.miyashinbank.co.jp/pdf/miyashin2024kami.pdf",
+    "https://www.miyashinbank.co.jp/pdf/miyashin2024.pdf"
   ],
   "status": "ok",
   "found": {
@@ -14,7 +19,7 @@
   },
   "data": {
     "industry_loans": {
-      "source_page": 47,
+      "source_page": 50,
       "rows": [
         {
           "label": "合計",
@@ -222,67 +227,129 @@
     },
     "securities_portfolio": null,
     "income_statement": {
-      "source_page": 13,
+      "source_page": 2,
       "rows": [
-        {
-          "label": "貸出金利息",
-          "values": [
-            4
-          ],
-          "raw_line": "貸出金利息や預け金利息が増加したこと等により経常収益が増 当金庫の自己資本比率は、国内基準である4%を大幅に上回っ"
-        },
-        {
-          "label": "業務純益",
-          "values": [
-            7.83,
-            7.94
-          ],
-          "raw_line": "業務純益 [単位:百万円] 7.83% 7.94%"
-        },
-        {
-          "label": "当期純利益",
-          "values": [
-            321,
-            8.0,
-            7.59
-          ],
-          "raw_line": "当期純利益 321 8.00 7.59%"
-        },
         {
           "label": "経常収益",
           "values": [
-            1948415,
-            1966021,
-            1987957,
-            2053014,
-            2067354
+            2053014
           ],
-          "raw_line": "経常収益 [ 千円] 1,948,415 1,966,021 1,987,957 2,053,014 2,067,354"
+          "raw_line": "経 常 収 益 2,053,014"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            1880393
+          ],
+          "raw_line": "資 金 運 用 収 益 1,880,393"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            1421526
+          ],
+          "raw_line": "貸 出 金 利 息 1,421,526"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            404258
+          ],
+          "raw_line": "有 価 証 券 利 息 配 当 金 404,258"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            158837
+          ],
+          "raw_line": "役 務 取 引 等 収 益 158,837"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            12827
+          ],
+          "raw_line": "そ の 他 業 務 収 益 12,827"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            955
+          ],
+          "raw_line": "そ の 他 経 常 収 益 955"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            1918801
+          ],
+          "raw_line": "経 常 費 用 1,918,801"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            76159
+          ],
+          "raw_line": "資 金 調 達 費 用 76,159"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            75146
+          ],
+          "raw_line": "預 金 利 息 75,146"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            130294
+          ],
+          "raw_line": "役 務 取 引 等 費 用 130,294"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            96815
+          ],
+          "raw_line": "そ の 他 業 務 費 用 96,815"
+        },
+        {
+          "label": "経費",
+          "values": [
+            1490920
+          ],
+          "raw_line": "経 費 1,490,920"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            858710
+          ],
+          "raw_line": "人 件 費 858,710"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            610469
+          ],
+          "raw_line": "物 件 費 610,469"
         },
         {
           "label": "経常利益",
           "values": [
-            282886,
-            203834,
-            227413,
-            134212,
-            196959
+            134212
           ],
-          "raw_line": "経常利益 [ 千円] 282,886 203,834 △ 227,413 134,212 △ 196,959"
+          "raw_line": "経 常 利 益 134,212"
         },
         {
           "label": "当期純利益",
           "values": [
-            136940,
-            156089,
-            261873,
-            98599,
-            389185
+            98599
           ],
-          "raw_line": "当期純利益 [ 千円] 136,940 156,089 △ 261,873 98,599 △ 389,185"
+          "raw_line": "当 期 純 利 益 98,599"
         }
       ]
     },
-    "page_count": 52
+    "page_count": 163
   }
 }

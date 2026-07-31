@@ -4,12 +4,12 @@
   "prefecture": "東京都",
   "disclosure_page": "https://www.shinkin.co.jp/showa/about/profile/disclosureindex.html",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/showa/dist/pdf/2026-2.pdf",
-    "https://www.shinkin.co.jp/showa/dist/pdf/2026-3.pdf",
-    "https://www.shinkin.co.jp/showa/dist/pdf/2026-4.pdf",
-    "https://www.shinkin.co.jp/showa/dist/pdf/2026-5.pdf",
-    "https://www.shinkin.co.jp/showa/dist/pdf/2026-6.pdf",
-    "https://www.shinkin.co.jp/showa/dist/pdf/2026-7.pdf"
+    "https://www.shinkin.co.jp/showa/dist/pdf/agent_service_flyer.pdf",
+    "https://www.shinkin.co.jp/showa/dist/pdf/20231226.pdf",
+    "https://www.shinkin.co.jp/showa/dist/pdf/maneron-bousi.pdf",
+    "https://www.shinkin.co.jp/showa/dist/pdf/kanyuuhousin.pdf",
+    "https://www.shinkin.co.jp/showa/dist/pdf/keieisyahosyo.pdf",
+    "https://www.shinkin.co.jp/showa/dist/pdf/customerharassment.pdf"
   ],
   "status": "ok",
   "found": {
@@ -21,6 +21,6 @@
     "industry_loans": null,
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 23
+    "page_count": 8
   }
 }

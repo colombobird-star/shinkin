@@ -23,7 +23,8 @@
       },
       {
         "url": "http://www.shinkin.co.jp/himawari/pdf/discloser/discloser202503/discloser202503.pdf#view=Fit",
-        "error": "HTTP Error 503: Service Unavailable"
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
       },
       {
         "url": "http://www.shinkin.co.jp/himawari/pdf/discloser/discloser202409/discloser202409.pdf#view=Fit",

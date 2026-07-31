@@ -4,8 +4,7 @@
   "prefecture": "大阪府",
   "disclosure_page": "https://www.osaka-shinkin.co.jp/companyinfo/index.html",
   "pdf_urls": [
-    "https://www.osaka-shinkin.co.jp/pdf/disclosure2025/2025hanki_disclosure_shusei.pdf",
-    "https://www.osaka-shinkin.co.jp/pdf/disclosure2024/2025_disclosure_shusei.pdf"
+    "https://www.osaka-shinkin.co.jp/pdf/disclosure2025/202509disclosure_all.pdf"
   ],
   "status": "ok",
   "found": {
@@ -17,6 +16,6 @@
     "industry_loans": null,
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 8
+    "page_count": 10
   }
 }

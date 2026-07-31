@@ -4,7 +4,7 @@
   "prefecture": "福井県",
   "disclosure_page": "https://www.shinkin.co.jp/tsuruga/about/disc/",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/tsuruga/about/disc/pdf/all2026.pdf"
+    "https://www.shinkin.co.jp/tsuruga/about/disc/pdf/shiryou.pdf"
   ],
   "status": "ok",
   "found": {
@@ -17,7 +17,7 @@
     "securities_portfolio": {
       "pages": [
         {
-          "source_page": 52,
+          "source_page": 17,
           "rows": [
             {
               "label": "国債",
@@ -265,7 +265,7 @@
       ]
     },
     "income_statement": {
-      "source_page": 55,
+      "source_page": 20,
       "rows": [
         {
           "label": "経費",
@@ -402,6 +402,6 @@
         }
       ]
     },
-    "page_count": 78
+    "page_count": 21
   }
 }

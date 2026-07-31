@@ -5,7 +5,6 @@
   "disclosure_page": "https://www.shinkin.co.jp/takasaki/about/disclosure/",
   "pdf_urls": [
     "https://www.shinkin.co.jp/takasaki/assets/pdf/about/disclosure/r07-disclosure-document.pdf",
-    "https://www.shinkin.co.jp/takasaki/assets/pdf/about/disclosure/r07-disclosure-errata.pdf",
     "https://www.shinkin.co.jp/takasaki/assets/pdf/about/disclosure/r06-disclosure-document.pdf",
     "https://www.shinkin.co.jp/takasaki/assets/pdf/about/disclosure/r05-disclosure-document.pdf"
   ],
@@ -522,7 +521,7 @@
           ]
         },
         {
-          "source_page": 43,
+          "source_page": 42,
           "rows": [
             {
               "label": "国債",
@@ -804,7 +803,7 @@
           ]
         },
         {
-          "source_page": 60,
+          "source_page": 59,
           "rows": [
             {
               "label": "国債",
@@ -1136,6 +1135,6 @@
         }
       ]
     },
-    "page_count": 67
+    "page_count": 66
   }
 }

@@ -4,20 +4,131 @@
   "prefecture": "新潟県",
   "disclosure_page": "https://www.ksbank.jp/company/report/index.html",
   "pdf_urls": [
-    "https://www.ksbank.jp/uploads/2026_torikumi.pdf",
-    "https://www.ksbank.jp/uploads/2026_goannai.pdf",
-    "https://www.ksbank.jp/uploads/2026_siryo.pdf"
+    "https://www.ksbank.jp/uploads/pdf/202509_mini_report.pdf"
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
+    "industry_loans": true,
     "securities_portfolio": false,
     "income_statement": false
   },
   "data": {
-    "industry_loans": null,
+    "industry_loans": {
+      "source_page": 1,
+      "rows": [
+        {
+          "label": "農業、林業",
+          "values": [
+            0.28,
+            2.06
+          ],
+          "raw_line": "農業、林業 0.28 飲食業 2.06"
+        },
+        {
+          "label": "建設業",
+          "values": [
+            8.25,
+            0.91
+          ],
+          "raw_line": "建設業 8.25 生活関連サービス業、娯楽業 0.91"
+        },
+        {
+          "label": "電気・ガス・熱供給・水道業",
+          "values": [
+            0.16,
+            0.24
+          ],
+          "raw_line": "電気・ガス・熱供給・水道業 0.16 教育、学習支援業 0.24"
+        },
+        {
+          "label": "卸売業、小売業",
+          "values": [
+            4.91,
+            10.23
+          ],
+          "raw_line": "卸売業、小売業 4.91 地方公共団体 10.23"
+        },
+        {
+          "label": "金融業、保険業",
+          "values": [
+            17.06,
+            28.42
+          ],
+          "raw_line": "金融業、保険業 17.06 個人(住宅・消費・納税資金等)28.42"
+        },
+        {
+          "label": "小計",
+          "values": [
+            5703,
+            4750,
+            953,
+            5591,
+            4487,
+            1104
+          ],
+          "raw_line": "小 計 5,703 4,750△ 953 5,591 4,487△ 1,104"
+        },
+        {
+          "label": "合計",
+          "values": [
+            5703,
+            4750,
+            953,
+            5691,
+            4587,
+            1104
+          ],
+          "raw_line": "合 計 5,703 4,750△ 953 5,691 4,587△ 1,104"
+        },
+        {
+          "label": "その他",
+          "values": [
+            357,
+            345,
+            12,
+            984,
+            952,
+            31
+          ],
+          "raw_line": "その他 357 345 12 984 952 31"
+        },
+        {
+          "label": "小計",
+          "values": [
+            1080,
+            1060,
+            20,
+            1755,
+            1712,
+            42
+          ],
+          "raw_line": "小 計 1,080 1,060 20 1,755 1,712 42"
+        },
+        {
+          "label": "小計",
+          "values": [
+            885,
+            874,
+            886
+          ],
+          "raw_line": "小計(A) 885 874 886 取得原価を"
+        },
+        {
+          "label": "その他",
+          "values": [
+            10360,
+            11779,
+            1419,
+            8838,
+            9814,
+            976
+          ],
+          "raw_line": "その他 10,360 11,779 △ 1,419 8,838 9,814 △ 976"
+        }
+      ]
+    },
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 88
+    "page_count": 1
   }
 }

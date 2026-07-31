@@ -4,18 +4,127 @@
   "prefecture": "岡山県",
   "disclosure_page": "https://www.shinkin.co.jp/tamashima-sk/about/disclosure.html",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/tamashima-sk/archives/001/202302/moneylaunderingpolicy.pdf"
+    "https://www.shinkin.co.jp/tamashima-sk/disclose/113.pdf"
   ],
   "status": "ok",
   "found": {
     "industry_loans": false,
     "securities_portfolio": false,
-    "income_statement": false
+    "income_statement": true
   },
   "data": {
     "industry_loans": null,
     "securities_portfolio": null,
-    "income_statement": null,
-    "page_count": 1
+    "income_statement": {
+      "source_page": 6,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            5496534
+          ],
+          "raw_line": "経 常 収 益 5,496,534千円"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            4675947
+          ],
+          "raw_line": "資 金 運 用 収 益 4,675,947"
+        },
+        {
+          "label": "貸出金利息",
+          "values": [
+            2518241
+          ],
+          "raw_line": "貸 出 金 利息 2,518,241"
+        },
+        {
+          "label": "有価証券利息配当金",
+          "values": [
+            1155453
+          ],
+          "raw_line": "有 価 証 券 利 息 配 当金 1,155,453"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            564201
+          ],
+          "raw_line": "役 務 取 引 等 収 益 564,201"
+        },
+        {
+          "label": "その他業務収益",
+          "values": [
+            27983
+          ],
+          "raw_line": "そ の 他 業 務 収 益 27,983"
+        },
+        {
+          "label": "その他経常収益",
+          "values": [
+            228400
+          ],
+          "raw_line": "そ の 他 経 常 収 益 228,400"
+        },
+        {
+          "label": "経常費用",
+          "values": [
+            4970570
+          ],
+          "raw_line": "経 常 費 用 4,970,570"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            653743
+          ],
+          "raw_line": "資 金 調 達 費 用 653,743"
+        },
+        {
+          "label": "預金利息",
+          "values": [
+            647146
+          ],
+          "raw_line": "預 金 利 息 647,146"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            248968
+          ],
+          "raw_line": "役 務 取 引 等 費 用 248,968"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            928605
+          ],
+          "raw_line": "そ の 他 業 務 費 用 928,605"
+        },
+        {
+          "label": "経費",
+          "values": [
+            2769663
+          ],
+          "raw_line": "経 費 2,769,663"
+        },
+        {
+          "label": "人件費",
+          "values": [
+            1715308
+          ],
+          "raw_line": "人 件 費 1,715,308"
+        },
+        {
+          "label": "物件費",
+          "values": [
+            952631
+          ],
+          "raw_line": "物 件 費 952,631"
+        }
+      ]
+    },
+    "page_count": 10
   }
 }

@@ -4,10 +4,7 @@
   "prefecture": "福岡県",
   "disclosure_page": "https://www.fukuokahibiki.co.jp/about/disclosure2025.php",
   "pdf_urls": [
-    "https://www.fukuokahibiki.co.jp/pdf/nenkin_kansya.pdf?202602",
-    "https://www.fukuokahibiki.co.jp/about/files/202522-42s.pdf?202607",
-    "https://www.fukuokahibiki.co.jp/pdf/mn035.pdf?202607",
-    "https://www.fukuokahibiki.co.jp/pdf/policy_on_customer-202605.pdf"
+    "https://www.fukuokahibiki.co.jp/about/files/202522-42s.pdf?202607"
   ],
   "status": "ok",
   "found": {
@@ -19,6 +16,6 @@
     "industry_loans": null,
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 29
+    "page_count": 21
   }
 }

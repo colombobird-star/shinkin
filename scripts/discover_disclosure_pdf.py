@@ -24,7 +24,7 @@ import time
 import urllib.error
 import urllib.request
 from html import unescape
-from urllib.parse import urljoin, urlparse
+from urllib.parse import quote, urljoin, urlparse, urlsplit, urlunsplit
 
 HIGH_KEYWORDS = [
     "計数編", "計数資料編", "keisu", "資料編", "業務のご報告", "gyomu", "業績報告",
@@ -49,16 +49,54 @@ PERIOD_CODE_RE = re.compile(r"\b(2[3-6]\d{2})\b")
 RETRYABLE_HTTP_CODES = {403, 429, 500, 502, 503, 504}
 
 
+def safe_url(url):
+    """URLのpath/queryに未エンコードの非ASCII文字(日本語ファイル名等)が
+    含まれている場合、urllibがリクエストライン組み立て時にasciiエンコードで
+    失敗するため、パーセントエンコードして安全な形に変換する。"""
+    parts = urlsplit(url)
+    path = quote(parts.path, safe="/%")
+    query = quote(parts.query, safe="=&%")
+    return urlunsplit((parts.scheme, parts.netloc, path, query, parts.fragment))
+
+
+META_CHARSET_RE = re.compile(rb'charset=["\']?\s*([\w-]+)', re.IGNORECASE)
+
+
+def decode_html(raw: bytes, header_charset: str | None) -> str:
+    """HTTPヘッダにcharsetが無い、または実際の文字コードと食い違う
+    ページ(特に古いshift_jis系の金庫サイト)が多いため、
+    HTML内のmeta charset宣言も見て複数候補をフォールバックする。"""
+    candidates = []
+    if header_charset:
+        candidates.append(header_charset)
+    m = META_CHARSET_RE.search(raw[:2048])
+    if m:
+        candidates.append(m.group(1).decode("ascii", errors="ignore"))
+    candidates += ["utf-8", "cp932", "euc-jp"]
+
+    seen = set()
+    for enc in candidates:
+        enc_norm = enc.lower().replace("shift-jis", "shift_jis").replace("sjis", "shift_jis").replace("x-sjis", "shift_jis")
+        if enc_norm in seen:
+            continue
+        seen.add(enc_norm)
+        try:
+            return raw.decode(enc_norm)
+        except (LookupError, UnicodeDecodeError):
+            continue
+    return raw.decode("utf-8", errors="replace")
+
+
 def fetch(url, timeout=20, retries=3):
     last_err = None
     for attempt in range(retries):
         if attempt:
             time.sleep(2 * attempt)
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(safe_url(url), headers={"User-Agent": "Mozilla/5.0"})
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
-                charset = resp.headers.get_content_charset() or "utf-8"
-                return resp.read().decode(charset, errors="replace")
+                raw = resp.read()
+                return decode_html(raw, resp.headers.get_content_charset())
         except urllib.error.HTTPError as e:
             last_err = e
             if e.code not in RETRYABLE_HTTP_CODES:

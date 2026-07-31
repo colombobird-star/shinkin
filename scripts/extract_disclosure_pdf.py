@@ -31,6 +31,7 @@ import unicodedata
 import urllib.error
 import urllib.request
 from pathlib import Path
+from urllib.parse import quote, urlsplit, urlunsplit
 
 import pdfplumber
 
@@ -122,12 +123,22 @@ def to_number(token: str):
     return value
 
 
+def safe_url(url):
+    """URLのpath/queryに未エンコードの非ASCII文字(日本語ファイル名等)が
+    含まれている場合、urllibがリクエストライン組み立て時にasciiエンコードで
+    失敗するため、パーセントエンコードして安全な形に変換する。"""
+    parts = urlsplit(url)
+    path = quote(parts.path, safe="/%")
+    query = quote(parts.query, safe="=&%")
+    return urlunsplit((parts.scheme, parts.netloc, path, query, parts.fragment))
+
+
 def download(url: str, dest: Path, retries: int = 3):
     last_err = None
     for attempt in range(retries):
         if attempt:
             time.sleep(2 * attempt)
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(safe_url(url), headers={"User-Agent": "Mozilla/5.0"})
         try:
             with urllib.request.urlopen(req) as resp, open(dest, "wb") as f:
                 f.write(resp.read())

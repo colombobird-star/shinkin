@@ -55,11 +55,24 @@ def run_one(record, raw_dir):
     result["pdf_urls"] = pdf_urls
 
     local_paths = []
-    try:
-        for i, url in enumerate(pdf_urls):
-            dest = raw_dir / f"{name}_{i}.pdf"
+    download_errors = []
+    for i, url in enumerate(pdf_urls):
+        dest = raw_dir / f"{name}_{i}.pdf"
+        try:
             download(url, dest)
             local_paths.append(dest)
+        except Exception as e:  # noqa: BLE001
+            # 同点候補の中には壊れたリンク(404等)が混ざることがあるため、
+            # 個別のダウンロード失敗では全体を諦めず、成功した分だけで進める。
+            download_errors.append(f"{url}: {e}")
+    if download_errors:
+        result["download_errors"] = download_errors
+    if not local_paths:
+        result["status"] = "download_or_parse_error"
+        result["error"] = "; ".join(download_errors) or "no candidate could be downloaded"
+        return result
+
+    try:
         extracted = extract_all(local_paths)
     except Exception as e:  # noqa: BLE001
         result["status"] = "download_or_parse_error"

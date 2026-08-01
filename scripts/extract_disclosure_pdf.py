@@ -162,9 +162,14 @@ def load_pages(pdf_path: Path):
 
 
 def find_pages(pages, keywords):
+    """一部の金庫は見出しを「経 常 収 益」のように1文字ずつ全角スペースで
+    区切って組版しているため(昭和信用金庫等)、単純な部分文字列一致では
+    該当ページを検出できない。ページテキストから空白を除いた版でも
+    照合することで、そうした表記にも対応する。"""
     hits = []
     for i, text in enumerate(pages):
-        if any(k in text for k in keywords):
+        compact = strip_spaces(text)
+        if any(k in text or k in compact for k in keywords):
             hits.append(i)
     return hits
 
@@ -197,8 +202,13 @@ def extract_label_number_lines(text, categories):
 
 
 def extract_industry_loans(pages):
+    # 見出し(「貸出金業種別内訳」等)が図形化されている、あるいは表記ゆれで
+    # 見つからないページがあるため(高知信用金庫等)、見出しキーワードに
+    # 一致するページを優先しつつ、無ければ全ページを対象に業種区分の
+    # 行パターン自体で判定する。
     idx = find_pages(pages, ["貸出金業種別", "貸出金の業種別", "業種別内訳"])
-    for i in idx:
+    ordered = idx + [i for i in range(len(pages)) if i not in idx]
+    for i in ordered:
         rows = extract_label_number_lines(pages[i], INDUSTRY_CATEGORIES)
         if len(rows) >= 5:
             return {"source_page": i + 1, "rows": rows}
@@ -207,19 +217,25 @@ def extract_industry_loans(pages):
 
 def extract_securities_portfolio(pages):
     idx = find_pages(pages, ["有価証券の種類別", "残存期間別の残高", "種類別の平均残高"])
+    ordered = idx + [i for i in range(len(pages)) if i not in idx]
     out = {}
-    for i in idx:
+    for i in ordered:
         rows = extract_label_number_lines(pages[i], SECURITY_CATEGORIES)
         if len(rows) >= 3:
             out.setdefault("pages", []).append({"source_page": i + 1, "rows": rows})
+            if len(out["pages"]) >= 4:
+                break
     return out or None
 
 
 def extract_income_statement(pages):
     idx = find_pages(pages, ["損益計算書", "損益の状況", "経常収益"])
-    for i in idx:
+    ordered = idx + [i for i in range(len(pages)) if i not in idx]
+    for i in ordered:
         rows = extract_label_number_lines(pages[i], INCOME_STATEMENT_ITEMS)
-        if len(rows) >= 5:
+        # 5年間の主要経営指標だけを載せる簡易版だと、経常収益・業務純益・
+        # 経常利益・当期純利益の4項目しか無いことがある(高知信用金庫等)。
+        if len(rows) >= 4:
             return {"source_page": i + 1, "rows": rows}
     return None
 

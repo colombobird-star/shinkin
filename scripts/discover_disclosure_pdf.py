@@ -27,7 +27,7 @@ from html import unescape
 from urllib.parse import quote, urljoin, urlparse, urlsplit, urlunsplit
 
 HIGH_KEYWORDS = [
-    "計数編", "計数資料編", "keisu", "資料編", "業務のご報告", "gyomu", "業績報告",
+    "計数編", "計数資料編", "keisu", "資料編", "shiryou", "siryou", "業務のご報告", "gyomu", "業績報告",
     "財務データ", "損益の状況", "業種別",
 ]
 # "開示項目"は「開示項目一覧」という目次ページにもマッチしてしまうため、

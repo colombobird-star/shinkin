@@ -153,10 +153,16 @@ def download(url: str, dest: Path, retries: int = 3):
 
 
 def load_pages(pdf_path: Path):
+    """一部の金庫のPDFは、ページのmediabox外(印刷・表示はされない領域)に
+    縦書きサイドバー見出し等の「幽霊」文字オブジェクトが残っており、
+    pdfplumberのextract_text()がこれを本文の行に混ぜてしまうことがある
+    (奈良信用金庫等)。ページをmediabox内にcropしてから抽出することで
+    これらの幽霊文字を除外する。"""
     pages = []
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
-            text = page.extract_text() or ""
+            cropped = page.crop((0, 0, page.width, page.height))
+            text = cropped.extract_text() or ""
             pages.append(unicodedata.normalize("NFKC", text))
     return pages
 

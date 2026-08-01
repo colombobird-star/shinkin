@@ -11,9 +11,6 @@
     "https://www.combank.co.jp/news/20260721.pdf",
     "https://www.combank.co.jp/news/20260716.pdf"
   ],
-  "download_errors": [
-    "https://www.combank.co.jp/news/20260724.pdf: Remote end closed connection without response"
-  ],
   "status": "ok",
   "found": {
     "industry_loans": false,
@@ -24,6 +21,6 @@
     "industry_loans": null,
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 12
+    "page_count": 17
   }
 }

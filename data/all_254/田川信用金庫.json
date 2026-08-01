@@ -8,13 +8,133 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": false
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 12,
+      "rows": [
+        {
+          "label": "小計",
+          "values": [
+            1.322
+          ],
+          "raw_line": "小計額                          1.322百万F"
+        },
+        {
+          "label": "合計",
+          "values": [
+            27374
+          ],
+          "raw_line": "合計額                         27,374百万"
+        },
+        {
+          "label": "その他",
+          "values": [
+            7.492,
+            7.492
+          ],
+          "raw_line": "その他有休証券      7.492    7.492      ー"
+        },
+        {
+          "label": "合計",
+          "values": [
+            330
+          ],
+          "raw_line": "合計                          330"
+        },
+        {
+          "label": "合計",
+          "values": [
+            23850,
+            14007,
+            8403,
+            12434
+          ],
+          "raw_line": "合計  23,850 | 14,007 | 8,403 | 12,434"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 12,
+          "rows": [
+            {
+              "label": "合計",
+              "values": [
+                27374
+              ],
+              "raw_line": "合計額                         27,374百万"
+            },
+            {
+              "label": "合計",
+              "values": [
+                330
+              ],
+              "raw_line": "合計                          330"
+            },
+            {
+              "label": "合計",
+              "values": [
+                23850,
+                14007,
+                8403,
+                12434
+              ],
+              "raw_line": "合計  23,850 | 14,007 | 8,403 | 12,434"
+            }
+          ]
+        },
+        {
+          "source_page": 16,
+          "rows": [
+            {
+              "label": "社債",
+              "values": [
+                4793,
+                4.129
+              ],
+              "raw_line": "社           債       4793         4.129         陣還         有価証券"
+            },
+            {
+              "label": "株式",
+              "values": [
+                263,
+                2
+              ],
+              "raw_line": "株           式| 263 |  ・| |      2.国内業務部門と国際業務部門の区別はしておりません。"
+            },
+            {
+              "label": "外国証券",
+              "values": [
+                1.282,
+                1.205
+              ],
+              "raw_line": "外国 証 券       1.282         1.205"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                914,
+                849
+              ],
+              "raw_line": "その他の証券      914        849"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                784,
+                784
+              ],
+              "raw_line": "その他の証券               ー                  =                  =                 =                  =                  ー                 784               784"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": null,
     "page_count": 24
   }

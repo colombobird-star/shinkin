@@ -281,6 +281,19 @@ def pick_pdf_candidates(links, max_candidates=6):
             bundles = [s for s in near_top_bundles if s["score"] == bundle_top]
     best = bundles if bundles else tied
 
+    # ページ範囲で分割された章立てPDF(例: 「P2〜15」「P16〜21」)は、
+    # 目的の決算表がどのファイルに入っているか事前にわからないため、
+    # 同点付近のページ範囲ファイルは複数まとめて候補に含める
+    # (福岡ひびき信用金庫・大阪シティ信用金庫等)。
+    if not bundles:
+        page_range_near_top = [
+            s for s in scored
+            if PAGE_RANGE_RE.search(f"{s['url']} {s['text']}".lower())
+            and s["score"] >= top_score - 3
+        ]
+        if len(page_range_near_top) > len(best):
+            best = page_range_near_top
+
     # 重複URL除去、順序維持
     seen = set()
     result = []

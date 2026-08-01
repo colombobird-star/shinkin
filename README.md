@@ -21,6 +21,15 @@ pip install -r requirements.txt
 python3 scripts/fetch_shinkin_financials.py --out data/shinkin_financials.csv
 ```
 
+個別金庫のディスクロージャーPDF抽出でスキャン画像PDFのOCRフォールバックを
+使う場合は、別途Tesseract本体(日本語言語データ込み)が必要:
+
+```bash
+apt-get install -y tesseract-ocr tesseract-ocr-jpn
+```
+
+(未インストールの場合はOCRを黙ってスキップし、通常のテキスト抽出のみ行う)
+
 金融庁のファイルURLは年度更新のたびに変わる（例: `zenkoku/2025-2.xlsx`）。
 最新のURLは https://www.fsa.go.jp/policy/chusho/shihyou.html の
 「信用金庫・信用組合」欄のリンクから確認し、`--url` で指定する。

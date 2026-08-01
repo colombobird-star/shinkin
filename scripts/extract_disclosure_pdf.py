@@ -35,7 +35,19 @@ from urllib.parse import quote, urlsplit, urlunsplit
 
 import pdfplumber
 
+try:
+    import fitz  # PyMuPDF
+    import pytesseract
+    from PIL import Image
+    import io as _io
+    OCR_AVAILABLE = True
+except ImportError:
+    OCR_AVAILABLE = False
+
 RETRYABLE_HTTP_CODES = {403, 429, 500, 502, 503, 504}
+# この文字数未満しかテキストが取れなかったページは、スキャン画像や
+# アウトラインフォント化されたページの可能性が高いとみなしOCRを試す。
+OCR_FALLBACK_THRESHOLD = 30
 
 INDUSTRY_CATEGORIES = [
     "製造業",
@@ -152,17 +164,40 @@ def download(url: str, dest: Path, retries: int = 3):
     raise last_err
 
 
-def load_pages(pdf_path: Path):
+def _ocr_page(pdf_path: Path, page_number: int) -> str:
+    """該当ページを画像化してOCRする(スキャンPDF・アウトラインフォント化
+    されたページ用のフォールバック)。tesseract等が無い環境では黙って
+    空文字列を返す。"""
+    if not OCR_AVAILABLE:
+        return ""
+    try:
+        doc = fitz.open(pdf_path)
+        page = doc[page_number]
+        pix = page.get_pixmap(matrix=fitz.Matrix(3, 3))
+        img = Image.open(_io.BytesIO(pix.tobytes("png")))
+        return pytesseract.image_to_string(img, lang="jpn")
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+def load_pages(pdf_path: Path, use_ocr: bool = True):
     """一部の金庫のPDFは、ページのmediabox外(印刷・表示はされない領域)に
     縦書きサイドバー見出し等の「幽霊」文字オブジェクトが残っており、
     pdfplumberのextract_text()がこれを本文の行に混ぜてしまうことがある
     (奈良信用金庫等)。ページをmediabox内にcropしてから抽出することで
-    これらの幽霊文字を除外する。"""
+    これらの幽霊文字を除外する。
+
+    抽出されたテキストが極端に短いページは、スキャン画像やアウトライン
+    フォント化されたページの可能性が高いため、OCRで再試行する。"""
     pages = []
     with pdfplumber.open(pdf_path) as pdf:
-        for page in pdf.pages:
+        for i, page in enumerate(pdf.pages):
             cropped = page.crop((0, 0, page.width, page.height))
             text = cropped.extract_text() or ""
+            if use_ocr and len(text.strip()) < OCR_FALLBACK_THRESHOLD:
+                ocr_text = _ocr_page(pdf_path, i)
+                if len(ocr_text.strip()) > len(text.strip()):
+                    text = ocr_text
             pages.append(unicodedata.normalize("NFKC", text))
     return pages
 

@@ -4,15 +4,11 @@
   "prefecture": "福島県",
   "disclosure_page": "https://www.matsushin.jp/pages/105/",
   "pdf_urls": [
-    "https://www.matsushin.jp/files/libs/2337/202504231447252317.pdf",
-    "https://www.matsushin.jp/files/libs/2228/202503271057448760.pdf",
-    "http://chrome-extension%3A//efaidnbmnnnibpcajpcglclefindmkaj/https%3A//www.matsushin.jp/files/libs/2386/202506101121407665.pdf",
-    "https://www.matsushin.jp/files/libs/2386/202506101121407665.pdf",
-    "https://www.matsushin.jp/files/libs/1808/20241124005244766.pdf",
-    "https://www.matsushin.jp/files/libs/2430/202510011610548004.pdf"
-  ],
-  "download_errors": [
-    "http://chrome-extension%3A//efaidnbmnnnibpcajpcglclefindmkaj/https%3A//www.matsushin.jp/files/libs/2386/202506101121407665.pdf: <urlopen error [Errno -2] Name or service not known>"
+    "https://www.matsushin.jp/files/libs/2753/202607281020425626.pdf",
+    "https://www.matsushin.jp/files/libs/2554/202601061003176197.pdf",
+    "https://www.matsushin.jp/files/libs/2712/202604031211599490.pdf",
+    "https://www.matsushin.jp/files/libs/2457/202511071553152026.pdf",
+    "https://www.matsushin.jp/files/libs/2756/202607291753473786.pdf"
   ],
   "status": "ok",
   "found": {
@@ -24,6 +20,6 @@
     "industry_loans": null,
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 5
+    "page_count": 17
   }
 }

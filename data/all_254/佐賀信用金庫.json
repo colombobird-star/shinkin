@@ -9,6 +9,41 @@
       {
         "url": "https://www.shinkin.co.jp/saga/about/disclosure/index.html",
         "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://www.shinkin.co.jp/",
+        "pdf_candidates_found": 0,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.shinkin.co.jp/saga/index.shtml",
+        "pdf_candidates_found": 1,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.shinkin.co.jp/saga/about/index.shtml",
+        "pdf_candidates_found": 1,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.shinkin.co.jp/saga/about/greeting/",
+        "pdf_candidates_found": 1,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.shinkin.co.jp/saga/about/outline/",
+        "pdf_candidates_found": 1,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.shinkin.co.jp/saga/about/philosophy/",
+        "pdf_candidates_found": 1,
+        "good_candidates_found": 0
+      },
+      {
+        "url": "https://www.shinkin.co.jp/saga/about/disclosure/",
+        "pdf_candidates_found": 1,
+        "good_candidates_found": 0
       }
     ]
   }

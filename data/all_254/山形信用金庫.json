@@ -4,239 +4,58 @@
   "prefecture": "山形県",
   "disclosure_page": "https://www.shinkin.co.jp/y-shinkin/about/disclosure.php",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/y-shinkin/about/data/disclosure/disclosure_r07_9.pdf"
+    "https://www.shinkin.co.jp/y-shinkin/about/data/gyoumu/gyoumu_077.pdf",
+    "https://www.shinkin.co.jp/y-shinkin/about/data/gyoumu/gyoumu_076.pdf"
   ],
   "status": "ok",
   "found": {
-    "industry_loans": true,
+    "industry_loans": false,
     "securities_portfolio": false,
-    "income_statement": false
+    "income_statement": true
   },
   "data": {
-    "industry_loans": {
-      "source_page": 2,
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": {
+      "source_page": 8,
       "rows": [
         {
-          "label": "合計",
+          "label": "役務取引等収益",
           "values": [
-            86002,
-            86257,
-            2
+            128700
           ],
-          "raw_line": "合 計 86,002 86,257 2. コア業務純益=実質業務純益−国債等債券損益"
+          "raw_line": "役務取引等収益 128,700"
         },
         {
-          "label": "製造業",
+          "label": "その他業務収益",
           "values": [
-            7122,
-            7116,
-            6827
+            29966
           ],
-          "raw_line": "製 造 業 7,122 7,116 6,827"
+          "raw_line": "その他業務収益 29,966 これを次のとおり処分いたします。"
         },
         {
-          "label": "農業、林業",
+          "label": "その他業務費用",
           "values": [
-            207,
-            201,
-            200
+            35653
           ],
-          "raw_line": "農 業 、 林 業 207 201 200"
+          "raw_line": "その他業務費用 35,653"
         },
         {
-          "label": "鉱業、採石業、砂利採取業",
+          "label": "経費",
           "values": [
-            50,
-            46,
-            34,
-            2.08
+            1497789
           ],
-          "raw_line": "鉱業、採石業、砂利採取業 50 46 34 2.08%"
+          "raw_line": "経 費 1,497,789"
         },
         {
-          "label": "建設業",
+          "label": "経常利益",
           "values": [
-            10350,
-            10100,
-            10237
+            330274
           ],
-          "raw_line": "建 設 業 10,350 10,100 10,237 その他のサービス"
-        },
-        {
-          "label": "電気・ガス・熱供給・水道業",
-          "values": [
-            222,
-            118,
-            126,
-            3.24
-          ],
-          "raw_line": "電気・ガス・熱供給・水道業 222 118 126 3.24% そそのの他他"
-        },
-        {
-          "label": "情報通信業",
-          "values": [
-            76,
-            73,
-            56
-          ],
-          "raw_line": "情 報 通 信 業 76 73 56"
-        },
-        {
-          "label": "運輸業、郵便業",
-          "values": [
-            1864,
-            1837,
-            1789
-          ],
-          "raw_line": "運輸業、郵便業 1,864 1,837 1,789"
-        },
-        {
-          "label": "卸売業、小売業",
-          "values": [
-            8482,
-            8517,
-            8858
-          ],
-          "raw_line": "卸売業、小売業 8,482 8,517 8,858 国国・・地地方方"
-        },
-        {
-          "label": "金融業、保険業",
-          "values": [
-            5167,
-            5169,
-            4865,
-            44,
-            33
-          ],
-          "raw_line": "金融業、保険業 5,167 5,169 4,865 公公共共団団体体等等 44..0033%%"
-        },
-        {
-          "label": "不動産業",
-          "values": [
-            8657,
-            8550,
-            8448
-          ],
-          "raw_line": "不 動 産 業 8,657 8,550 8,448 個個人人"
-        },
-        {
-          "label": "物品賃貸業",
-          "values": [
-            150,
-            130,
-            213
-          ],
-          "raw_line": "物 品 賃 貸 業 150 130 213"
-        },
-        {
-          "label": "学術研究、専門・技術サービス業",
-          "values": [
-            240,
-            228,
-            235
-          ],
-          "raw_line": "学術研究、専門・技術サービス業 240 228 235"
-        },
-        {
-          "label": "宿泊業",
-          "values": [
-            1147,
-            974,
-            955
-          ],
-          "raw_line": "宿 泊 業 1,147 974 955 製製造造業業"
-        },
-        {
-          "label": "飲食業",
-          "values": [
-            3060,
-            3038,
-            2928,
-            77,
-            9955
-          ],
-          "raw_line": "飲 食 業 3,060 3,038 2,928 77..9955%%"
-        },
-        {
-          "label": "生活関連サービス業、娯楽業",
-          "values": [
-            1066,
-            1048,
-            1064
-          ],
-          "raw_line": "生活関連サービス業、娯楽業 1,066 1,048 1,064"
-        },
-        {
-          "label": "教育、学習支援業",
-          "values": [
-            775,
-            809,
-            910
-          ],
-          "raw_line": "教育、学習支援業 775 809 910 不不動動産産業業"
-        },
-        {
-          "label": "医療、福祉",
-          "values": [
-            1150,
-            1201,
-            1226,
-            99,
-            8833
-          ],
-          "raw_line": "医 療 、 福 祉 1,150 1,201 1,226 99..8833%% 建建設設業業"
-        },
-        {
-          "label": "その他のサービス",
-          "values": [
-            2840,
-            2802,
-            2781
-          ],
-          "raw_line": "その他のサービス 2,840 2,802 2,781 小小売売業業"
-        },
-        {
-          "label": "小計",
-          "values": [
-            52634,
-            51964,
-            51762,
-            1100,
-            3311
-          ],
-          "raw_line": "小 計 52,634 51,964 51,762 1100..3311%%"
-        },
-        {
-          "label": "国・地方公共団体等",
-          "values": [
-            3776,
-            3782,
-            3464
-          ],
-          "raw_line": "国・地方公共団体等 3,776 3,782 3,464"
-        },
-        {
-          "label": "個人",
-          "values": [
-            29358,
-            29924,
-            30709
-          ],
-          "raw_line": "個 人 29,358 29,924 30,709"
-        },
-        {
-          "label": "合計",
-          "values": [
-            85769,
-            85671,
-            85936
-          ],
-          "raw_line": "合 計 85,769 85,671 85,936"
+          "raw_line": "経 常 利 益 330,274 理 事 和 田 茂 樹"
         }
       ]
     },
-    "securities_portfolio": null,
-    "income_statement": null,
-    "page_count": 4
+    "page_count": 8
   }
 }

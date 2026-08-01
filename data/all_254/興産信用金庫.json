@@ -3,13 +3,19 @@
   "institution_code": 1305,
   "prefecture": "東京都",
   "disclosure_page": "http://www.shinkin.co.jp/kosan/disclosure/index.html",
-  "status": "pdf_not_found",
-  "debug": {
-    "visited": [
-      {
-        "url": "http://www.shinkin.co.jp/kosan/disclosure/index.html",
-        "error": "HTTP Error 404: Not Found"
-      }
-    ]
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/kosan/common/docs/information/2026/tegatahaisi.pdf"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 2
   }
 }

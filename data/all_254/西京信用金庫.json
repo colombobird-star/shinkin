@@ -5,8 +5,7 @@
   "disclosure_page": "https://www.shinkin.co.jp/saikyo/about/disclosure/index.shtml",
   "pdf_urls": [
     "https://www.shinkin.co.jp/saikyo/about/disclosure/pdf/2025nendo_report.pdf",
-    "https://www.shinkin.co.jp/saikyo/about/disclosure/pdf/2025minirepo.pdf",
-    "https://www.shinkin.co.jp/saikyo/about/disclosure/pdf/2025kamikirepo.pdf"
+    "https://www.shinkin.co.jp/saikyo/about/disclosure/pdf/2025minirepo.pdf"
   ],
   "status": "ok",
   "found": {
@@ -375,6 +374,6 @@
         }
       ]
     },
-    "page_count": 69
+    "page_count": 61
   }
 }

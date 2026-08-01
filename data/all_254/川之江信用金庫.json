@@ -9,6 +9,14 @@
       {
         "url": "https://www.kawanoe-shinkin.co.jp/about/disclose",
         "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+      },
+      {
+        "url": "https://www.kawanoe-shinkin.co.jp/about/",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+      },
+      {
+        "url": "https://www.kawanoe-shinkin.co.jp/",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
       }
     ]
   }

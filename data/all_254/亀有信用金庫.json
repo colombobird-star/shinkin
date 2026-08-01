@@ -4,8 +4,7 @@
   "prefecture": "東京都",
   "disclosure_page": "https://www.shinkin.co.jp/kameari/pc/_aboutus/disclosure.php",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/kameari/pdf/discro/2026/39-64.pdf",
-    "https://www.shinkin.co.jp/kameari/pdf/discro/2026/65.pdf"
+    "https://www.shinkin.co.jp/kameari/pdf/discro/2026/r07all.pdf"
   ],
   "status": "ok",
   "found": {
@@ -15,7 +14,7 @@
   },
   "data": {
     "industry_loans": {
-      "source_page": 9,
+      "source_page": 48,
       "rows": [
         {
           "label": "合計",
@@ -312,7 +311,7 @@
     "securities_portfolio": {
       "pages": [
         {
-          "source_page": 11,
+          "source_page": 50,
           "rows": [
             {
               "label": "国債",
@@ -407,7 +406,7 @@
           ]
         },
         {
-          "source_page": 12,
+          "source_page": 51,
           "rows": [
             {
               "label": "国債",
@@ -502,7 +501,7 @@
           ]
         },
         {
-          "source_page": 13,
+          "source_page": 52,
           "rows": [
             {
               "label": "合計",
@@ -654,7 +653,7 @@
           ]
         },
         {
-          "source_page": 14,
+          "source_page": 53,
           "rows": [
             {
               "label": "合計",
@@ -808,7 +807,7 @@
       ]
     },
     "income_statement": {
-      "source_page": 3,
+      "source_page": 42,
       "rows": [
         {
           "label": "経常収益",
@@ -968,6 +967,6 @@
         }
       ]
     },
-    "page_count": 27
+    "page_count": 70
   }
 }

@@ -4,8 +4,7 @@
   "prefecture": "神奈川県",
   "disclosure_page": "https://www.yokoshin.co.jp/_aboutus/kinko/disclosure.html",
   "pdf_urls": [
-    "https://www.yokoshin.co.jp/_aboutus/pdf/y_report2025.pdf",
-    "https://www.yokoshin.co.jp/_aboutus/pdf/y_report2025j.pdf"
+    "https://www.yokoshin.co.jp/_aboutus/pdf/y_report2025.pdf"
   ],
   "status": "ok",
   "found": {
@@ -221,6 +220,6 @@
     },
     "securities_portfolio": null,
     "income_statement": null,
-    "page_count": 30
+    "page_count": 4
   }
 }

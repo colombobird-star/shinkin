@@ -4,7 +4,6 @@
   "prefecture": "新潟県",
   "disclosure_page": "https://www.shinkin.co.jp/sanshin/about/#al-dis",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/sanshin/assets/media/pdf/about/disclosure/disclosure_minidiscro202509.pdf",
     "https://www.shinkin.co.jp/sanshin/assets/media/pdf/about/disclosure/disclosure_report2025.pdf"
   ],
   "status": "ok",
@@ -17,7 +16,7 @@
     "industry_loans": null,
     "securities_portfolio": null,
     "income_statement": {
-      "source_page": 14,
+      "source_page": 8,
       "rows": [
         {
           "label": "経常収益",
@@ -141,6 +140,6 @@
         }
       ]
     },
-    "page_count": 14
+    "page_count": 8
   }
 }

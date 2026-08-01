@@ -6,11 +6,7 @@
   "pdf_urls": [
     "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_annual26.pdf",
     "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/gyoumu2026.pdf",
-    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_mini26.pdf",
-    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_keiei26.pdf"
-  ],
-  "download_errors": [
-    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_keiei26.pdf: HTTP Error 404: Not Found"
+    "https://www.shinonome-shinkin.jp/assets/pdf/disclosure/s_mini26.pdf"
   ],
   "status": "ok",
   "found": {

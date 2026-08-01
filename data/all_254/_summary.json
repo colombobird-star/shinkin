@@ -102,8 +102,12 @@
   {
     "institution_name": "旭川信用金庫",
     "prefecture": "北海道",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "稚内信用金庫",
@@ -148,8 +152,12 @@
   {
     "institution_name": "釧路信用金庫",
     "prefecture": "北海道",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "大地みらい信用金庫",
@@ -194,8 +202,12 @@
   {
     "institution_name": "東奥信用金庫",
     "prefecture": "青森県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": false,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "青い森信用金庫",
@@ -232,9 +244,9 @@
     "prefecture": "山形県",
     "status": "ok",
     "found": {
-      "industry_loans": true,
+      "industry_loans": false,
       "securities_portfolio": false,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
@@ -386,8 +398,12 @@
   {
     "institution_name": "郡山信用金庫",
     "prefecture": "福島県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "白河信用金庫",
@@ -412,8 +428,12 @@
   {
     "institution_name": "ひまわり信用金庫",
     "prefecture": "福島県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": false,
+      "income_statement": false
+    }
   },
   {
     "institution_name": "あぶくま信用金庫",
@@ -521,8 +541,8 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
-      "income_statement": false
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -548,8 +568,12 @@
   {
     "institution_name": "佐野信用金庫",
     "prefecture": "栃木県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "大田原信用金庫",
@@ -674,8 +698,12 @@
   {
     "institution_name": "佐原信用金庫",
     "prefecture": "千葉県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "横浜信用金庫",
@@ -732,9 +760,9 @@
     "prefecture": "神奈川県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -770,8 +798,12 @@
   {
     "institution_name": "興産信用金庫",
     "prefecture": "東京都",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": false,
+      "income_statement": false
+    }
   },
   {
     "institution_name": "さわやか信用金庫",
@@ -906,8 +938,12 @@
   {
     "institution_name": "目黒信用金庫",
     "prefecture": "東京都",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "世田谷信用金庫",
@@ -1024,16 +1060,20 @@
     "prefecture": "新潟県",
     "status": "ok",
     "found": {
-      "industry_loans": true,
+      "industry_loans": false,
       "securities_portfolio": false,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
     "institution_name": "上越信用金庫",
     "prefecture": "新潟県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "新井信用金庫",
@@ -1100,9 +1140,9 @@
     "prefecture": "長野県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -1208,8 +1248,12 @@
   {
     "institution_name": "石動信用金庫",
     "prefecture": "富山県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "金沢信用金庫",
@@ -1284,7 +1328,7 @@
   {
     "institution_name": "越前信用金庫",
     "prefecture": "福井県",
-    "status": "pdf_not_found",
+    "status": "download_or_parse_error",
     "found": null
   },
   {
@@ -1300,8 +1344,12 @@
   {
     "institution_name": "静清信用金庫",
     "prefecture": "静岡県",
-    "status": "download_or_parse_error",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "浜松磐田信用金庫",
@@ -1316,8 +1364,12 @@
   {
     "institution_name": "沼津信用金庫",
     "prefecture": "静岡県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "三島信用金庫",
@@ -1432,8 +1484,12 @@
   {
     "institution_name": "愛知信用金庫",
     "prefecture": "愛知県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "豊橋信用金庫",
@@ -1828,8 +1884,12 @@
   {
     "institution_name": "兵庫信用金庫",
     "prefecture": "兵庫県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "尼崎信用金庫",
@@ -2022,8 +2082,8 @@
     "prefecture": "岡山県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2160,8 +2220,12 @@
   {
     "institution_name": "東予信用金庫",
     "prefecture": "愛媛県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": true,
+      "securities_portfolio": false,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "川之江信用金庫",
@@ -2254,9 +2318,9 @@
     "prefecture": "福岡県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -2308,8 +2372,12 @@
   {
     "institution_name": "たちばな信用金庫",
     "prefecture": "長崎県",
-    "status": "pdf_not_found",
-    "found": null
+    "status": "ok",
+    "found": {
+      "industry_loans": false,
+      "securities_portfolio": true,
+      "income_statement": true
+    }
   },
   {
     "institution_name": "熊本信用金庫",

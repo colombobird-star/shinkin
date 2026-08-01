@@ -4,7 +4,6 @@
   "prefecture": "三重県",
   "disclosure_page": "https://www.kitaiseueno-shinkin.jp/about/disclosure/",
   "pdf_urls": [
-    "https://www.kitaiseueno-shinkin.jp/pdf/about/disclosure/202109.pdf",
     "https://www.kitaiseueno-shinkin.jp/pdf/about/disclosure/202103.pdf",
     "https://www.kitaiseueno-shinkin.jp/pdf/about/disclosure/2103_mini.pdf"
   ],
@@ -16,7 +15,7 @@
   },
   "data": {
     "industry_loans": {
-      "source_page": 46,
+      "source_page": 40,
       "rows": [
         {
           "label": "製造業",
@@ -287,7 +286,7 @@
     "securities_portfolio": {
       "pages": [
         {
-          "source_page": 48,
+          "source_page": 42,
           "rows": [
             {
               "label": "国債",
@@ -584,7 +583,7 @@
       ]
     },
     "income_statement": {
-      "source_page": 39,
+      "source_page": 33,
       "rows": [
         {
           "label": "経常収益",
@@ -729,6 +728,6 @@
         }
       ]
     },
-    "page_count": 84
+    "page_count": 78
   }
 }

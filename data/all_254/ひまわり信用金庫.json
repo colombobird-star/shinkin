@@ -3,13 +3,19 @@
   "institution_code": 1186,
   "prefecture": "福島県",
   "disclosure_page": "http://www.shinkin.co.jp/himawari/kinko_disclosure.html",
-  "status": "pdf_not_found",
-  "debug": {
-    "visited": [
-      {
-        "url": "http://www.shinkin.co.jp/himawari/kinko_disclosure.html",
-        "error": "HTTP Error 503: Service Unavailable"
-      }
-    ]
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/himawari/pdf/discloser/discloser202603/discloser202603.pdf#view=Fit"
+  ],
+  "status": "ok",
+  "found": {
+    "industry_loans": false,
+    "securities_portfolio": false,
+    "income_statement": false
+  },
+  "data": {
+    "industry_loans": null,
+    "securities_portfolio": null,
+    "income_statement": null,
+    "page_count": 78
   }
 }

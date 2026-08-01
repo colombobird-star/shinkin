@@ -3,13 +3,12 @@
   "institution_code": 1475,
   "prefecture": "福井県",
   "disclosure_page": "http://www.shinkin.co.jp/echishin/disclobanner/index.html",
-  "status": "pdf_not_found",
-  "debug": {
-    "visited": [
-      {
-        "url": "http://www.shinkin.co.jp/echishin/disclobanner/index.html",
-        "error": "HTTP Error 503: Service Unavailable"
-      }
-    ]
-  }
+  "pdf_urls": [
+    "https://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025.pdf"
+  ],
+  "download_errors": [
+    "https://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025.pdf: HTTP Error 404: Not Found"
+  ],
+  "status": "download_or_parse_error",
+  "error": "https://www.shinkin.co.jp/echishin/disclobanner/pdf/disclo2025.pdf: HTTP Error 404: Not Found"
 }

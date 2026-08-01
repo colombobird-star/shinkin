@@ -35,9 +35,12 @@ HIGH_KEYWORDS = [
 HIGH_KEYWORDS_PHRASES = ["開示項目（財務", "開示項目(財務"]
 BUNDLE_KEYWORDS = ["一括ダウンロード", "一括", "全ページ", "全頁", "_all"]
 INDEX_PAGE_KEYWORDS = ["一覧", "目次", "index"]
+# 半期・中間期版は本編より情報が少ないことが多く(貸借対照表等を欠く簡易版の
+# ことがある)、同点付近では通期の本編を優先したい。
+HALF_YEAR_KEYWORDS = ["hanki", "半期", "中間期", "上期", "9月期", "9月末"]
 MID_KEYWORDS = ["ディスクロージャー", "disclo", "report"]
 EXCLUDE_KEYWORDS = [
-    "個人情報", "プライバシー", "規程", "約款", "定款", "採用", "sdgs", "csr", "iban",
+    "個人情報", "プライバシー", "規程", "約款", "定款", "採用", "sdgs", "csr",
     "正誤表", "訂正", "お詫び", "景況", "マーケットレポート",
 ]
 
@@ -90,7 +93,11 @@ def decode_html(raw: bytes, header_charset: str | None) -> str:
     return raw.decode("utf-8", errors="replace")
 
 
-def fetch(url, timeout=20, retries=3):
+def _fetch_once(url, timeout, retries):
+    """returns (html, final_url) -- final_urlはHTTPリダイレクト後の実際のURL
+    (ドメインを跨ぐ301等でも、旧ドメインの旧パスのサイトが古いキャッシュを
+    そのまま返すサイトがある一方、正しくは新ドメインに転送されている場合が
+    あるため、呼び出し側でクロール基点domainを更新できるようにする)。"""
     last_err = None
     for attempt in range(retries):
         if attempt:
@@ -99,7 +106,7 @@ def fetch(url, timeout=20, retries=3):
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 raw = resp.read()
-                return decode_html(raw, resp.headers.get_content_charset())
+                return decode_html(raw, resp.headers.get_content_charset()), resp.geturl()
         except urllib.error.HTTPError as e:
             last_err = e
             if e.code not in RETRYABLE_HTTP_CODES:
@@ -109,13 +116,74 @@ def fetch(url, timeout=20, retries=3):
     raise last_err
 
 
-def extract_links(html, base_url):
+def _toggle_trailing_slash(url):
+    parts = urlsplit(url)
+    if not parts.path or parts.path.endswith((".html", ".php", ".shtml")):
+        return None
+    if parts.path.endswith("/"):
+        new_path = parts.path.rstrip("/")
+    else:
+        new_path = parts.path + "/"
+    return urlunsplit((parts.scheme, parts.netloc, new_path, parts.query, parts.fragment))
+
+
+def fetch(url, timeout=20, retries=3):
+    """404の場合、末尾スラッシュの有無を反転して1回だけ再試行する
+    (たちばな信用金庫のように、末尾スラッシュの有無だけで404/200が
+    切り替わるサイトがあるため)。"""
+    try:
+        return _fetch_once(url, timeout, retries)
+    except urllib.error.HTTPError as e:
+        if e.code != 404:
+            raise
+        alt = _toggle_trailing_slash(url)
+        if not alt:
+            raise
+        return _fetch_once(alt, timeout, retries)
+
+
+META_REFRESH_RE = re.compile(
+    r'<meta\s+[^>]*http-equiv=["\']?refresh["\']?[^>]*content=["\']?\d+\s*;\s*url\s*=\s*'
+    r'[\'"]?([^"\'>]+)',
+    re.IGNORECASE,
+)
+FRAME_RE = re.compile(r'<(?:frame|iframe)\b[^>]*\bsrc="([^"]+)"', re.IGNORECASE)
+
+
+BASE_HREF_RE = re.compile(r'<base\b[^>]*\bhref="([^"]+)"', re.IGNORECASE)
+
+
+def effective_base_url(html, page_url):
+    """<base href="..."> があれば、相対リンクの解決基点はページ自身のURLでは
+    なくそちらを使う(佐原信用金庫等、多階層のページで<base>により相対パスの
+    意味が変わるサイトに対応)。"""
+    m = BASE_HREF_RE.search(html[:4096])
+    if not m:
+        return page_url
+    return urljoin(page_url, m.group(1).strip())
+
+
+def meta_refresh_target(html, base_url):
+    m = META_REFRESH_RE.search(html)
+    if not m:
+        return None
+    base_url = effective_base_url(html, base_url)
+    return urljoin(base_url, unescape(m.group(1).strip().rstrip("'\"")))
+
+
+def extract_links(html, page_url):
+    base_url = effective_base_url(html, page_url)
     links = []
     for m in LINK_RE.finditer(html):
         href, text = m.group(1), m.group(2)
         text = unescape(TAG_RE.sub("", text)).strip()
         abs_url = urljoin(base_url, href)
         links.append((abs_url, text))
+    # フレームセットページ(目黒信用金庫等)は<a>タグを持たず、実コンテンツが
+    # 別ファイルの<frame src="...">にあるため、フォローアップ先候補として拾う。
+    for m in FRAME_RE.finditer(html):
+        abs_url = urljoin(base_url, m.group(1))
+        links.append((abs_url, ""))
     return links
 
 
@@ -125,7 +193,7 @@ PAGE_RANGE_RE = re.compile(r"\bp\.?\s*\d+\s*[~\-―～]\s*\d+", re.IGNORECASE)
 
 
 def score_link(url, text):
-    hay = f"{url} {text}".lower()
+    hay = f"{url} {text}".lower().rstrip()
     if any(k.lower() in hay for k in EXCLUDE_KEYWORDS):
         return -100
     score = 0
@@ -136,31 +204,53 @@ def score_link(url, text):
     # 「開示項目一覧」等の目次ページはHIGH_KEYWORDSの単純一致では弾けないので減点する。
     if any(k.lower() in hay for k in INDEX_PAGE_KEYWORDS):
         score -= 4
+    if any(k.lower() in hay for k in HALF_YEAR_KEYWORDS):
+        score -= 8
     is_bundle_link = any(k.lower() in hay for k in BUNDLE_KEYWORDS) or hay.endswith("all.pdf")
     # URLのクエリ文字列(キャッシュバスター等)やファイル名中の日付は
     # 無関係な文書(規程・お知らせ等)にも付いていることが多く、それだけで
-    # ディスクロージャー資料と誤認しないよう、キーワード一致がある場合か
-    # バンドルファイルの場合に限って新しさボーナスを加点する。
-    if score > 0 or is_bundle_link:
-        years = [int(y) for y in YEAR_RE.findall(hay)]
-        if years:
-            score += (max(years) - 2020)  # 新しい年度ほど加点
-        else:
-            periods = [int(p) for p in PERIOD_CODE_RE.findall(hay)]
-            if periods:
-                score += (max(periods) - 2300) * 0.01  # 弱いフォールバックの新しさ指標
+    # ディスクロージャー資料と誤認しないよう、キーワード一致が無い場合は
+    # 新しさボーナスを弱くする(ゼロにはしない: 愛知信用金庫のように、
+    # 正しい年次本編ファイルがキーワードを一切含まない素っ気ない
+    # 表記("2026_00.pdf"等)のことがあるため)。
+    keyword_hit = score > 0 or is_bundle_link
+    years = [int(y) for y in YEAR_RE.findall(hay)]
+    if years:
+        # 新しさの重みはキーワード一致より優先する(静清信用金庫のように、
+        # 古い年度のファイルだけ「資料編」という具体的なラベルが付いて
+        # おり、最新年度のファイルは単に「ディスクロージャー2026」等の
+        # 素っ気ない表記のため、キーワードスコアだけでは古い方が勝って
+        # しまうケースがあるため)。
+        multiplier = 2 if keyword_hit else 0.5
+        score += (max(years) - 2020) * multiplier
+    elif keyword_hit:
+        periods = [int(p) for p in PERIOD_CODE_RE.findall(hay)]
+        if periods:
+            score += (max(periods) - 2300) * 0.01  # 弱いフォールバックの新しさ指標
     if is_bundle_link:
         score += 1
     return score
 
 
 def is_bundle(url, text):
-    hay = f"{url} {text}".lower()
+    hay = f"{url} {text}".lower().rstrip()
     return any(k.lower() in hay for k in BUNDLE_KEYWORDS) or hay.endswith("all.pdf")
 
 
+def _looks_like_pdf_link(url):
+    # フラグメント(#view=Fit等、PDFビューアへのヒント)やクエリを除いた
+    # 素のパスで拡張子を判定する(ひまわり信用金庫等で使われている)。
+    path = url.lower().split("#", 1)[0]
+    path, _, query = path.partition("?")
+    if path.endswith(".pdf"):
+        return True
+    # CMS配信用のリレーURL(例: /relays/download/.../?file=/files/libs/xxx.pdf)は
+    # 拡張子がパスに出ず、クエリ文字列に実ファイル名が入っていることがある。
+    return ".pdf" in query
+
+
 def pick_pdf_candidates(links, max_candidates=6):
-    pdf_links = [(u, t) for u, t in links if u.lower().split("?")[0].endswith(".pdf")]
+    pdf_links = [(u, t) for u, t in links if _looks_like_pdf_link(u)]
     if not pdf_links:
         return []
     scored = sorted(
@@ -205,15 +295,16 @@ def pick_pdf_candidates(links, max_candidates=6):
 
 FOLLOWUP_KEYWORDS = HIGH_KEYWORDS + MID_KEYWORDS + [
     "経営内容", "情報開示", "財務", "業績", "決算", "info",
+    "/about/", "会社概要", "金庫について", "当金庫について", "会社案内",
 ]
 
 
-def find_followup_pages(links, base_domain, max_links=5):
+def find_followup_pages(links, allowed_domains, max_links=5):
     scored = []
     for u, t in links:
-        if urlparse(u).netloc != base_domain:
+        if urlparse(u).netloc not in allowed_domains:
             continue
-        if u.lower().split("?")[0].endswith((".pdf", ".jpg", ".png", ".css", ".js")):
+        if _looks_like_pdf_link(u) or u.lower().split("?")[0].endswith((".jpg", ".png", ".css", ".js")):
             continue
         hay = f"{u} {t}".lower()
         if any(k in EXCLUDE_KEYWORDS for k in hay.split()):
@@ -245,14 +336,17 @@ def find_followup_pages(links, base_domain, max_links=5):
 STRONG_MATCH_THRESHOLD = 5
 
 
-def discover(disclosure_url, max_depth=2):
+def discover(disclosure_url, max_depth=4):
     """returns (list of candidate pdf urls, debug info dict)"""
     debug = {"visited": []}
     visited_pages = set()
     to_visit = [disclosure_url]
-    base_domain = urlparse(disclosure_url).netloc
+    # HTTPリダイレクトでドメインを跨ぐサイト(佐野信用金庫の旧ドメイン等)に
+    # 対応するため、実際に到達したドメインは随時ここに追加していく。
+    allowed_domains = {urlparse(disclosure_url).netloc}
     best_candidates = []
     best_score = -1
+    tried_domain_root_fallback = False
 
     for depth in range(max_depth):
         next_round = []
@@ -261,10 +355,46 @@ def discover(disclosure_url, max_depth=2):
                 continue
             visited_pages.add(page_url)
             try:
-                html = fetch(page_url)
+                html, final_url = fetch(page_url)
             except Exception as e:  # noqa: BLE001
                 debug["visited"].append({"url": page_url, "error": str(e)})
+                # 元URL自体が404等で死んでいるサイトリニューアル後、
+                # トップページのナビゲーションからディスクロージャーページを
+                # 辿り直せることがある(興産信用金庫・兵庫信用金庫等)。
+                # www.shinkin.co.jp/<支店>/のような共有ホスティングでは
+                # ドメイン丸ごとのルートではなく、金庫固有のサブパス
+                # (最初のパスセグメント)のルートに戻る必要がある。
+                if not tried_domain_root_fallback:
+                    tried_domain_root_fallback = True
+                    parsed = urlparse(page_url)
+                    first_segment = parsed.path.strip("/").split("/")[0] if parsed.path.strip("/") else ""
+                    candidate_roots = {f"/{first_segment}/"} if first_segment else set()
+                    candidate_roots.add("/")
+                    for domain in list(allowed_domains):
+                        for root_path in candidate_roots:
+                            root = urlunsplit((parsed.scheme, domain, root_path, "", ""))
+                            if root not in visited_pages:
+                                next_round.append(root)
                 continue
+
+            if final_url != page_url:
+                # HTTPリダイレクト先が別ドメインでも、そちらを起点に
+                # 探索を続けられるようにする。
+                allowed_domains.add(urlparse(final_url).netloc)
+                page_url = final_url
+
+            # meta refreshによる自動転送を1階層だけ追跡する
+            # (旭川信用金庫・東奥信用金庫・愛知信用金庫等で使われている)。
+            redirect_target = meta_refresh_target(html, page_url)
+            if redirect_target and redirect_target not in visited_pages:
+                visited_pages.add(redirect_target)
+                try:
+                    html, final_url2 = fetch(redirect_target)
+                    page_url = final_url2
+                    allowed_domains.add(urlparse(final_url2).netloc)
+                except Exception as e:  # noqa: BLE001
+                    debug["visited"].append({"url": redirect_target, "error": str(e)})
+
             links = extract_links(html, page_url)
             candidates = pick_pdf_candidates(links)
             good_candidates = [c for c in candidates if c["score"] > 0]
@@ -279,7 +409,7 @@ def discover(disclosure_url, max_depth=2):
                 best_candidates = good_candidates
             if best_score >= STRONG_MATCH_THRESHOLD:
                 return best_candidates, debug
-            next_round.extend(find_followup_pages(links, base_domain))
+            next_round.extend(find_followup_pages(links, allowed_domains))
         to_visit = next_round
         if not to_visit:
             break

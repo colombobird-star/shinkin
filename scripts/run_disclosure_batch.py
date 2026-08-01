@@ -11,6 +11,7 @@ FSAの一覧(信用金庫)から対象をサンプリングし、ディスクロ
 """
 import argparse
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -32,9 +33,19 @@ def sample_institutions(records, per_prefecture):
     return sample
 
 
+SCHEME_MISSING_SLASHES_RE = re.compile(r"^(https?):(?!//)")
+
+
+def normalize_disclosure_url(url):
+    """FSA元データに時々ある「https:example.com/...」(スラッシュ抜け)を補正する。"""
+    if not url:
+        return url
+    return SCHEME_MISSING_SLASHES_RE.sub(r"\1://", url.strip())
+
+
 def run_one(record, raw_dir):
     name = record["institution_name"]
-    disclosure_url = record["disclosure_url"]
+    disclosure_url = normalize_disclosure_url(record["disclosure_url"])
     result = {
         "institution_name": name,
         "institution_code": record["institution_code"],

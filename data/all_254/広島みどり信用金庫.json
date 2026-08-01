@@ -10,7 +10,7 @@
   "status": "ok",
   "found": {
     "industry_loans": true,
-    "securities_portfolio": false,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
@@ -153,7 +153,188 @@
         }
       ]
     },
-    "securities_portfolio": null,
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 1,
+          "rows": [
+            {
+              "label": "地方債",
+              "values": [
+                6485,
+                6107
+              ],
+              "raw_line": "地 方 債 6,485 6,107"
+            },
+            {
+              "label": "社債",
+              "values": [
+                14956,
+                15397
+              ],
+              "raw_line": "社 債 14,956 15,397"
+            },
+            {
+              "label": "株式",
+              "values": [
+                626,
+                681
+              ],
+              "raw_line": "株 式 626 681 ど"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                14997,
+                13206,
+                42,
+                93
+              ],
+              "raw_line": "そ の 他 の 証 券 14,997 13,206 未 払 費 用 42 93"
+            }
+          ]
+        },
+        {
+          "source_page": 2,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                1664
+              ],
+              "raw_line": "国債等債券償還益 1,664 -"
+            },
+            {
+              "label": "株式",
+              "values": [
+                34153,
+                63197
+              ],
+              "raw_line": "株 式 等 売 却 益 34,153 63,197"
+            },
+            {
+              "label": "国債",
+              "values": [
+                117415,
+                149725
+              ],
+              "raw_line": "国債等債券売却損 117,415 149,725"
+            },
+            {
+              "label": "国債",
+              "values": [
+                19797
+              ],
+              "raw_line": "国債等債券償還損 19,797 -"
+            },
+            {
+              "label": "株式",
+              "values": [
+                840
+              ],
+              "raw_line": "株 式 等 売 却 損 - 840"
+            }
+          ]
+        },
+        {
+          "source_page": 5,
+          "rows": [
+            {
+              "label": "株式",
+              "values": [
+                598,
+                597,
+                1
+              ],
+              "raw_line": "株式は取引所の価格、債券は取引所の価格又は取引金融機関 債 券 598 597 1"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                6107,
+                6827,
+                -720
+              ],
+              "raw_line": "地方債 6,107 6,827 △720"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                100,
+                6
+              ],
+              "raw_line": "地方債 100 - 6"
+            },
+            {
+              "label": "合計",
+              "values": [
+                594
+              ],
+              "raw_line": "合 計 594"
+            },
+            {
+              "label": "国債",
+              "values": [
+                587,
+                510,
+                -76
+              ],
+              "raw_line": "国 債 587 510 △76"
+            },
+            {
+              "label": "合計",
+              "values": [
+                4484,
+                3925,
+                -558
+              ],
+              "raw_line": "合 計 4,484 3,925 △558 等の担保を徴求するほか、契約後も定期的に予め定めている金庫"
+            }
+          ]
+        },
+        {
+          "source_page": 9,
+          "rows": [
+            {
+              "label": "合計",
+              "values": [
+                97394,
+                95058
+              ],
+              "raw_line": "合 計 97,394 95,058"
+            },
+            {
+              "label": "合計",
+              "values": [
+                94987,
+                100.0,
+                94753,
+                100.0
+              ],
+              "raw_line": "合 計 94,987 (100.0) 94,753 (100.0)"
+            },
+            {
+              "label": "合計",
+              "values": [
+                40143,
+                39414
+              ],
+              "raw_line": "合 計 40,143 39,414"
+            },
+            {
+              "label": "合計",
+              "values": [
+                39475,
+                39141,
+                314,
+                304
+              ],
+              "raw_line": "合 計 39,475 39,141 314 304"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 2,
       "rows": [

@@ -9,7 +9,7 @@
   "status": "ok",
   "found": {
     "industry_loans": true,
-    "securities_portfolio": false,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
@@ -61,7 +61,88 @@
         }
       ]
     },
-    "securities_portfolio": null,
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 7,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                3637,
+                545
+              ],
+              "raw_line": "国 債 3,637 通 知 預 金 545"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                12193,
+                90365
+              ],
+              "raw_line": "地 方 債 12,193 定 期 預 金 90,365"
+            },
+            {
+              "label": "社債",
+              "values": [
+                33560,
+                3783
+              ],
+              "raw_line": "社 債 33,560 定 期 積 金 3,783"
+            },
+            {
+              "label": "株式",
+              "values": [
+                418,
+                2355
+              ],
+              "raw_line": "株 式 418 その他の預金 2,355"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                18664,
+                80
+              ],
+              "raw_line": "その他の証券 18,664 借 用 金 80"
+            }
+          ]
+        },
+        {
+          "source_page": 8,
+          "rows": [
+            {
+              "label": "株式",
+              "values": [
+                27385
+              ],
+              "raw_line": "株 式 等 売 却 益 27,385"
+            },
+            {
+              "label": "国債",
+              "values": [
+                86991
+              ],
+              "raw_line": "国 債 等 債 券 売 却 損 86,991"
+            },
+            {
+              "label": "株式",
+              "values": [
+                9510
+              ],
+              "raw_line": "株 式 等 売 却 損 9,510"
+            },
+            {
+              "label": "株式",
+              "values": [
+                510
+              ],
+              "raw_line": "株 式 等 償 却 510"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 8,
       "rows": [

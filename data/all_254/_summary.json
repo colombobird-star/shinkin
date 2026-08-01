@@ -14,8 +14,8 @@
     "prefecture": "北海道",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -35,7 +35,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -64,7 +64,7 @@
     "prefecture": "北海道",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -85,7 +85,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -94,9 +94,9 @@
     "prefecture": "北海道",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
@@ -145,7 +145,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -154,7 +154,7 @@
     "prefecture": "北海道",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -176,7 +176,7 @@
     "found": {
       "industry_loans": true,
       "securities_portfolio": true,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
@@ -185,7 +185,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -205,7 +205,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -234,7 +234,7 @@
     "prefecture": "秋田県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -244,8 +244,8 @@
     "prefecture": "山形県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -254,7 +254,7 @@
     "prefecture": "山形県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -264,7 +264,7 @@
     "prefecture": "山形県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -274,7 +274,7 @@
     "prefecture": "山形県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -285,7 +285,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -305,7 +305,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -340,8 +340,8 @@
     "prefecture": "宮城県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -351,7 +351,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -360,8 +360,8 @@
     "prefecture": "宮城県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -400,7 +400,7 @@
     "prefecture": "福島県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -421,7 +421,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -490,7 +490,7 @@
     "prefecture": "群馬県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -521,7 +521,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -550,8 +550,8 @@
     "prefecture": "栃木県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -610,8 +610,8 @@
     "prefecture": "茨城県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": false
     }
   },
@@ -631,7 +631,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -641,7 +641,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -661,7 +661,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -690,7 +690,7 @@
     "prefecture": "千葉県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -712,7 +712,7 @@
     "found": {
       "industry_loans": true,
       "securities_portfolio": false,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
@@ -731,7 +731,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -741,7 +741,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -841,7 +841,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -881,7 +881,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -890,8 +890,8 @@
     "prefecture": "東京都",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": false
     }
   },
@@ -901,7 +901,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -961,7 +961,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -980,7 +980,7 @@
     "prefecture": "東京都",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": false,
       "income_statement": false
     }
@@ -1001,7 +1001,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1020,8 +1020,8 @@
     "prefecture": "新潟県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1040,8 +1040,8 @@
     "prefecture": "新潟県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1060,8 +1060,8 @@
     "prefecture": "新潟県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1091,7 +1091,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1120,8 +1120,8 @@
     "prefecture": "山梨県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1131,7 +1131,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1200,8 +1200,8 @@
     "prefecture": "富山県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1221,7 +1221,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1240,7 +1240,7 @@
     "prefecture": "富山県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1250,7 +1250,7 @@
     "prefecture": "富山県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1270,7 +1270,7 @@
     "prefecture": "石川県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1281,7 +1281,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1291,7 +1291,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1310,7 +1310,7 @@
     "prefecture": "福井県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1337,7 +1337,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1387,7 +1387,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1397,7 +1397,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1426,7 +1426,7 @@
     "prefecture": "岐阜県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1456,8 +1456,8 @@
     "prefecture": "岐阜県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1477,7 +1477,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1517,7 +1517,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1526,8 +1526,8 @@
     "prefecture": "愛知県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1537,8 +1537,8 @@
     "status": "ok",
     "found": {
       "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -1557,7 +1557,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1576,8 +1576,8 @@
     "prefecture": "愛知県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1597,7 +1597,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1606,7 +1606,7 @@
     "prefecture": "愛知県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1636,7 +1636,7 @@
     "prefecture": "三重県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1657,7 +1657,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1666,7 +1666,7 @@
     "prefecture": "三重県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1707,7 +1707,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1747,7 +1747,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1767,7 +1767,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1776,7 +1776,7 @@
     "prefecture": "大阪府",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1808,7 +1808,7 @@
     "found": {
       "industry_loans": false,
       "securities_portfolio": false,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
@@ -1817,7 +1817,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": false
     }
   },
@@ -1827,7 +1827,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1846,7 +1846,7 @@
     "prefecture": "和歌山県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1856,7 +1856,7 @@
     "prefecture": "兵庫県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1866,8 +1866,8 @@
     "prefecture": "兵庫県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": false
     }
   },
@@ -1877,7 +1877,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -1918,7 +1918,7 @@
     "found": {
       "industry_loans": true,
       "securities_portfolio": true,
-      "income_statement": false
+      "income_statement": true
     }
   },
   {
@@ -1947,8 +1947,8 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
-      "income_statement": false
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -1957,7 +1957,7 @@
     "status": "ok",
     "found": {
       "industry_loans": false,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": false
     }
   },
@@ -1976,7 +1976,7 @@
     "prefecture": "鳥取県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -1986,7 +1986,7 @@
     "prefecture": "鳥取県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -2007,7 +2007,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2023,7 +2023,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2093,7 +2093,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2123,7 +2123,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2162,8 +2162,8 @@
     "prefecture": "徳島県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2203,7 +2203,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2213,8 +2213,8 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
-      "income_statement": false
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -2223,7 +2223,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2239,8 +2239,8 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
-      "income_statement": false
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -2268,9 +2268,9 @@
     "prefecture": "福岡県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -2328,8 +2328,8 @@
     "prefecture": "福岡県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
+      "industry_loans": true,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2338,7 +2338,7 @@
     "prefecture": "佐賀県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -2374,7 +2374,7 @@
     "prefecture": "長崎県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -2395,7 +2395,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2404,9 +2404,9 @@
     "prefecture": "熊本県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
-      "securities_portfolio": false,
-      "income_statement": false
+      "industry_loans": true,
+      "securities_portfolio": true,
+      "income_statement": true
     }
   },
   {
@@ -2415,7 +2415,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },
@@ -2454,7 +2454,7 @@
     "prefecture": "宮崎県",
     "status": "ok",
     "found": {
-      "industry_loans": false,
+      "industry_loans": true,
       "securities_portfolio": true,
       "income_statement": true
     }
@@ -2465,7 +2465,7 @@
     "status": "ok",
     "found": {
       "industry_loans": true,
-      "securities_portfolio": false,
+      "securities_portfolio": true,
       "income_statement": true
     }
   },

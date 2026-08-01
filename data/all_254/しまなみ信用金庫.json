@@ -4,7 +4,6 @@
   "prefecture": "広島県",
   "disclosure_page": "https://www.shinkin.co.jp/shimanami/about/disclosure.html",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/shimanami/attach/news/disclosure2026.pdf",
     "https://www.shinkin.co.jp/shimanami/attach/news/disclosure2026_shiryou.pdf"
   ],
   "status": "ok",
@@ -15,7 +14,7 @@
   },
   "data": {
     "industry_loans": {
-      "source_page": 64,
+      "source_page": 17,
       "rows": [
         {
           "label": "製造業",
@@ -258,7 +257,7 @@
     "securities_portfolio": {
       "pages": [
         {
-          "source_page": 66,
+          "source_page": 19,
           "rows": [
             {
               "label": "合計",
@@ -452,11 +451,239 @@
               "raw_line": "合 計 99,665 99,036"
             }
           ]
+        },
+        {
+          "source_page": 2,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                19769,
+                18055,
+                13794
+              ],
+              "raw_line": "国 債 19,769 18,055 13,794"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                6883,
+                11651,
+                11595
+              ],
+              "raw_line": "地 方 債 6,883 11,651 11,595"
+            },
+            {
+              "label": "社債",
+              "values": [
+                19329,
+                18109,
+                14722
+              ],
+              "raw_line": "社 債 19,329 18,109 14,722"
+            },
+            {
+              "label": "株式",
+              "values": [
+                231,
+                220,
+                207
+              ],
+              "raw_line": "株 式 231 220 207"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                49340,
+                48413,
+                44221
+              ],
+              "raw_line": "その他の証券 49,340 48,413 44,221"
+            },
+            {
+              "label": "合計",
+              "values": [
+                395658,
+                392061,
+                390234
+              ],
+              "raw_line": "合 計 395,658 392,061 390,234"
+            }
+          ]
+        },
+        {
+          "source_page": 4,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                19,
+                687812
+              ],
+              "raw_line": "国債等債券売却益 19 - 687,812"
+            },
+            {
+              "label": "株式",
+              "values": [
+                255347,
+                34,
+                405958
+              ],
+              "raw_line": "株 式 等 売 却 益 255,347 34 405,958"
+            },
+            {
+              "label": "国債",
+              "values": [
+                101884,
+                183830,
+                1117923
+              ],
+              "raw_line": "国債等債券売却損 101,884 183,830 1,117,923"
+            },
+            {
+              "label": "国債",
+              "values": [
+                237125,
+                37552,
+                377746
+              ],
+              "raw_line": "国債等債券償還損 237,125 37,552 377,746"
+            },
+            {
+              "label": "国債",
+              "values": [
+                506265
+              ],
+              "raw_line": "国債等債券償却 - - 506,265"
+            },
+            {
+              "label": "株式",
+              "values": [
+                759,
+                769
+              ],
+              "raw_line": "株 式 等 売 却 損 - 759 769"
+            },
+            {
+              "label": "株式",
+              "values": [
+                1000
+              ],
+              "raw_line": "株 式 等 償 却 - - 1,000"
+            }
+          ]
+        },
+        {
+          "source_page": 10,
+          "rows": [
+            {
+              "label": "地方債",
+              "values": [
+                50
+              ],
+              "raw_line": "地方債 - - - 下し、当該実質価額がその取得原価に比べて50%以上低下してい"
+            },
+            {
+              "label": "国債",
+              "values": [
+                4870,
+                4408,
+                462
+              ],
+              "raw_line": "国債 4,870 4,408 △ 462"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                8600,
+                7825,
+                774
+              ],
+              "raw_line": "地方債 8,600 7,825 △ 774"
+            },
+            {
+              "label": "合計",
+              "values": [
+                35114,
+                29147,
+                5966
+              ],
+              "raw_line": "合 計 35,114 29,147 △ 5,966"
+            },
+            {
+              "label": "株式",
+              "values": [
+                156,
+                16,
+                140
+              ],
+              "raw_line": "株式 156 16 140 の契約の多くには、金融情勢の変化、債権の保全及びその他相当"
+            },
+            {
+              "label": "国債",
+              "values": [
+                8923,
+                11050,
+                2126
+              ],
+              "raw_line": "国債 8,923 11,050 △ 2,126"
+            },
+            {
+              "label": "合計",
+              "values": [
+                49367,
+                54344,
+                4976
+              ],
+              "raw_line": "合 計 49,367 54,344 △ 4,976"
+            },
+            {
+              "label": "国債",
+              "values": [
+                143
+              ],
+              "raw_line": "国債等債券償却 143百万円"
+            },
+            {
+              "label": "株式",
+              "values": [
+                8,
+                40
+              ],
+              "raw_line": "株式 8 40 -"
+            },
+            {
+              "label": "国債",
+              "values": [
+                3422,
+                892
+              ],
+              "raw_line": "国債 3,422 - 892"
+            },
+            {
+              "label": "社債",
+              "values": [
+                714,
+                225,
+                191
+              ],
+              "raw_line": "社債 714 - 225 税務上の繰越欠損金に係る評価性引当額(注) △ 191百万円"
+            },
+            {
+              "label": "合計",
+              "values": [
+                9751,
+                1093,
+                1495
+              ],
+              "raw_line": "合 計 9,751 1,093 1,495"
+            }
+          ]
         }
       ]
     },
     "income_statement": {
-      "source_page": 51,
+      "source_page": 4,
       "rows": [
         {
           "label": "経常収益",
@@ -595,6 +822,6 @@
         }
       ]
     },
-    "page_count": 79
+    "page_count": 32
   }
 }

@@ -12,13 +12,121 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 5,
+      "rows": [
+        {
+          "label": "小計",
+          "values": [
+            5211,
+            4899
+          ],
+          "raw_line": "小計(A) 5,211 4,899"
+        },
+        {
+          "label": "その他",
+          "values": [
+            19074,
+            20660,
+            1586,
+            14034,
+            15319,
+            1285
+          ],
+          "raw_line": "その他 19,074 20,660 ▲ 1,586 14,034 15,319 ▲ 1,285"
+        },
+        {
+          "label": "小計",
+          "values": [
+            64147,
+            68709,
+            4561,
+            60285,
+            64810,
+            4524
+          ],
+          "raw_line": "小 計 64,147 68,709 ▲ 4,561 60,285 64,810 ▲ 4,524"
+        },
+        {
+          "label": "合計",
+          "values": [
+            71958,
+            76272,
+            4314,
+            72342,
+            76248,
+            3906
+          ],
+          "raw_line": "合 計 71,958 76,272 ▲ 4,314 72,342 76,248 ▲ 3,906"
+        },
+        {
+          "label": "合計",
+          "values": [
+            15,
+            15
+          ],
+          "raw_line": "合 計 15 15"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 5,
+          "rows": [
+            {
+              "label": "社債",
+              "values": [
+                1531,
+                1521,
+                9,
+                905,
+                900,
+                5
+              ],
+              "raw_line": "社 債 1,531 1,521 9 905 900 5"
+            },
+            {
+              "label": "社債",
+              "values": [
+                37849,
+                39920,
+                2071,
+                38599,
+                40837,
+                2237
+              ],
+              "raw_line": "社 債 37,849 39,920 ▲ 2,071 38,599 40,837 ▲ 2,237"
+            },
+            {
+              "label": "合計",
+              "values": [
+                71958,
+                76272,
+                4314,
+                72342,
+                76248,
+                3906
+              ],
+              "raw_line": "合 計 71,958 76,272 ▲ 4,314 72,342 76,248 ▲ 3,906"
+            },
+            {
+              "label": "合計",
+              "values": [
+                15,
+                15
+              ],
+              "raw_line": "合 計 15 15"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 3,
       "rows": [

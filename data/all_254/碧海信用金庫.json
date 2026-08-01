@@ -13,13 +13,194 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 25,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            254626
+          ],
+          "raw_line": "その他の証券 254,626"
+        },
+        {
+          "label": "その他",
+          "values": [
+            545
+          ],
+          "raw_line": "その他の業務収益 545"
+        },
+        {
+          "label": "その他",
+          "values": [
+            6681
+          ],
+          "raw_line": "その他負債 6,681"
+        },
+        {
+          "label": "その他",
+          "values": [
+            16005,
+            2,
+            33
+          ],
+          "raw_line": "その他資産 16,005 金融派生商品 2 給付補塡備金繰入額 33 の"
+        },
+        {
+          "label": "その他",
+          "values": [
+            599,
+            1215
+          ],
+          "raw_line": "その他の資産 599 債務保証 1,215"
+        },
+        {
+          "label": "その他",
+          "values": [
+            1
+          ],
+          "raw_line": "その他の業務費用 1"
+        },
+        {
+          "label": "その他",
+          "values": [
+            1060
+          ],
+          "raw_line": "その他経常費用 1,060"
+        },
+        {
+          "label": "その他",
+          "values": [
+            1470,
+            194459,
+            216
+          ],
+          "raw_line": "その他の有形固定資産 1,470 利益剰余金 194,459 貸出金償却 216"
+        },
+        {
+          "label": "その他",
+          "values": [
+            193274,
+            315
+          ],
+          "raw_line": "その他利益剰余金 193,274 その他の経常費用 315 へ"
+        },
+        {
+          "label": "その他",
+          "values": [
+            86
+          ],
+          "raw_line": "その他の無形固定資産 86 し"
+        },
+        {
+          "label": "その他",
+          "values": [
+            -45996,
+            35
+          ],
+          "raw_line": "その他有価証券評価差額金 △45,996 減損損失 35"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 25,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                20443,
+                934530
+              ],
+              "raw_line": "国債 20,443 定期預金 934,530 リ"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                103000,
+                32043,
+                2603
+              ],
+              "raw_line": "地方債 103,000 定期積金 32,043 その他の役務収益 2,603 テ"
+            },
+            {
+              "label": "社債",
+              "values": [
+                273280,
+                22581,
+                1164
+              ],
+              "raw_line": "社債 273,280 その他の預金 22,581 その他業務収益 1,164 ィ"
+            },
+            {
+              "label": "株式",
+              "values": [
+                14496
+              ],
+              "raw_line": "株式 14,496"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                254626
+              ],
+              "raw_line": "その他の証券 254,626"
+            }
+          ]
+        },
+        {
+          "source_page": 61,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                20443,
+                934530
+              ],
+              "raw_line": "国債 20,443 定期預金 934,530 リ"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                103000,
+                32043,
+                2603
+              ],
+              "raw_line": "地方債 103,000 定期積金 32,043 その他の役務収益 2,603 テ"
+            },
+            {
+              "label": "社債",
+              "values": [
+                273280,
+                22581,
+                1164
+              ],
+              "raw_line": "社債 273,280 その他の預金 22,581 その他業務収益 1,164 ィ"
+            },
+            {
+              "label": "株式",
+              "values": [
+                14496
+              ],
+              "raw_line": "株式 14,496"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                254626
+              ],
+              "raw_line": "その他の証券 254,626"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 5,
       "rows": [

@@ -8,13 +8,145 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 6,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            14239,
+            15
+          ],
+          "raw_line": "その他の証券 14,239 未決済為替借 15"
+        },
+        {
+          "label": "その他",
+          "values": [
+            738,
+            40
+          ],
+          "raw_line": "その他資産 738 職員預り金 40"
+        },
+        {
+          "label": "その他",
+          "values": [
+            45,
+            2
+          ],
+          "raw_line": "その他の資産 45 睡眠預金払戻損失引当金 2"
+        },
+        {
+          "label": "その他",
+          "values": [
+            107,
+            102983
+          ],
+          "raw_line": "その他の有形固定資産 107 負債の部合計 102,983"
+        },
+        {
+          "label": "その他",
+          "values": [
+            40,
+            562
+          ],
+          "raw_line": "その他の無形固定資産 40 出 資 金 562"
+        },
+        {
+          "label": "その他",
+          "values": [
+            -2243
+          ],
+          "raw_line": "その他有価証券評価差額金 △2,243"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 6,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                1744,
+                49931
+              ],
+              "raw_line": "国 債 1,744 定 期 預 金 49,931"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                3384,
+                2657
+              ],
+              "raw_line": "地 方 債 3,384 定 期 積 金 2,657"
+            },
+            {
+              "label": "社債",
+              "values": [
+                4416,
+                734
+              ],
+              "raw_line": "社 債 4,416 その他の預金 734"
+            },
+            {
+              "label": "株式",
+              "values": [
+                114,
+                283
+              ],
+              "raw_line": "株 式 114 その他負債 283"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                14239,
+                15
+              ],
+              "raw_line": "その他の証券 14,239 未決済為替借 15"
+            }
+          ]
+        },
+        {
+          "source_page": 7,
+          "rows": [
+            {
+              "label": "株式",
+              "values": [
+                8215
+              ],
+              "raw_line": "株 式 等 売 却 益 8,215"
+            },
+            {
+              "label": "国債",
+              "values": [
+                1055651
+              ],
+              "raw_line": "国債等債券売却損 1,055,651"
+            },
+            {
+              "label": "国債",
+              "values": [
+                110224
+              ],
+              "raw_line": "国債等債券償還損 110,224"
+            },
+            {
+              "label": "株式",
+              "values": [
+                4279
+              ],
+              "raw_line": "株 式 等 売 却 損 4,279"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 7,
       "rows": [

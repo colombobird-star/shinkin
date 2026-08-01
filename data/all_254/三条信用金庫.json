@@ -8,13 +8,160 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 7,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            80672,
+            3627
+          ],
+          "raw_line": "そ の 他 の 証 券 80,672 そ の 他 の 預 金 3,627"
+        },
+        {
+          "label": "その他",
+          "values": [
+            4477,
+            51
+          ],
+          "raw_line": "そ の 他 資 産 4,477 未 決 済 為 替 借 51"
+        },
+        {
+          "label": "その他",
+          "values": [
+            215,
+            8
+          ],
+          "raw_line": "そ の 他 の 資 産 215 払 戻 未 済 金 8"
+        },
+        {
+          "label": "その他",
+          "values": [
+            689,
+            191
+          ],
+          "raw_line": "その他の有形固定資産 689 そ の 他 の 負 債 191"
+        },
+        {
+          "label": "その他",
+          "values": [
+            6,
+            178
+          ],
+          "raw_line": "その他の無形固定資産 6 役員退職慰労引当金 178"
+        },
+        {
+          "label": "その他",
+          "values": [
+            52373
+          ],
+          "raw_line": "その他利益剰余金 52,373"
+        },
+        {
+          "label": "その他",
+          "values": [
+            24248
+          ],
+          "raw_line": "その他有価証券評価差額金 △ 24,248"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 7,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                44214,
+                839
+              ],
+              "raw_line": "国 債 44,214 貯 蓄 預 金 839"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                24296,
+                618
+              ],
+              "raw_line": "地 方 債 24,296 通 知 預 金 618"
+            },
+            {
+              "label": "社債",
+              "values": [
+                126896,
+                250755
+              ],
+              "raw_line": "社 債 126,896 定 期 預 金 250,755"
+            },
+            {
+              "label": "株式",
+              "values": [
+                13225,
+                8830
+              ],
+              "raw_line": "株 式 13,225 定 期 積 金 8,830"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                80672,
+                3627
+              ],
+              "raw_line": "そ の 他 の 証 券 80,672 そ の 他 の 預 金 3,627"
+            }
+          ]
+        },
+        {
+          "source_page": 8,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                4865
+              ],
+              "raw_line": "国債等債券売却益 4,865 上記の通りであります。"
+            },
+            {
+              "label": "株式",
+              "values": [
+                566783
+              ],
+              "raw_line": "株 式 等 売 却 益 566,783"
+            },
+            {
+              "label": "国債",
+              "values": [
+                102880
+              ],
+              "raw_line": "国債等債券売却損 102,880"
+            },
+            {
+              "label": "国債",
+              "values": [
+                105307
+              ],
+              "raw_line": "国債等債券償還損 105,307"
+            },
+            {
+              "label": "株式",
+              "values": [
+                3463,
+                7780
+              ],
+              "raw_line": "株 式 等 売 却 損 3,463 監 事 (cid:7780) 山 忠 則"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 8,
       "rows": [

@@ -8,13 +8,123 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 1,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            255,
+            399,
+            293,
+            290
+          ],
+          "raw_line": "その他の業務収支 △ 255 △ 399 その他の役務取引等費用 293 290"
+        },
+        {
+          "label": "その他",
+          "values": [
+            1,
+            4
+          ],
+          "raw_line": "その他業務収益 1 4"
+        },
+        {
+          "label": "その他",
+          "values": [
+            256,
+            403
+          ],
+          "raw_line": "その他業務費用 256 403 経費の内訳 (単位:百万円)"
+        },
+        {
+          "label": "その他",
+          "values": [
+            1,
+            4
+          ],
+          "raw_line": "その他業 務収益 1 4"
+        },
+        {
+          "label": "合計",
+          "values": [
+            3608,
+            3464
+          ],
+          "raw_line": "合 計 3,608 3,464"
+        },
+        {
+          "label": "その他",
+          "values": [
+            1,
+            4
+          ],
+          "raw_line": "その他の業務収益 1 4"
+        },
+        {
+          "label": "その他",
+          "values": [
+            256,
+            403
+          ],
+          "raw_line": "その他業 務 費用 256 403"
+        },
+        {
+          "label": "その他",
+          "values": [
+            3,
+            2
+          ],
+          "raw_line": "その他の業務費用 3 2"
+        },
+        {
+          "label": "その他",
+          "values": [
+            255,
+            399
+          ],
+          "raw_line": "その他業 務 利益 △ 255 △ 399"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 1,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                44,
+                48
+              ],
+              "raw_line": "国債等債券損益は、国債等債券売却益、国債等債券償還益、国債等債券売却損、 交際費・寄贈費・諸会費 44 48"
+            },
+            {
+              "label": "合計",
+              "values": [
+                3608,
+                3464
+              ],
+              "raw_line": "合 計 3,608 3,464"
+            },
+            {
+              "label": "国債",
+              "values": [
+                253,
+                401
+              ],
+              "raw_line": "国債等債券売却損 253 401"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 1,
       "rows": [

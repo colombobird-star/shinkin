@@ -8,12 +8,90 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
+    "industry_loans": true,
     "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
+    "industry_loans": {
+      "source_page": 2,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            881,
+            947
+          ],
+          "raw_line": "そ の 他 の 預 金 881 947"
+        },
+        {
+          "label": "その他",
+          "values": [
+            8963,
+            6580
+          ],
+          "raw_line": "そ の 他 の 証 券 8,963 6,580"
+        },
+        {
+          "label": "その他",
+          "values": [
+            427,
+            631
+          ],
+          "raw_line": "そ の 他 負 債 427 631"
+        },
+        {
+          "label": "その他",
+          "values": [
+            1176,
+            1208
+          ],
+          "raw_line": "そ の 他 資 産 1,176 1,208"
+        },
+        {
+          "label": "その他",
+          "values": [
+            41,
+            48,
+            37,
+            42
+          ],
+          "raw_line": "そ の 他 の 資 産 41 48 賞 与 引 当 金 37 42"
+        },
+        {
+          "label": "その他",
+          "values": [
+            137,
+            118
+          ],
+          "raw_line": "その他の有形固定資産 137 118"
+        },
+        {
+          "label": "その他",
+          "values": [
+            14,
+            14
+          ],
+          "raw_line": "その他の無形固定資産 14 14"
+        },
+        {
+          "label": "その他",
+          "values": [
+            10069,
+            10351
+          ],
+          "raw_line": "その他利益剰余金 10,069 10,351"
+        },
+        {
+          "label": "その他",
+          "values": [
+            -3075,
+            -4259
+          ],
+          "raw_line": "その他有価証券評価差額金 △3,075 △4,259"
+        }
+      ]
+    },
     "securities_portfolio": {
       "pages": [
         {
@@ -359,6 +437,89 @@
                 303
               ],
               "raw_line": "合 計 401 353 3 397 353 353 303 16 336 303"
+            }
+          ]
+        },
+        {
+          "source_page": 2,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                6955,
+                9895
+              ],
+              "raw_line": "国 債 6,955 9,895"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                2719,
+                3040
+              ],
+              "raw_line": "地 方 債 2,719 3,040"
+            },
+            {
+              "label": "社債",
+              "values": [
+                17943,
+                18612
+              ],
+              "raw_line": "社 債 17,943 18,612"
+            },
+            {
+              "label": "株式",
+              "values": [
+                5,
+                5
+              ],
+              "raw_line": "株 式 5 5"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                8963,
+                6580
+              ],
+              "raw_line": "そ の 他 の 証 券 8,963 6,580"
+            }
+          ]
+        },
+        {
+          "source_page": 3,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                5,
+                30088,
+                134,
+                1622
+              ],
+              "raw_line": "国債等債券売却益 5 30,088 特 別 利 益 134 1,622"
+            },
+            {
+              "label": "株式",
+              "values": [
+                123,
+                1265
+              ],
+              "raw_line": "株式等売却益 - - その他の特別損失 123 1,265"
+            },
+            {
+              "label": "国債",
+              "values": [
+                6918,
+                484697
+              ],
+              "raw_line": "国債等債券売却損 6,918 484,697"
+            },
+            {
+              "label": "国債",
+              "values": [
+                590
+              ],
+              "raw_line": "国債等債券償還損 - 590"
             }
           ]
         }

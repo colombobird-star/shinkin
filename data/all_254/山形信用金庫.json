@@ -9,13 +9,178 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 4,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            8216,
+            251079
+          ],
+          "raw_line": "そ の 他 の 証 券 8,216 払 戻 未 済 持 分 - 預 金 利 息 251,079"
+        },
+        {
+          "label": "その他",
+          "values": [
+            961
+          ],
+          "raw_line": "そ の 他 資 産 961 金融商品等受入担保金 - その他の支払利息 - 理 事 長 大 谷 明 彦"
+        },
+        {
+          "label": "その他",
+          "values": [
+            27
+          ],
+          "raw_line": "そ の 他 の 資 産 27"
+        },
+        {
+          "label": "その他",
+          "values": [
+            84512
+          ],
+          "raw_line": "その他の経常費用 84,512"
+        },
+        {
+          "label": "その他",
+          "values": [
+            86,
+            491239
+          ],
+          "raw_line": "その他の有形固定資産 86 資 本 準 備 金 - 経 常 利 益 491,239 常 勤 監 事 阿部 太左ェ門"
+        },
+        {
+          "label": "その他",
+          "values": [
+            8,
+            1177,
+            9559
+          ],
+          "raw_line": "その他の無形固定資産 8 当期未処分剰余金 1,177 固 定 資 産 処 分 損 9,559"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 4,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                4599,
+                771
+              ],
+              "raw_line": "国 債 4,599 そ の 他 負 債 771 貸倒引当金戻入益 -"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                1265,
+                184,
+                32962,
+                150000000
+              ],
+              "raw_line": "地 方 債 1,265 未 払 費 用 184 株 式 等 売 却 益 32,962 特別積立金 150,000,000"
+            },
+            {
+              "label": "短期社債",
+              "values": [
+                2
+              ],
+              "raw_line": "短 期 社 債 - 給 付 補 塡 備 金 2 金銭の信託運用益 -"
+            },
+            {
+              "label": "社債",
+              "values": [
+                8381
+              ],
+              "raw_line": "社 債 8,381"
+            },
+            {
+              "label": "株式",
+              "values": [
+                159,
+                34,
+                258062
+              ],
+              "raw_line": "株 式 159 払 戻 未 済 金 34 資 金 調 達 費 用 258,062"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                8216,
+                251079
+              ],
+              "raw_line": "そ の 他 の 証 券 8,216 払 戻 未 済 持 分 - 預 金 利 息 251,079"
+            },
+            {
+              "label": "国債",
+              "values": [
+                1
+              ],
+              "raw_line": "国債等債券償還損 1"
+            }
+          ]
+        },
+        {
+          "source_page": 8,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                5140
+              ],
+              "raw_line": "国 債 5,140"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                2678,
+                73579
+              ],
+              "raw_line": "地 方 債 2,678 その他の役務収益 73,579"
+            },
+            {
+              "label": "社債",
+              "values": [
+                8175
+              ],
+              "raw_line": "社 債 8,175"
+            },
+            {
+              "label": "国債",
+              "values": [
+                1
+              ],
+              "raw_line": "国債等債券償還益 1"
+            },
+            {
+              "label": "株式",
+              "values": [
+                198,
+                1501
+              ],
+              "raw_line": "株 式 198 借 入 金 1,501"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                7931,
+                334,
+                8275
+              ],
+              "raw_line": "そ の 他 の 証 券 7,931 そ の 他 負 債 334 その他経常収益 8,275"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 8,
       "rows": [

@@ -8,13 +8,121 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 6,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            13384
+          ],
+          "raw_line": "そ の 他 の 証 券 13,384"
+        },
+        {
+          "label": "その他",
+          "values": [
+            3834
+          ],
+          "raw_line": "そ の 他 資 産 3,834"
+        },
+        {
+          "label": "その他",
+          "values": [
+            177
+          ],
+          "raw_line": "そ の 他 の 資 産 177"
+        },
+        {
+          "label": "その他",
+          "values": [
+            572
+          ],
+          "raw_line": "そ の 他 の 有 形 固 定 資 産 572"
+        },
+        {
+          "label": "その他",
+          "values": [
+            47
+          ],
+          "raw_line": "そ の 他 の 無 形 固 定 資 産 47"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 6,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                32968
+              ],
+              "raw_line": "国 債 32,968"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                34597
+              ],
+              "raw_line": "地 方 債 34,597"
+            },
+            {
+              "label": "社債",
+              "values": [
+                23871
+              ],
+              "raw_line": "社 債 23,871"
+            },
+            {
+              "label": "株式",
+              "values": [
+                1019
+              ],
+              "raw_line": "株 式 1,019"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                13384
+              ],
+              "raw_line": "そ の 他 の 証 券 13,384"
+            }
+          ]
+        },
+        {
+          "source_page": 8,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                709
+              ],
+              "raw_line": "国 債 等 債 券 償 還 益 709"
+            },
+            {
+              "label": "株式",
+              "values": [
+                319473
+              ],
+              "raw_line": "株 式 等 売 却 益 319,473"
+            },
+            {
+              "label": "国債",
+              "values": [
+                302636
+              ],
+              "raw_line": "国 債 等 債 券 売 却 損 302,636"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 8,
       "rows": [

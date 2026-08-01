@@ -8,13 +8,153 @@
   ],
   "status": "ok",
   "found": {
-    "industry_loans": false,
-    "securities_portfolio": false,
+    "industry_loans": true,
+    "securities_portfolio": true,
     "income_statement": true
   },
   "data": {
-    "industry_loans": null,
-    "securities_portfolio": null,
+    "industry_loans": {
+      "source_page": 2,
+      "rows": [
+        {
+          "label": "その他",
+          "values": [
+            8715
+          ],
+          "raw_line": "その他の証券 8,715 外国他店預り ̶"
+        },
+        {
+          "label": "その他",
+          "values": [
+            1583,
+            2
+          ],
+          "raw_line": "その他資産 1,583 払戻未済持分 2"
+        },
+        {
+          "label": "その他",
+          "values": [
+            123,
+            34
+          ],
+          "raw_line": "その他の資産 123 資産除去債務 34"
+        },
+        {
+          "label": "その他",
+          "values": [
+            318,
+            160
+          ],
+          "raw_line": "その他の有形固定資産 318 偶発損失引当金 160"
+        },
+        {
+          "label": "その他",
+          "values": [
+            13
+          ],
+          "raw_line": "その他の無形固定資産 13 再評価に係る繰延税金負債 ̶̶"
+        },
+        {
+          "label": "その他",
+          "values": [
+            -4,
+            2000
+          ],
+          "raw_line": "その他の引当金 △△4 資本剰余金 2,000"
+        },
+        {
+          "label": "その他",
+          "values": [
+            2403
+          ],
+          "raw_line": "その他利益剰余金 2,403"
+        },
+        {
+          "label": "その他",
+          "values": [
+            -1193
+          ],
+          "raw_line": "その他有価証券評価差額金 △△1,193"
+        }
+      ]
+    },
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 2,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                24642
+              ],
+              "raw_line": "国債 24,642 コールマネー ̶̶"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                3391
+              ],
+              "raw_line": "地方債 3,391 売現先勘定 ̶̶"
+            },
+            {
+              "label": "社債",
+              "values": [
+                2365
+              ],
+              "raw_line": "社債 2,365 コマーシャル・ペーパー ̶̶"
+            },
+            {
+              "label": "株式",
+              "values": [
+                115
+              ],
+              "raw_line": "株式 115 外国為替 ̶̶"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                8715
+              ],
+              "raw_line": "その他の証券 8,715 外国他店預り ̶"
+            }
+          ]
+        },
+        {
+          "source_page": 3,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                17
+              ],
+              "raw_line": "国債等債券売却益 17"
+            },
+            {
+              "label": "株式",
+              "values": [
+                43
+              ],
+              "raw_line": "株式等売却益 43"
+            },
+            {
+              "label": "国債",
+              "values": [
+                1863
+              ],
+              "raw_line": "国債等債券売却損 1,863"
+            },
+            {
+              "label": "国債",
+              "values": [
+                48
+              ],
+              "raw_line": "国債等債券償還損 48"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": {
       "source_page": 3,
       "rows": [

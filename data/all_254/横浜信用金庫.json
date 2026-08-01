@@ -10,7 +10,7 @@
   "found": {
     "industry_loans": true,
     "securities_portfolio": false,
-    "income_statement": false
+    "income_statement": true
   },
   "data": {
     "industry_loans": {
@@ -219,7 +219,89 @@
       ]
     },
     "securities_portfolio": null,
-    "income_statement": null,
+    "income_statement": {
+      "source_page": 3,
+      "rows": [
+        {
+          "label": "業務純益",
+          "values": [
+            6,
+            44.3,
+            6,
+            9,
+            7,
+            9
+          ],
+          "raw_line": "業務純益は前年比6億円、44.3%増加の\b 令和6年9月末 令和7年9月末"
+        },
+        {
+          "label": "資金運用収益",
+          "values": [
+            11492,
+            13741
+          ],
+          "raw_line": "資金運用収益 11,492 13,741"
+        },
+        {
+          "label": "役務取引等収益",
+          "values": [
+            1815,
+            1934
+          ],
+          "raw_line": "役務取引等収益 1,815 1,934"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            1,
+            12.1,
+            97,
+            255
+          ],
+          "raw_line": "当期純利益は前年比1億円、12.1%増加 その他業務収益 97 255"
+        },
+        {
+          "label": "資金調達費用",
+          "values": [
+            402,
+            2003
+          ],
+          "raw_line": "資金調達費用 402 2,003"
+        },
+        {
+          "label": "役務取引等費用",
+          "values": [
+            748,
+            770
+          ],
+          "raw_line": "役務取引等費用 748 770"
+        },
+        {
+          "label": "その他業務費用",
+          "values": [
+            1061,
+            1039
+          ],
+          "raw_line": "その他業務費用 1,061 1,039"
+        },
+        {
+          "label": "経費",
+          "values": [
+            9666,
+            9966
+          ],
+          "raw_line": "経費 9,666 9,966"
+        },
+        {
+          "label": "当期純利益",
+          "values": [
+            1616,
+            1813
+          ],
+          "raw_line": "当期純利益 1,616 1,813"
+        }
+      ]
+    },
     "page_count": 4
   }
 }

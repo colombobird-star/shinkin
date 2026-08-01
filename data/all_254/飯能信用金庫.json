@@ -4,9 +4,6 @@
   "prefecture": "埼玉県",
   "disclosure_page": "https://www.shinkin.co.jp/hanno/bank_information/disclosure/",
   "pdf_urls": [
-    "https://www.shinkin.co.jp/hanno/bank_information/disclosure/pdf/2026medium-term.pdf",
-    "https://www.shinkin.co.jp/hanno/bank_information/disclosure/pdf/2026dx.pdf",
-    "https://www.shinkin.co.jp/hanno/bank_information/disclosure/pdf/2026genkyo.pdf",
     "https://www.shinkin.co.jp/hanno/bank_information/disclosure/pdf/2026siryou.pdf"
   ],
   "status": "ok",
@@ -17,7 +14,7 @@
   },
   "data": {
     "industry_loans": {
-      "source_page": 85,
+      "source_page": 30,
       "rows": [
         {
           "label": "製造業",
@@ -276,7 +273,7 @@
     "securities_portfolio": {
       "pages": [
         {
-          "source_page": 86,
+          "source_page": 31,
           "rows": [
             {
               "label": "国債",
@@ -492,11 +489,292 @@
               "raw_line": "合 計 538,491 590,201 526,895 552,050"
             }
           ]
+        },
+        {
+          "source_page": 15,
+          "rows": [
+            {
+              "label": "国債",
+              "values": [
+                170677,
+                163542,
+                17034,
+                15926
+              ],
+              "raw_line": "国 債 170,677 163,542 定 期 積 金 17,034 15,926"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                18064,
+                17793,
+                8657,
+                8852
+              ],
+              "raw_line": "地 方 債 18,064 17,793 そ の 他 の 預 金 8,657 8,852"
+            },
+            {
+              "label": "社債",
+              "values": [
+                121916,
+                120947,
+                72239,
+                44210
+              ],
+              "raw_line": "社 債 121,916 120,947 借 用 金 72,239 44,210"
+            },
+            {
+              "label": "株式",
+              "values": [
+                22954,
+                31947,
+                72239,
+                44210
+              ],
+              "raw_line": "株 式 22,954 31,947 借 入 金 72,239 44,210"
+            },
+            {
+              "label": "その他の証券",
+              "values": [
+                204878,
+                192665,
+                4378,
+                4804
+              ],
+              "raw_line": "そ の 他 の 証 券 204,878 192,665 そ の 他 負 債 4,378 4,804"
+            }
+          ]
+        },
+        {
+          "source_page": 20,
+          "rows": [
+            {
+              "label": "合計",
+              "values": [
+                234638,
+                495446,
+                306898,
+                435876
+              ],
+              "raw_line": "合 計 234,638 495,446 306,898 435,876"
+            },
+            {
+              "label": "合計",
+              "values": [
+                1406205,
+                89768,
+                3130,
+                74
+              ],
+              "raw_line": "合 計 1,406,205 89,768 3,130 74"
+            },
+            {
+              "label": "国債",
+              "values": [
+                1008,
+                1011,
+                3
+              ],
+              "raw_line": "国債 1,008 1,011 3"
+            },
+            {
+              "label": "外国証券",
+              "values": [
+                1000,
+                1004,
+                4
+              ],
+              "raw_line": "外国証券 1,000 1,004 4"
+            },
+            {
+              "label": "国債",
+              "values": [
+                11931,
+                11491,
+                -440
+              ],
+              "raw_line": "国債 11,931 11,491 △440"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                2795,
+                2604,
+                -191
+              ],
+              "raw_line": "地方債 2,795 2,604 △191"
+            },
+            {
+              "label": "外国証券",
+              "values": [
+                4699,
+                4502,
+                -197
+              ],
+              "raw_line": "外国証券 4,699 4,502 △197"
+            },
+            {
+              "label": "合計",
+              "values": [
+                34503,
+                33176,
+                -1326
+              ],
+              "raw_line": "合 計 34,503 33,176 △1,326"
+            },
+            {
+              "label": "株式",
+              "values": [
+                28617,
+                17305,
+                11312
+              ],
+              "raw_line": "株式 28,617 17,305 11,312"
+            },
+            {
+              "label": "国債",
+              "values": [
+                12145,
+                12052,
+                92
+              ],
+              "raw_line": "国債 12,145 12,052 92"
+            },
+            {
+              "label": "社債",
+              "values": [
+                5327,
+                4985,
+                342
+              ],
+              "raw_line": "社債 5,327 4,985 342"
+            },
+            {
+              "label": "外国証券",
+              "values": [
+                64508,
+                55083,
+                9424
+              ],
+              "raw_line": "外国証券 64,508 55,083 9,424"
+            },
+            {
+              "label": "株式",
+              "values": [
+                3291,
+                3671,
+                -380
+              ],
+              "raw_line": "株式 3,291 3,671 △380"
+            },
+            {
+              "label": "国債",
+              "values": [
+                138456,
+                158734,
+                -20277
+              ],
+              "raw_line": "国債 138,456 158,734 △20,277"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                14997,
+                16739,
+                -1742
+              ],
+              "raw_line": "地方債 14,997 16,739 △1,742"
+            },
+            {
+              "label": "社債",
+              "values": [
+                102552,
+                111943,
+                -9390
+              ],
+              "raw_line": "社債 102,552 111,943 △9,390"
+            },
+            {
+              "label": "外国証券",
+              "values": [
+                64078,
+                69132,
+                -5053
+              ],
+              "raw_line": "外国証券 64,078 69,132 △5,053"
+            },
+            {
+              "label": "合計",
+              "values": [
+                491874,
+                503006,
+                -11131
+              ],
+              "raw_line": "合 計 491,874 503,006 △11,131"
+            }
+          ]
+        },
+        {
+          "source_page": 21,
+          "rows": [
+            {
+              "label": "株式",
+              "values": [
+                6579,
+                2234,
+                199
+              ],
+              "raw_line": "株式 6,579 2,234 199"
+            },
+            {
+              "label": "国債",
+              "values": [
+                985,
+                1
+              ],
+              "raw_line": "国債 985 - 1"
+            },
+            {
+              "label": "地方債",
+              "values": [
+                3412,
+                183
+              ],
+              "raw_line": "地方債 3,412 - 183"
+            },
+            {
+              "label": "社債",
+              "values": [
+                35467,
+                0,
+                2883
+              ],
+              "raw_line": "社債 35,467 0 2,883"
+            },
+            {
+              "label": "外国証券",
+              "values": [
+                12176,
+                1464,
+                526
+              ],
+              "raw_line": "外国証券 12,176 1,464 526"
+            },
+            {
+              "label": "合計",
+              "values": [
+                65114,
+                4356,
+                4066
+              ],
+              "raw_line": "合 計 65,114 4,356 4,066"
+            }
+          ]
         }
       ]
     },
     "income_statement": {
-      "source_page": 77,
+      "source_page": 22,
       "rows": [
         {
           "label": "経常収益",
@@ -636,6 +914,6 @@
         }
       ]
     },
-    "page_count": 107
+    "page_count": 52
   }
 }

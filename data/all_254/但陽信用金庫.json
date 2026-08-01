@@ -15,12 +15,58 @@
   "status": "ok",
   "found": {
     "industry_loans": false,
-    "securities_portfolio": false,
+    "securities_portfolio": true,
     "income_statement": false
   },
   "data": {
     "industry_loans": null,
-    "securities_portfolio": null,
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 69,
+          "rows": [
+            {
+              "label": "株式",
+              "values": [
+                25,
+                2026,
+                6
+              ],
+              "raw_line": "株式会社タクミナ○25 (2026年6月末現在)"
+            },
+            {
+              "label": "株式",
+              "values": [
+                7,
+                10,
+                21
+              ],
+              "raw_line": "株式会社誠壽堂7 兵庫クレー株式会社10 福伸電機株式会社21"
+            },
+            {
+              "label": "株式",
+              "values": [
+                16,
+                13,
+                21,
+                3,
+                7,
+                20.2
+              ],
+              "raw_line": "株式会社籠谷16 釜谷紙業株式会社13 ニシカワ食品株式会社21 不 3 動 .7 産 % 業 20.2% 製造業"
+            },
+            {
+              "label": "株式",
+              "values": [
+                6,
+                41.3
+              ],
+              "raw_line": "株式会社マルアイ6 保険業 業種別 41.3%"
+            }
+          ]
+        }
+      ]
+    },
     "income_statement": null,
     "page_count": 72
   }

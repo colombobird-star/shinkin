@@ -9,13 +9,133 @@
   "status": "ok",
   "found": {
     "industry_loans": false,
-    "securities_portfolio": false,
-    "income_statement": false
+    "securities_portfolio": true,
+    "income_statement": true
   },
   "data": {
     "industry_loans": null,
-    "securities_portfolio": null,
-    "income_statement": null,
+    "securities_portfolio": {
+      "pages": [
+        {
+          "source_page": 14,
+          "rows": [
+            {
+              "label": "株式",
+              "values": [
+                10
+              ],
+              "raw_line": "株式会社オオサカヤ10"
+            },
+            {
+              "label": "株式",
+              "values": [
+                15,
+                8,
+                4,
+                10
+              ],
+              "raw_line": "株式会社伊藤商店15 上中 富雄8 安藤 浩詩4 株式会社磯部組10"
+            },
+            {
+              "label": "株式",
+              "values": [
+                10,
+                15,
+                3,
+                15
+              ],
+              "raw_line": "株式会社誠電社10 武豊屋株式会社15 成田 一郎3 河野電子株式会社15"
+            },
+            {
+              "label": "株式",
+              "values": [
+                15,
+                3,
+                2,
+                15
+              ],
+              "raw_line": "株式会社総本家田中屋15 都築 延男3 間瀬 芳郎2 株式会社仙台屋15"
+            },
+            {
+              "label": "株式",
+              "values": [
+                15
+              ],
+              "raw_line": "株式会社チェリー半田販売15"
+            },
+            {
+              "label": "株式",
+              "values": [
+                15
+              ],
+              "raw_line": "株式会社日比七15"
+            },
+            {
+              "label": "株式",
+              "values": [
+                15
+              ],
+              "raw_line": "株式会社不二工具15"
+            },
+            {
+              "label": "株式",
+              "values": [
+                13,
+                10
+              ],
+              "raw_line": "株式会社武豊鉄工所13 株式会社共和モータース10"
+            },
+            {
+              "label": "株式",
+              "values": [
+                15
+              ],
+              "raw_line": "株式会社元組15"
+            },
+            {
+              "label": "株式",
+              "values": [
+                15
+              ],
+              "raw_line": "株式会社森島商店15"
+            }
+          ]
+        }
+      ]
+    },
+    "income_statement": {
+      "source_page": 27,
+      "rows": [
+        {
+          "label": "経常収益",
+          "values": [
+            1
+          ],
+          "raw_line": "経常収益 1 マネー・ローンダリング及びテロ資金供与対策"
+        },
+        {
+          "label": "経常利益",
+          "values": [
+            1
+          ],
+          "raw_line": "経常利益・当期純利益 1"
+        },
+        {
+          "label": "業務純益",
+          "values": [
+            2
+          ],
+          "raw_line": "業務純益 2"
+        },
+        {
+          "label": "経費",
+          "values": [
+            3
+          ],
+          "raw_line": "経費の内訳 3"
+        }
+      ]
+    },
     "page_count": 28
   }
 }
